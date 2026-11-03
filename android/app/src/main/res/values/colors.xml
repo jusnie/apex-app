@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="ic_launcher_background">#000000</color>
-    <color name="apex_black">#000000</color>
-    <color name="apex_red">#E10600</color>
-    <color name="apex_white">#FFFFFF</color>
+    <color name="purple_200">#FFE10600</color>
+    <color name="purple_500">#FFE10600</color>
+    <color name="purple_700">#FFC80400</color>
+    <color name="teal_200">#FFFF2E2E</color>
+    <color name="teal_700">#FFE10600</color>
+    <color name="black">#FF000000</color>
+    <color name="ic_launcher_background">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="apex_black">#FF000000</color>
+    <color name="apex_red">#FFE10600</color>
+    <color name="apex_white">#FFFFFFFF</color>
+    <color name="app_splash_background">#FF000000</color>
+    <color name="widget_fallback_background">#FF000000</color>
+    <color name="widget_fallback_primary">#FFFFFFFF</color>
+    <color name="widget_fallback_secondary">#FFC4C4CE</color>
+    <color name="voice_shortcut_background">#FF000000</color>
 </resources>

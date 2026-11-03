@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="app_splash_background">#FF050507</color>
-    <color name="widget_fallback_background">#FF050507</color>
+    <color name="app_splash_background">#FF000000</color>
+    <color name="widget_fallback_background">#FF000000</color>
     <color name="widget_fallback_primary">#FFFFFFFF</color>
-    <color name="widget_fallback_secondary">#FF8E8E93</color>
+    <color name="widget_fallback_secondary">#FFC4C4CE</color>
 </resources>
