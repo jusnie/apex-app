@@ -1,0 +1,8 @@
+# Default owner for everything in the repository. With a "Require review from
+# Code Owners" rule on main, every pull request needs the maintainer's approval.
+* @apexapp
+
+# Supply-chain sensitive paths: CI definitions, release signing, dependency policy.
+/.github/ @apexapp
+/android/gradle/ @apexapp
+/SECURITY.md @apexapp
