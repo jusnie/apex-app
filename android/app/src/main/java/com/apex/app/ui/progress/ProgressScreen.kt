@@ -379,7 +379,7 @@ private fun MyProgressContent(container: AppContainer) {
         isLoadingFoodRangeStats = false
     }
 
-    Scaffold(containerColor = Color.Transparent) { padding ->
+    Scaffold(containerColor = Color.Transparent, contentColor = Color.White) { padding ->
         LazyColumn(
             modifier = Modifier.fillMaxSize().padding(padding),
             contentPadding = androidx.compose.foundation.layout.PaddingValues(
@@ -2744,7 +2744,7 @@ fun BodyMeasurementsScreen(container: AppContainer, onBack: () -> Unit) {
         return if (heightMetric) String.format(Locale.US, "%.0f %s", cm, cmUnit) else String.format(Locale.US, "%.0f %s", cm / 2.54, inUnit)
     }
 
-    Scaffold(containerColor = Color.Transparent) { padding ->
+    Scaffold(containerColor = Color.Transparent, contentColor = Color.White) { padding ->
         LazyColumn(
             modifier = Modifier.fillMaxSize().padding(padding).padding(horizontal = 16.dp),
             contentPadding = androidx.compose.foundation.layout.PaddingValues(top = 14.dp, bottom = BottomNavScrollPadding),

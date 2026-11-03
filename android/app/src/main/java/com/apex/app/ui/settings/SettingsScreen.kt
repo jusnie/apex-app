@@ -710,7 +710,7 @@ fun SettingsScreen(
     }
 
     // iOS Settings: bare List, no NavigationBar visible. Match that — no TopAppBar.
-    Scaffold(containerColor = Color.Transparent) { padding ->
+    Scaffold(containerColor = Color.Transparent, contentColor = Color.White) { padding ->
         Column(
             Modifier
                 .fillMaxSize()
@@ -2377,7 +2377,7 @@ fun OptionalNutrientGoalsScreen(
     val ui by vm.ui.collectAsState()
     var editing by remember { mutableStateOf<OptionalNutrient?>(null) }
 
-    Scaffold(containerColor = Color.Transparent) { padding ->
+    Scaffold(containerColor = Color.Transparent, contentColor = Color.White) { padding ->
         LazyColumn(
             modifier = Modifier
                 .fillMaxSize()
@@ -2515,7 +2515,7 @@ fun QuickActionsScreen(
     val ui by vm.ui.collectAsState()
     var expandedSlot by remember { mutableStateOf<Int?>(null) }
 
-    Scaffold(containerColor = Color.Transparent) { padding ->
+    Scaffold(containerColor = Color.Transparent, contentColor = Color.White) { padding ->
         LazyColumn(
             modifier = Modifier
                 .fillMaxSize()
@@ -2613,7 +2613,7 @@ fun QuickActionsScreen(
 fun CalculationMethodsScreen(
     onBack: () -> Unit
 ) {
-    Scaffold(containerColor = Color.Transparent) { padding ->
+    Scaffold(containerColor = Color.Transparent, contentColor = Color.White) { padding ->
         LazyColumn(
             modifier = Modifier
                 .fillMaxSize()

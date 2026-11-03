@@ -249,6 +249,7 @@ fun CoachScreen(container: AppContainer) {
 
     Scaffold(
         containerColor = Color.Transparent,
+        contentColor = Color.White,
         topBar = {
             // iOS Coach: centered "Coach" title, with a small circular dark
             // chip on the right wrapping a counterclockwise arrow reset icon.

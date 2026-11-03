@@ -471,6 +471,7 @@ DisposableEffect(lifecycleOwner, vm) {
     // ad strip above this screen (TabWithBanner) now owns that inset.
     Scaffold(
         containerColor = Color.Transparent,
+        contentColor = Color.White,
         bottomBar = {
             if (selectionMode) {
                 Column(

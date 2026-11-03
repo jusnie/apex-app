@@ -177,40 +177,36 @@ enum AppThemeColor: String, CaseIterable, Identifiable {
 }
 
 enum AppColors {
-    // Primary APEX Crimson Red -> Scarlet gradient
-    static var calorieGradient: [Color] { AppThemeColor.current.gradientColors }
-    static var calorie: Color { AppThemeColor.current.color }
+    //Primary APEX Crimson Red -> Scarlet gradient enforced globally
+    static var calorieGradient: [Color] { [Color(hex: 0xE10600), Color(hex: 0xFF2E2E)] }
+    static var calorie: Color { Color(hex: 0xE10600) }
 
     // Protein
     static var proteinGradient: [Color] { [Color(hex: 0xFF453A), Color(hex: 0xFF7A70)] }
     static var protein: Color { Color(hex: 0xFF453A) }
 
     // Carbs
-    static var carbsGradient: [Color] { [Color(hex: 0xF8FAFC), Color(hex: 0xCBD5E1)] }
-    static var carbs: Color { Color(hex: 0xF8FAFC) }
+    static var carbsGradient: [Color] { [Color.white, Color(hex: 0xCBD5E1)] }
+    static var carbs: Color { Color.white }
 
     // Fat
     static var fatGradient: [Color] { [Color(hex: 0xEF4444), Color(hex: 0xFCA5A5)] }
     static var fat: Color { Color(hex: 0xEF4444) }
 
-    // Background & Card: Obsidian Black (#050507 / #0E0E12) in dark, Crisp Pure White (#F8F8FA / #FFFFFF) in light
-    static let appBackground = Color("appBackground")
-    static let appCard = Color("appCard")
+    // Pure Black background & Obsidian Card enforced globally across APEX
+    static let appBackground = Color.black
+    static let appCard = Color(hex: 0x0A0A0F)
 }
 
-/// Signature APEX smooth ambient animated background (Obsidian Black, Crimson Red & Crisp White).
+/// Signature APEX smooth ambient animated background (Pure Black, Crimson Red & Crisp White).
 /// Mirrors Android's `APEXAnimatedBackground.kt` with identical 22s / 30s Lissajous radial motion.
 struct APEXAnimatedBackground: View {
-    @Environment(\.colorScheme) private var colorScheme
-    @AppStorage(AppThemeColor.storageKey) private var appThemeColorRaw = AppThemeColor.defaultColor.rawValue
-
     var body: some View {
-        let theme = AppThemeColor.color(for: appThemeColorRaw)
-        let primaryAccent = Color(hex: theme.startHex)
-        let secondaryAccent = Color(hex: theme.endHex)
-        let isDark = colorScheme == .dark
+        let primaryAccent = Color(hex: 0xE10600)
+        let secondaryAccent = Color(hex: 0xFF2E2E)
+        let isDark = true
 
-        TimelineView(.animation(minimumInterval: 1.0 / 30.0, paused: false)) { timeline in
+        TimelineView(.animation(minimumInterval: 1.0 / 60.0, paused: false)) { timeline in
             let t = timeline.date.timeIntervalSinceReferenceDate
             let phaseA = (t.truncatingRemainder(dividingBy: 22.0) / 22.0) * (2.0 * .pi)
             let phaseB = (t.truncatingRemainder(dividingBy: 30.0) / 30.0) * (2.0 * .pi)
@@ -220,9 +216,8 @@ struct APEXAnimatedBackground: View {
                 let h = size.height
                 let maxDim = max(w, h, 1)
 
-                // 1. Base Obsidian Black / Crisp Ice White canvas
-                let baseColor = isDark ? Color(hex: 0x050507) : Color(hex: 0xF8F8FA)
-                context.fill(Path(CGRect(origin: .zero, size: size)), with: .color(baseColor))
+                // 1. Pure Black (#000000) canvas
+                context.fill(Path(CGRect(origin: .zero, size: size)), with: .color(.black))
 
                 // 2. Primary APEX Crimson Red drifting ambient orb
                 let orb1Center = CGPoint(

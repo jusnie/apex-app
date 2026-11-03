@@ -1,8 +1,14 @@
 package com.apex.app.ui.components
 
+import androidx.compose.animation.animateContentSize
+import androidx.compose.animation.core.Spring
+import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.core.spring
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.interaction.collectIsPressedAsState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
@@ -22,17 +28,22 @@ import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Icon
+import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.composed
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.luminance
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -44,6 +55,29 @@ import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import com.apex.app.ui.theme.AppColors
 
+/**
+ * Silky spring tactile press modifier applied across interactive buttons & cards.
+ */
+fun Modifier.apexPressScale(
+    interactionSource: MutableInteractionSource,
+    enabled: Boolean = true,
+    pressedScale: Float = 0.965f
+): Modifier = composed {
+    val pressed by interactionSource.collectIsPressedAsState()
+    val scale by animateFloatAsState(
+        targetValue = if (enabled && pressed) pressedScale else 1f,
+        animationSpec = spring(
+            dampingRatio = Spring.DampingRatioMediumBouncy,
+            stiffness = Spring.StiffnessMediumLow
+        ),
+        label = "apexPressScale"
+    )
+    this.graphicsLayer {
+        scaleX = scale
+        scaleY = scale
+    }
+}
+
 @Composable
 fun APEXGlassSurface(
     modifier: Modifier = Modifier,
@@ -52,43 +86,48 @@ fun APEXGlassSurface(
     contentAlignment: Alignment = Alignment.TopStart,
     content: @Composable BoxScope.() -> Unit
 ) {
-    val isDark = MaterialTheme.colorScheme.background.luminance() < 0.5f
     val shape = RoundedCornerShape(cornerRadius)
-    val baseColor = if (isDark) Color(0xFF0E0E13).copy(alpha = 0.86f)
-                    else Color(0xFFFFFFFF).copy(alpha = 0.96f)
-    val shadowColor = if (isDark) Color.Black.copy(alpha = 0.44f)
-                      else Color.Black.copy(alpha = 0.09f)
+    val baseColor = Color(0xFF0A0A0F).copy(alpha = 0.90f)
+    val shadowColor = Color.Black.copy(alpha = 0.52f)
     val sheen = Brush.verticalGradient(
         listOf(
-            Color.White.copy(alpha = if (isDark) 0.065f else 0.90f),
-            Color.White.copy(alpha = if (isDark) 0.015f else 0.35f),
-            AppColors.Calorie.copy(alpha = if (isDark) 0.032f else 0.025f)
+            Color.White.copy(alpha = 0.06f),
+            Color.White.copy(alpha = 0.015f),
+            AppColors.Calorie.copy(alpha = 0.032f)
         )
     )
     val border = Brush.linearGradient(
         listOf(
-            Color.White.copy(alpha = if (isDark) 0.16f else 0.92f),
-            AppColors.Calorie.copy(alpha = if (isDark) 0.22f else 0.16f),
-            Color.White.copy(alpha = if (isDark) 0.04f else 0.50f)
+            Color.White.copy(alpha = 0.16f),
+            AppColors.Calorie.copy(alpha = 0.24f),
+            Color.White.copy(alpha = 0.05f)
         )
     )
 
-    Box(
-        modifier = modifier
-            .shadow(
-                elevation = if (isDark) 14.dp else 10.dp,
-                shape = shape,
-                ambientColor = shadowColor,
-                spotColor = if (isDark) AppColors.Calorie.copy(alpha = 0.16f) else shadowColor
-            )
-            .clip(shape)
-            .background(baseColor)
-            .background(sheen)
-            .border(0.8.dp, border, shape)
-            .padding(padding),
-        contentAlignment = contentAlignment,
-        content = content
-    )
+    CompositionLocalProvider(LocalContentColor provides Color.White) {
+        Box(
+            modifier = modifier
+                .animateContentSize(
+                    animationSpec = spring(
+                        dampingRatio = Spring.DampingRatioNoBouncy,
+                        stiffness = Spring.StiffnessMediumLow
+                    )
+                )
+                .shadow(
+                    elevation = 14.dp,
+                    shape = shape,
+                    ambientColor = shadowColor,
+                    spotColor = AppColors.Calorie.copy(alpha = 0.18f)
+                )
+                .clip(shape)
+                .background(baseColor)
+                .background(sheen)
+                .border(0.8.dp, border, shape)
+                .padding(padding),
+            contentAlignment = contentAlignment,
+            content = content
+        )
+    }
 }
 
 @Composable
@@ -142,29 +181,24 @@ fun APEXGlassTextField(
     keyboardActions: KeyboardActions = KeyboardActions.Default,
     visualTransformation: VisualTransformation = VisualTransformation.None,
     textStyle: TextStyle = TextStyle(
-        color = MaterialTheme.colorScheme.onSurface,
+        color = Color.White,
         fontSize = 16.sp,
         fontWeight = FontWeight.Medium
     )
 ) {
     val shape = RoundedCornerShape(18.dp)
-    val isDark = MaterialTheme.colorScheme.background.luminance() < 0.5f
-    val fieldFill = if (isDark) {
-        Color(0xFF14141B).copy(alpha = 0.88f)
-    } else {
-        Color(0xFFF1F1F5)
-    }
+    val fieldFill = Color(0xFF121219).copy(alpha = 0.92f)
     val fieldSheen = Brush.verticalGradient(
         listOf(
-            Color.White.copy(alpha = if (isDark) 0.06f else 0.65f),
-            Color.White.copy(alpha = if (isDark) 0.015f else 0.15f),
-            AppColors.Calorie.copy(alpha = if (isDark) 0.025f else 0.020f)
+            Color.White.copy(alpha = 0.06f),
+            Color.White.copy(alpha = 0.015f),
+            AppColors.Calorie.copy(alpha = 0.025f)
         )
     )
     val fieldBorder = Brush.linearGradient(
         listOf(
-            Color.White.copy(alpha = if (isDark) 0.14f else 0.85f),
-            AppColors.Calorie.copy(alpha = if (isDark) 0.16f else 0.14f)
+            Color.White.copy(alpha = 0.16f),
+            AppColors.Calorie.copy(alpha = 0.22f)
         )
     )
     BasicTextField(
@@ -176,7 +210,7 @@ fun APEXGlassTextField(
         keyboardOptions = keyboardOptions,
         keyboardActions = keyboardActions,
         visualTransformation = visualTransformation,
-        textStyle = textStyle,
+        textStyle = textStyle.copy(color = Color.White),
         cursorBrush = SolidColor(AppColors.Calorie),
         modifier = modifier
             .fillMaxWidth()
@@ -194,7 +228,7 @@ fun APEXGlassTextField(
                 if (value.isEmpty() && placeholder.isNotBlank()) {
                     Text(
                         placeholder,
-                        color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f),
+                        color = Color.White.copy(alpha = 0.44f),
                         fontSize = textStyle.fontSize,
                         fontWeight = FontWeight.Medium
                     )
@@ -215,17 +249,19 @@ fun APEXGlassDialog(
         onDismissRequest = onDismissRequest,
         properties = DialogProperties(usePlatformDefaultWidth = false)
     ) {
-        APEXGlassSurface(
-            modifier = modifier
-                .fillMaxWidth()
-                .padding(horizontal = 24.dp),
-            cornerRadius = 28.dp,
-            padding = 20.dp
-        ) {
-            Column(
-                verticalArrangement = Arrangement.spacedBy(16.dp),
-                content = content
-            )
+        CompositionLocalProvider(LocalContentColor provides Color.White) {
+            APEXGlassSurface(
+                modifier = modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 24.dp),
+                cornerRadius = 28.dp,
+                padding = 20.dp
+            ) {
+                Column(
+                    verticalArrangement = Arrangement.spacedBy(16.dp),
+                    content = content
+                )
+            }
         }
     }
 }
@@ -239,30 +275,50 @@ fun APEXGlassPrimaryButton(
     height: Dp = 50.dp,
     content: (@Composable RowScope.() -> Unit)? = null
 ) {
+    val interactionSource = remember { MutableInteractionSource() }
     val brush = if (enabled) {
         Brush.linearGradient(listOf(AppColors.CalorieStart, AppColors.CalorieEnd))
     } else {
         Brush.linearGradient(
             listOf(
-                AppColors.Calorie.copy(alpha = 0.35f),
-                AppColors.Calorie.copy(alpha = 0.35f)
+                AppColors.CalorieStart.copy(alpha = 0.36f),
+                AppColors.CalorieEnd.copy(alpha = 0.36f)
             )
         )
     }
     Row(
         modifier
+            .apexPressScale(interactionSource = interactionSource, enabled = enabled)
             .height(height)
+            .shadow(
+                elevation = if (enabled) 10.dp else 0.dp,
+                shape = RoundedCornerShape(16.dp),
+                ambientColor = AppColors.Calorie.copy(alpha = 0.35f),
+                spotColor = AppColors.Calorie.copy(alpha = 0.45f)
+            )
             .clip(RoundedCornerShape(16.dp))
             .background(brush)
-            .clickable(enabled = enabled, onClick = onClick)
+            .clickable(
+                interactionSource = interactionSource,
+                indication = null,
+                enabled = enabled,
+                onClick = onClick
+            )
             .padding(horizontal = 18.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.Center
     ) {
-        if (content != null) {
-            content()
-        } else {
-            Text(text, color = Color.White, fontWeight = FontWeight.SemiBold, fontSize = 16.sp)
+        CompositionLocalProvider(LocalContentColor provides Color.White) {
+            if (content != null) {
+                content()
+            } else {
+                Text(
+                    text,
+                    color = if (enabled) Color.White else Color.White.copy(alpha = 0.6f),
+                    fontWeight = FontWeight.SemiBold,
+                    fontSize = 16.sp
+                )
+            }
         }
     }
 }
@@ -272,33 +328,42 @@ fun APEXGlassTextButton(
     text: String,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
-    color: Color = AppColors.Calorie,
-    enabled: Boolean = true
+    color: Color = Color.White,
+    enabled: Boolean = true,
+    filledPrimary: Boolean = false
 ) {
-    val isDark = MaterialTheme.colorScheme.background.luminance() < 0.5f
+    val interactionSource = remember { MutableInteractionSource() }
     val shape = RoundedCornerShape(14.dp)
-    val fill = if (isDark) {
-        Color.White.copy(alpha = 0.06f)
+    val fillBrush = if (filledPrimary) {
+        if (enabled) Brush.linearGradient(listOf(AppColors.CalorieStart, AppColors.CalorieEnd))
+        else Brush.linearGradient(listOf(AppColors.CalorieStart.copy(alpha = 0.35f), AppColors.CalorieEnd.copy(alpha = 0.35f)))
     } else {
-        Color(0xFFF1F1F5)
+        Brush.linearGradient(listOf(Color.White.copy(alpha = 0.08f), Color.White.copy(alpha = 0.06f)))
     }
-    val border = if (isDark) {
-        Color.White.copy(alpha = 0.12f)
+    val border = if (filledPrimary) Color.White.copy(alpha = 0.18f) else Color.White.copy(alpha = 0.14f)
+    val textColor = if (filledPrimary) {
+        if (enabled) Color.White else Color.White.copy(alpha = 0.55f)
     } else {
-        Color(0xFFE4E4E7)
+        color.copy(alpha = if (enabled) color.alpha else color.alpha * 0.40f)
     }
     Box(
         modifier
+            .apexPressScale(interactionSource = interactionSource, enabled = enabled)
             .clip(shape)
-            .background(fill)
+            .background(fillBrush)
             .border(0.6.dp, border, shape)
-            .clickable(enabled = enabled, onClick = onClick)
-            .padding(horizontal = 14.dp, vertical = 10.dp),
+            .clickable(
+                interactionSource = interactionSource,
+                indication = null,
+                enabled = enabled,
+                onClick = onClick
+            )
+            .padding(horizontal = 16.dp, vertical = 10.dp),
         contentAlignment = Alignment.Center
     ) {
         Text(
             text,
-            color = color.copy(alpha = if (enabled) color.alpha else color.alpha * 0.38f),
+            color = textColor,
             fontSize = 15.sp,
             fontWeight = FontWeight.SemiBold
         )
@@ -324,16 +389,17 @@ fun APEXGlassDialogActions(
             APEXGlassTextButton(
                 text = dismissText,
                 onClick = onDismiss,
-                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.68f)
+                color = Color.White.copy(alpha = 0.80f),
+                filledPrimary = false
             )
-            Spacer(Modifier.width(6.dp))
+            Spacer(Modifier.width(8.dp))
         }
-        val primaryColor = if (destructive) Color(0xFFFF453A) else AppColors.Calorie
         APEXGlassTextButton(
             text = primaryText,
             onClick = onPrimary,
-            color = primaryColor,
-            enabled = primaryEnabled
+            color = Color.White,
+            enabled = primaryEnabled,
+            filledPrimary = true
         )
     }
 }

@@ -98,14 +98,14 @@ jobs:
           mkdir -p "$GITHUB_WORKSPACE/dist-apk"
           APK_SRC=$(find app/build/outputs/apk/release -name "*.apk" | head -n 1)
           test -f "$APK_SRC"
-          cp "$APK_SRC" "$GITHUB_WORKSPACE/dist-apk/APEX-v8.0.1-release.apk"
+          cp "$APK_SRC" "$GITHUB_WORKSPACE/dist-apk/APEX-v8.0.2-release.apk"
           ls -lh "$GITHUB_WORKSPACE/dist-apk/"
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
           name: APEX-Android-APK
-          path: dist-apk/APEX-v8.0.1-release.apk
+          path: dist-apk/APEX-v8.0.2-release.apk
           if-no-files-found: error
           retention-days: 90
 
@@ -114,11 +114,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          TAG="v8.0.1"
+          TAG="v8.0.2"
           if gh release view "$TAG" >/dev/null 2>&1; then
-            gh release upload "$TAG" "$GITHUB_WORKSPACE/dist-apk/APEX-v8.0.1-release.apk" --clobber
+            gh release upload "$TAG" "$GITHUB_WORKSPACE/dist-apk/APEX-v8.0.2-release.apk" --clobber
           else
-            gh release create "$TAG" "$GITHUB_WORKSPACE/dist-apk/APEX-v8.0.1-release.apk" \
-              --title "APEX v8.0.1 (Android APK)" \
-              --notes "Signed Android release APK for **APEX** (\`com.apex.app\`) — Tactical Jarvis HUD + Reactor Core, 317-workout native video catalog, Black/Crimson/White theme, Dev: Yasuda | Gian."
+            gh release create "$TAG" "$GITHUB_WORKSPACE/dist-apk/APEX-v8.0.2-release.apk" \
+              --title "APEX v8.0.2 (Android APK)" \
+              --notes "Signed Android release APK for **APEX** (\`com.apex.app\`) v8.0.2 — Enforced Pure Black background + Crisp White text + Crimson Red buttons across all screens, new APEX Tactical Emblem icons, smooth directional & spring animations app-wide, 317 video-guided workouts, Dev: Yasuda | Gian."
           fi

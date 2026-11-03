@@ -1,6 +1,19 @@
 package com.apex.app.ui.navigation
 
 import android.annotation.SuppressLint
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.core.FastOutSlowInEasing
+import androidx.compose.animation.core.Spring
+import androidx.compose.animation.core.spring
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.scaleIn
+import androidx.compose.animation.scaleOut
+import androidx.compose.animation.slideInHorizontally
+import androidx.compose.animation.slideInVertically
+import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.animation.slideOutVertically
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.WindowInsets
@@ -274,8 +287,20 @@ fun APEXNavHost(
     CompositionLocalProvider(LocalLaunchFillEpoch provides launchFillEpoch) {
     Scaffold(
         containerColor = androidx.compose.ui.graphics.Color.Transparent,
+        contentColor = androidx.compose.ui.graphics.Color.White,
         bottomBar = {
-            if (showTabs) {
+            AnimatedVisibility(
+                visible = showTabs,
+                enter = slideInVertically(
+                    animationSpec = spring(
+                        dampingRatio = 0.82f,
+                        stiffness = Spring.StiffnessMediumLow
+                    )
+                ) { it } + fadeIn(tween(220)),
+                exit = slideOutVertically(
+                    animationSpec = tween(180, easing = FastOutSlowInEasing)
+                ) { it } + fadeOut(tween(160))
+            ) {
                 APEXBottomNavBar(
                     currentRoute = selectedTabRoute,
                     showAboutBadge = updateAvailable,
@@ -287,9 +312,78 @@ fun APEXNavHost(
         }
     ) { _ ->
         Box(Modifier.fillMaxSize()) {
+            val tabOrder = remember {
+                listOf(
+                    APEXRoutes.HOME,
+                    APEXRoutes.PROGRESS,
+                    APEXRoutes.COACH,
+                    APEXRoutes.SETTINGS,
+                    APEXRoutes.WORKOUTS
+                )
+            }
             NavHost(
                 navController = nav,
-                startDestination = if (startOnboarding) APEXRoutes.ONBOARDING else APEXRoutes.HOME
+                startDestination = if (startOnboarding) APEXRoutes.ONBOARDING else APEXRoutes.HOME,
+                enterTransition = {
+                    val from = initialState.destination.route.orEmpty()
+                    val to = targetState.destination.route.orEmpty()
+                    val fromIdx = tabOrder.indexOf(from)
+                    val toIdx = tabOrder.indexOf(to)
+                    when {
+                        to.startsWith("settings/") ->
+                            slideInHorizontally(tween(300, easing = FastOutSlowInEasing)) { it / 4 } +
+                                fadeIn(tween(240))
+                        from == APEXRoutes.ONBOARDING ->
+                            fadeIn(tween(340, easing = FastOutSlowInEasing)) +
+                                scaleIn(initialScale = 0.96f, animationSpec = tween(340, easing = FastOutSlowInEasing))
+                        fromIdx >= 0 && toIdx >= 0 && fromIdx != toIdx -> {
+                            val dir = if (toIdx > fromIdx) 1 else -1
+                            slideInHorizontally(tween(250, easing = FastOutSlowInEasing)) { (it / 10) * dir } +
+                                fadeIn(tween(210))
+                        }
+                        else ->
+                            fadeIn(tween(230, easing = FastOutSlowInEasing)) +
+                                scaleIn(initialScale = 0.98f, animationSpec = tween(230, easing = FastOutSlowInEasing))
+                    }
+                },
+                exitTransition = {
+                    val from = initialState.destination.route.orEmpty()
+                    val to = targetState.destination.route.orEmpty()
+                    val fromIdx = tabOrder.indexOf(from)
+                    val toIdx = tabOrder.indexOf(to)
+                    when {
+                        to.startsWith("settings/") ->
+                            slideOutHorizontally(tween(280, easing = FastOutSlowInEasing)) { -it / 10 } +
+                                fadeOut(tween(200))
+                        fromIdx >= 0 && toIdx >= 0 && fromIdx != toIdx -> {
+                            val dir = if (toIdx > fromIdx) -1 else 1
+                            slideOutHorizontally(tween(220, easing = FastOutSlowInEasing)) { (it / 14) * dir } +
+                                fadeOut(tween(180))
+                        }
+                        else ->
+                            fadeOut(tween(190, easing = FastOutSlowInEasing))
+                    }
+                },
+                popEnterTransition = {
+                    val from = initialState.destination.route.orEmpty()
+                    if (from.startsWith("settings/")) {
+                        slideInHorizontally(tween(280, easing = FastOutSlowInEasing)) { -it / 10 } +
+                            fadeIn(tween(220))
+                    } else {
+                        fadeIn(tween(220, easing = FastOutSlowInEasing)) +
+                            scaleIn(initialScale = 0.98f, animationSpec = tween(220, easing = FastOutSlowInEasing))
+                    }
+                },
+                popExitTransition = {
+                    val from = initialState.destination.route.orEmpty()
+                    if (from.startsWith("settings/")) {
+                        slideOutHorizontally(tween(280, easing = FastOutSlowInEasing)) { it / 4 } +
+                            fadeOut(tween(200))
+                    } else {
+                        fadeOut(tween(190, easing = FastOutSlowInEasing)) +
+                            scaleOut(targetScale = 0.98f, animationSpec = tween(190, easing = FastOutSlowInEasing))
+                    }
+                }
             ) {
                 composable(APEXRoutes.ONBOARDING) {
                     OnboardingScreen(container = container, onComplete = {

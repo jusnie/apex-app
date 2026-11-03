@@ -1,14 +1,16 @@
 package com.apex.app.ui.components
 
 import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.core.FastOutSlowInEasing
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -17,14 +19,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.apex.app.ui.theme.AppColors
 
 /**
- * iOS-style segmented control. Two options side-by-side inside a pill;
- * the selected side gets the pink fill and white text.
+ * APEX segmented control: Obsidian Black capsule track with smooth animated
+ * Crimson Red active segment and Crisp White typography.
  */
 @Composable
 fun UnitToggle(
@@ -34,16 +35,12 @@ fun UnitToggle(
     onSelect: (Boolean) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val isDark = MaterialTheme.colorScheme.background.luminance() < 0.5f
-    val trackColor = if (isDark) {
-        MaterialTheme.colorScheme.onSurface.copy(alpha = 0.12f)
-    } else {
-        Color(0xFFE5DAD3).copy(alpha = 0.88f)
-    }
+    val shape = RoundedCornerShape(22.dp)
     Box(
         modifier = modifier
-            .clip(RoundedCornerShape(22.dp))
-            .background(trackColor)
+            .clip(shape)
+            .background(Color(0xFF0E0E14))
+            .border(0.8.dp, Color.White.copy(alpha = 0.14f), shape)
             .padding(4.dp)
     ) {
         Row {
@@ -70,25 +67,20 @@ private fun UnitSegment(
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val isDark = MaterialTheme.colorScheme.background.luminance() < 0.5f
-    // iOS UISegmentedControl uses a slightly lighter neutral fill for the
-    // selected thumb (not an accent colour) — matches that look.
     val bg by animateColorAsState(
-        if (selected) {
-            if (isDark) MaterialTheme.colorScheme.onSurface.copy(alpha = 0.22f)
-            else Color.White.copy(alpha = 0.72f)
-        }
-        else Color.Transparent,
+        targetValue = if (selected) AppColors.Calorie else Color.Transparent,
+        animationSpec = tween(220, easing = FastOutSlowInEasing),
         label = "segBg"
     )
     val fg by animateColorAsState(
-        if (selected) MaterialTheme.colorScheme.onSurface
-        else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f),
+        targetValue = if (selected) Color.White else Color.White.copy(alpha = 0.68f),
+        animationSpec = tween(220, easing = FastOutSlowInEasing),
         label = "segFg"
     )
     val interactionSource = remember { MutableInteractionSource() }
     Box(
         modifier = modifier
+            .apexPressScale(interactionSource = interactionSource)
             .clip(RoundedCornerShape(18.dp))
             .background(bg)
             .clickable(
@@ -96,9 +88,13 @@ private fun UnitSegment(
                 indication = null,
                 onClick = onClick
             )
-            .padding(horizontal = 16.dp, vertical = 10.dp),
+            .padding(vertical = 10.dp),
         contentAlignment = Alignment.Center
     ) {
-        Text(label, color = fg, style = MaterialTheme.typography.titleSmall, fontWeight = FontWeight.SemiBold)
+        Text(
+            label,
+            color = fg,
+            fontWeight = if (selected) FontWeight.SemiBold else FontWeight.Medium
+        )
     }
 }

@@ -8,7 +8,6 @@ import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
@@ -22,18 +21,13 @@ import kotlin.math.max
 import kotlin.math.sin
 
 /**
- * Signature APEX smooth ambient animated background (Obsidian Black, Crimson Red & Crisp White).
- *
- * Uses continuous 0..2π phase rotation so radial light orbs drift along smooth Lissajous curves
- * with zero turnaround bounce or frame hitching.
+ * Signature APEX smooth ambient animated background:
+ * Pure OLED Black (#000000) base with silky continuous 0..2π Lissajous Crimson Red radial drift.
  */
 @Composable
 fun APEXAnimatedBackground(
     modifier: Modifier = Modifier
 ) {
-    val bgColor = MaterialTheme.colorScheme.background
-    val isDark = (bgColor.red + bgColor.green + bgColor.blue) / 3f < 0.5f
-
     val primaryAccent = AppColors.Calorie
     val secondaryAccent = AppColors.CalorieEnd
 
@@ -62,21 +56,20 @@ fun APEXAnimatedBackground(
         val h = size.height
         val maxDim = max(w, h).coerceAtLeast(1f)
 
-        // 1. Base Obsidian Black / Crisp Ice White canvas
-        drawRect(color = if (isDark) AppColors.AppBackgroundDark else AppColors.AppBackgroundLight)
+        // 1. Pure Black (#000000) canvas
+        drawRect(color = Color.Black)
 
-        // 2. Primary APEX Crimson Red drifting ambient orb (upper-left <-> upper-right)
+        // 2. Primary APEX Crimson Red drifting ambient orb
         val orb1Center = Offset(
             x = w * (0.24f + 0.22f * cos(phaseA)),
-            y = h * (0.16f + 0.10f * sin(phaseA * 1.0f + 0.4f))
+            y = h * (0.14f + 0.09f * sin(phaseA + 0.4f))
         )
-        val orb1Radius = maxDim * 0.62f
-        val orb1Alpha = if (isDark) 0.16f else 0.075f
+        val orb1Radius = maxDim * 0.58f
         drawCircle(
             brush = Brush.radialGradient(
                 colors = listOf(
-                    primaryAccent.copy(alpha = orb1Alpha),
-                    primaryAccent.copy(alpha = orb1Alpha * 0.42f),
+                    primaryAccent.copy(alpha = 0.14f),
+                    primaryAccent.copy(alpha = 0.05f),
                     Color.Transparent
                 ),
                 center = orb1Center,
@@ -86,18 +79,17 @@ fun APEXAnimatedBackground(
             center = orb1Center
         )
 
-        // 3. Secondary Scarlet Red counter-drifting ambient orb (lower-right <-> mid-left)
+        // 3. Secondary Scarlet Red counter-drifting ambient orb
         val orb2Center = Offset(
             x = w * (0.78f - 0.24f * sin(phaseB)),
-            y = h * (0.78f - 0.14f * cos(phaseB))
+            y = h * (0.80f - 0.13f * cos(phaseB))
         )
-        val orb2Radius = maxDim * 0.58f
-        val orb2Alpha = if (isDark) 0.12f else 0.055f
+        val orb2Radius = maxDim * 0.54f
         drawCircle(
             brush = Brush.radialGradient(
                 colors = listOf(
-                    secondaryAccent.copy(alpha = orb2Alpha),
-                    primaryAccent.copy(alpha = orb2Alpha * 0.35f),
+                    secondaryAccent.copy(alpha = 0.10f),
+                    primaryAccent.copy(alpha = 0.035f),
                     Color.Transparent
                 ),
                 center = orb2Center,
@@ -105,26 +97,6 @@ fun APEXAnimatedBackground(
             ),
             radius = orb2Radius,
             center = orb2Center
-        )
-
-        // 4. Subtle Crisp White atmospheric crown glow for liquid-glass depth
-        val crownCenter = Offset(
-            x = w * (0.50f + 0.12f * sin(phaseA - phaseB)),
-            y = -h * 0.06f
-        )
-        val crownRadius = maxDim * 0.48f
-        val crownAlpha = if (isDark) 0.045f else 0.45f
-        drawCircle(
-            brush = Brush.radialGradient(
-                colors = listOf(
-                    Color.White.copy(alpha = crownAlpha),
-                    Color.Transparent
-                ),
-                center = crownCenter,
-                radius = crownRadius
-            ),
-            radius = crownRadius,
-            center = crownCenter
         )
     }
 }

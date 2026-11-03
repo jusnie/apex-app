@@ -329,20 +329,24 @@ fun APEXBottomNavBar(
 private fun ActivePill(tabWidth: Dp, isDark: Boolean, modifier: Modifier = Modifier) {
     val pillShape = RoundedCornerShape(PillCorner)
 
-    val fill = if (isDark) AppColors.Calorie.copy(alpha = 0.22f)
-               else AppColors.Calorie.copy(alpha = 0.14f)
+    val fill = Brush.linearGradient(
+        colors = listOf(
+            AppColors.CalorieStart.copy(alpha = 0.92f),
+            AppColors.CalorieEnd.copy(alpha = 0.88f)
+        )
+    )
 
     val sheen = Brush.verticalGradient(
-        colors = if (isDark)
-            listOf(Color.White.copy(alpha = 0.16f), Color.White.copy(alpha = 0.0f))
-        else
-            listOf(Color.White.copy(alpha = 0.55f), Color.White.copy(alpha = 0.10f))
+        colors = listOf(
+            Color.White.copy(alpha = 0.22f),
+            Color.White.copy(alpha = 0.0f)
+        )
     )
 
     val border = Brush.linearGradient(
         listOf(
-            AppColors.Calorie.copy(alpha = if (isDark) 0.55f else 0.35f),
-            Color.White.copy(alpha = if (isDark) 0.26f else 0.70f)
+            Color.White.copy(alpha = 0.36f),
+            AppColors.CalorieEnd.copy(alpha = 0.65f)
         )
     )
 
@@ -351,10 +355,16 @@ private fun ActivePill(tabWidth: Dp, isDark: Boolean, modifier: Modifier = Modif
             .width(tabWidth)
             .fillMaxHeight()
             .padding(horizontal = PillInsetH, vertical = PillInsetV)
+            .shadow(
+                elevation = 10.dp,
+                shape = pillShape,
+                ambientColor = AppColors.Calorie.copy(alpha = 0.45f),
+                spotColor = AppColors.Calorie.copy(alpha = 0.60f)
+            )
             .clip(pillShape)
             .background(fill)
             .background(sheen)
-            .border(0.75.dp, border, pillShape)
+            .border(0.8.dp, border, pillShape)
     )
 }
 
@@ -367,13 +377,10 @@ private fun TabItem(
     modifier: Modifier = Modifier,
     onClick: () -> Unit
 ) {
-    val activeColor = AppColors.Calorie
-    val inactiveColor = if (isDark) Color.White.copy(alpha = 0.62f)
-                        else Color.Black.copy(alpha = 0.55f)
-    val tint = if (selected) activeColor else inactiveColor
+    val tint = if (selected) Color.White else Color.White.copy(alpha = 0.62f)
 
     val iconScale by animateFloatAsState(
-        targetValue = if (selected) 1.08f else 1.0f,
+        targetValue = if (selected) 1.10f else 1.0f,
         animationSpec = spring(
             dampingRatio = Spring.DampingRatioMediumBouncy,
             stiffness = 380f
@@ -400,7 +407,7 @@ private fun TabItem(
                 tab.icon,
                 contentDescription = label,
                 tint = tint,
-                modifier = Modifier.size(if (selected) 26.dp else 24.dp).scale(iconScale)
+                modifier = Modifier.size(if (selected) 25.dp else 23.dp).scale(iconScale)
             )
             if (showBadge) {
                 Box(
@@ -408,7 +415,7 @@ private fun TabItem(
                         .align(Alignment.TopEnd)
                         .size(8.dp)
                         .clip(CircleShape)
-                        .background(AppColors.Calorie)
+                        .background(if (selected) Color.White else AppColors.Calorie)
                 )
             }
         }
@@ -417,7 +424,7 @@ private fun TabItem(
             label,
             color = tint,
             fontSize = 11.sp,
-            fontWeight = if (selected) FontWeight.SemiBold else FontWeight.Medium
+            fontWeight = if (selected) FontWeight.Bold else FontWeight.Medium
         )
     }
 }

@@ -65,7 +65,7 @@ fun ProductInfoSettingsScreen(
     val hidden by container.prefs.productInfoHiddenFields.collectAsState(initial = emptySet())
     val scope = rememberCoroutineScope()
 
-    Scaffold(containerColor = Color.Transparent) { padding ->
+    Scaffold(containerColor = Color.Transparent, contentColor = Color.White) { padding ->
         LazyColumn(
             modifier = Modifier
                 .fillMaxSize()

@@ -31,6 +31,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -109,21 +110,37 @@ fun <T> WheelPicker(
             items(items) { item ->
                 val isSelected = item == items.getOrNull(centerIndex)
                 val alpha by animateFloatAsState(
-                    targetValue = if (isSelected) 1f else 0.35f,
+                    targetValue = if (isSelected) 1f else 0.36f,
+                    animationSpec = androidx.compose.animation.core.spring(
+                        dampingRatio = 0.85f,
+                        stiffness = 380f
+                    ),
                     label = "wheelAlpha"
+                )
+                val itemScale by animateFloatAsState(
+                    targetValue = if (isSelected) 1.06f else 0.92f,
+                    animationSpec = androidx.compose.animation.core.spring(
+                        dampingRatio = 0.82f,
+                        stiffness = 360f
+                    ),
+                    label = "wheelScale"
                 )
                 Box(
                     modifier = Modifier
                         .height(ITEM_HEIGHT)
-                        .fillMaxWidth(),
+                        .fillMaxWidth()
+                        .graphicsLayer {
+                            scaleX = itemScale
+                            scaleY = itemScale
+                        },
                     contentAlignment = Alignment.Center
                 ) {
                     Text(
                         label(item),
                         style = MaterialTheme.typography.titleLarge,
                         fontSize = if (isSelected) 24.sp else 20.sp,
-                        fontWeight = if (isSelected) FontWeight.SemiBold else FontWeight.Medium,
-                        color = MaterialTheme.colorScheme.onBackground.copy(alpha = alpha),
+                        fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Medium,
+                        color = Color.White.copy(alpha = alpha),
                         maxLines = 1,
                         softWrap = false
                     )
@@ -207,39 +224,20 @@ fun DateWheelPicker(
 @Composable
 private fun WheelSelectionHighlight(modifier: Modifier = Modifier) {
     val shape = RoundedCornerShape(14.dp)
-    val isDark = MaterialTheme.colorScheme.background.luminance() < 0.5f
-    val fill = if (isDark) {
-        MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.42f)
-    } else {
-        Color(0xFFE2D6CF).copy(alpha = 0.96f)
-    }
+    val fill = Color(0xFF15151E).copy(alpha = 0.86f)
     val sheen = Brush.verticalGradient(
-        colors = if (isDark) {
-            listOf(
-                Color.White.copy(alpha = 0.10f),
-                Color.White.copy(alpha = 0.025f),
-                AppColors.Calorie.copy(alpha = 0.045f)
-            )
-        } else {
-            listOf(
-                Color.White.copy(alpha = 0.22f),
-                Color.White.copy(alpha = 0.06f),
-                AppColors.Calorie.copy(alpha = 0.070f)
-            )
-        }
+        colors = listOf(
+            Color.White.copy(alpha = 0.10f),
+            Color.White.copy(alpha = 0.025f),
+            AppColors.Calorie.copy(alpha = 0.09f)
+        )
     )
     val stroke = Brush.linearGradient(
-        colors = if (isDark) {
-            listOf(
-                Color.White.copy(alpha = 0.18f),
-                AppColors.Calorie.copy(alpha = 0.14f)
-            )
-        } else {
-            listOf(
-                Color.White.copy(alpha = 0.50f),
-                AppColors.Calorie.copy(alpha = 0.22f)
-            )
-        }
+        colors = listOf(
+            AppColors.Calorie.copy(alpha = 0.55f),
+            Color.White.copy(alpha = 0.22f),
+            AppColors.CalorieEnd.copy(alpha = 0.45f)
+        )
     )
     Box(
         modifier

@@ -125,7 +125,10 @@ open class MainActivity : AppCompatActivity() {
         // the app's light/dark splash background.
         val splashScreen = installSplashScreen()
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        enableEdgeToEdge(
+            statusBarStyle = androidx.activity.SystemBarStyle.dark(android.graphics.Color.TRANSPARENT),
+            navigationBarStyle = androidx.activity.SystemBarStyle.dark(android.graphics.Color.TRANSPARENT)
+        )
 
         // Launch the Play in-app review card once, right after the first
         // successful food log (see ReviewPrompter). Silently no-ops on devices
@@ -189,24 +192,16 @@ open class MainActivity : AppCompatActivity() {
         }
 
         setContent {
-            val appearance by container.prefs.appearanceMode.collectAsState(initial = initialAppearance)
-            val themeColorKey by container.prefs.appThemeColor.collectAsState(initial = initialThemeColorKey)
-            val themeColor = AppThemeColor.fromKey(themeColorKey)
             val energyUnit by container.prefs.energyUnit.collectAsState(initial = initialEnergyUnit)
-            val systemDark = isSystemInDarkTheme()
-            val darkTheme = when (appearance) {
-                "light" -> false
-                "dark" -> true
-                else -> systemDark
-            }
-            APEXTheme(darkTheme = darkTheme, themeColor = themeColor) {
+            APEXTheme(darkTheme = true, themeColor = AppThemeColor.RED) {
                 // Above the NavHost and the shared-meal sheet so both show the chosen unit.
                 CompositionLocalProvider(LocalEnergyUnit provides energyUnit) {
                     Box(modifier = Modifier.fillMaxSize()) {
                         APEXAnimatedBackground(modifier = Modifier.fillMaxSize())
                         Surface(
                             modifier = Modifier.fillMaxSize(),
-                            color = Color.Transparent
+                            color = Color.Transparent,
+                            contentColor = Color.White
                         ) {
                             APEXNavHost(
                                 container = container,

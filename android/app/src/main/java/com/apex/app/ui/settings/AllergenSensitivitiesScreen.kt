@@ -195,7 +195,7 @@ fun AllergenSensitivitiesScreen(
         }
     }
 
-    Scaffold(containerColor = Color.Transparent) { padding ->
+    Scaffold(containerColor = Color.Transparent, contentColor = Color.White) { padding ->
         Box(Modifier.fillMaxSize()) {
             LazyColumn(
                 modifier = Modifier

@@ -54,7 +54,7 @@ fun TabBarSettingsScreen(
         Triple(APEXRoutes.WORKOUTS, R.string.nav_workouts, workoutsTabIcon(workoutMode))
     )
 
-    Scaffold(containerColor = Color.Transparent) { padding ->
+    Scaffold(containerColor = Color.Transparent, contentColor = Color.White) { padding ->
         LazyColumn(
             modifier = Modifier
                 .fillMaxSize()

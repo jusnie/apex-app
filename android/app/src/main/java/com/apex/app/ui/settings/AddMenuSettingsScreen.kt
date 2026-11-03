@@ -83,7 +83,10 @@ fun AddMenuSettingsScreen(
         FoodLogMethod.AddMenuCases.filterNot { it in visible }
     }
 
-    androidx.compose.material3.Scaffold(containerColor = Color.Transparent) { padding ->
+    androidx.compose.material3.Scaffold(
+        containerColor = Color.Transparent,
+        contentColor = Color.White
+    ) { padding ->
         if (!ui.addMenuLoaded) {
             Column(
                 Modifier

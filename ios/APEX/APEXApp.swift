@@ -38,11 +38,7 @@ struct APEXApp: App {
     @State private var isAutoRefreshingAdaptiveGoals = false
 
     private var colorScheme: ColorScheme? {
-        switch appearanceMode {
-        case "light": return .light
-        case "dark": return .dark
-        default: return nil
-        }
+        .dark
     }
 
     init() {

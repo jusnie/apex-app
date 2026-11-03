@@ -83,17 +83,35 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.Crossfade
+import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.core.FastOutSlowInEasing
+import androidx.compose.animation.core.RepeatMode
+import androidx.compose.animation.core.Spring
+import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.core.infiniteRepeatable
+import androidx.compose.animation.core.rememberInfiniteTransition
+import androidx.compose.animation.core.spring
 import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.slideInHorizontally
+import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.animation.togetherWith
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.runtime.withFrameNanos
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
+import com.apex.app.ui.components.apexPressScale
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
@@ -182,25 +200,34 @@ fun OnboardingScreen(container: AppContainer, onComplete: () -> Unit) {
                 Icon(
                     imageVector = Icons.Outlined.ChevronLeft,
                     contentDescription = stringResource(R.string.onboarding_back),
-                    tint = MaterialTheme.colorScheme.onBackground,
+                    tint = Color.White,
                     modifier = Modifier
                         .size(28.dp)
+                        .clip(CircleShape)
                         .clickable { vm.back() }
                 )
                 val totalSteps = OnboardingStep.values().size
-                val progress = ui.step.ordinal.toFloat() / (totalSteps - 1).toFloat()
+                val targetProgress = ui.step.ordinal.toFloat() / (totalSteps - 1).toFloat()
+                val animatedProgress by animateFloatAsState(
+                    targetValue = targetProgress,
+                    animationSpec = spring(
+                        dampingRatio = 0.82f,
+                        stiffness = 300f
+                    ),
+                    label = "onboardingProgress"
+                )
                 Box(
                     Modifier
                         .weight(1f)
-                        .height(4.dp)
-                        .clip(RoundedCornerShape(2.dp))
-                        .background(MaterialTheme.colorScheme.onBackground.copy(alpha = 0.08f))
+                        .height(5.dp)
+                        .clip(RoundedCornerShape(3.dp))
+                        .background(Color.White.copy(alpha = 0.14f))
                 ) {
                     Box(
                         Modifier
                             .fillMaxHeight()
-                            .fillMaxWidth(progress)
-                            .clip(RoundedCornerShape(2.dp))
+                            .fillMaxWidth(animatedProgress.coerceIn(0f, 1f))
+                            .clip(RoundedCornerShape(3.dp))
                             .background(
                                 Brush.horizontalGradient(
                                     listOf(AppColors.CalorieStart, AppColors.CalorieEnd)
@@ -215,74 +242,89 @@ fun OnboardingScreen(container: AppContainer, onComplete: () -> Unit) {
         }
 
         Box(Modifier.weight(1f).fillMaxWidth().padding(horizontal = 24.dp)) {
-            when (ui.step) {
-                OnboardingStep.WELCOME -> Crossfade(
-                    targetState = showReturning,
-                    animationSpec = tween(durationMillis = if (animateReturning) 220 else 0),
-                    label = "returning_user"
-                ) { returningVisible ->
-                    if (returningVisible) {
-                        ReturningUserStep(container = container, vm = vm, state = returning)
-                    } else {
-                        WelcomeStep()
+            AnimatedContent(
+                targetState = ui.step,
+                transitionSpec = {
+                    val forward = targetState.ordinal >= initialState.ordinal
+                    val dir = if (forward) 1 else -1
+                    (slideInHorizontally(
+                        animationSpec = tween(290, easing = FastOutSlowInEasing)
+                    ) { (it / 4) * dir } + fadeIn(tween(230))) togetherWith
+                        (slideOutHorizontally(
+                            animationSpec = tween(250, easing = FastOutSlowInEasing)
+                        ) { (-it / 5) * dir } + fadeOut(tween(180)))
+                },
+                label = "onboardingStepContent"
+            ) { currentStep ->
+                when (currentStep) {
+                    OnboardingStep.WELCOME -> Crossfade(
+                        targetState = showReturning,
+                        animationSpec = tween(durationMillis = if (animateReturning) 240 else 0),
+                        label = "returning_user"
+                    ) { returningVisible ->
+                        if (returningVisible) {
+                            ReturningUserStep(container = container, vm = vm, state = returning)
+                        } else {
+                            WelcomeStep()
+                        }
                     }
+                    OnboardingStep.GENDER -> GenderStep(selected = ui.gender, onSelect = vm::setGender)
+                    OnboardingStep.BIRTHDAY -> BirthdayStep(current = ui.birthday, onChange = vm::setBirthday)
+                    OnboardingStep.HEIGHT_WEIGHT -> HeightWeightStep(
+                        cm = ui.heightCm,
+                        kg = ui.weightKg,
+                        heightMetric = ui.heightMetric,
+                        weightMetric = ui.weightMetric,
+                        onHeightChange = vm::setHeight,
+                        onWeightChange = vm::setWeight,
+                        onToggle = vm::setUseMetric
+                    )
+                    OnboardingStep.BODY_FAT -> BodyFatStep(
+                        bodyFat = ui.bodyFatPercentage,
+                        goalBodyFat = ui.goalBodyFatPercentage,
+                        onChange = vm::setBodyFat,
+                        onGoalChange = vm::setGoalBodyFat
+                    )
+                    OnboardingStep.ACTIVITY -> ActivityStep(
+                        selected = ui.activity,
+                        onSelect = vm::setActivity
+                    )
+                    OnboardingStep.GOAL -> GoalStep(selected = ui.goal, onSelect = vm::setGoal)
+                    OnboardingStep.GOAL_WEIGHT -> GoalWeightStep(
+                        current = ui.goalWeightKg,
+                        goal = ui.goal,
+                        heightMetric = ui.heightMetric,
+                        weightMetric = ui.weightMetric,
+                        onChange = vm::setGoalWeight,
+                        onToggle = vm::setUseMetric
+                    )
+                    OnboardingStep.GOAL_SPEED -> GoalSpeedStep(
+                        weeklyKg = ui.weeklyChangeKg,
+                        goal = ui.goal,
+                        useMetric = ui.weightMetric,
+                        currentKg = ui.weightKg,
+                        targetKg = ui.goalWeightKg,
+                        onSelect = vm::setWeeklyChange
+                    )
+                    OnboardingStep.NOTIFICATIONS -> NotificationsStep(
+                        enabled = ui.notificationsEnabled,
+                        onToggle = vm::setNotificationsEnabled
+                    )
+                    OnboardingStep.HEALTH_CONNECT -> HealthConnectStep(
+                        container = container,
+                        enabled = ui.healthConnectEnabled,
+                        onToggle = vm::setHealthConnectEnabled
+                    )
+                    OnboardingStep.BUILDING_PLAN -> BuildingPlanStep(vm = vm, onComplete = vm::next)
+                    OnboardingStep.PLAN_READY -> PlanReadyStep(state = ui, vm = vm)
                 }
-                OnboardingStep.GENDER -> GenderStep(selected = ui.gender, onSelect = vm::setGender)
-                OnboardingStep.BIRTHDAY -> BirthdayStep(current = ui.birthday, onChange = vm::setBirthday)
-                OnboardingStep.HEIGHT_WEIGHT -> HeightWeightStep(
-                    cm = ui.heightCm,
-                    kg = ui.weightKg,
-                    heightMetric = ui.heightMetric,
-                    weightMetric = ui.weightMetric,
-                    onHeightChange = vm::setHeight,
-                    onWeightChange = vm::setWeight,
-                    onToggle = vm::setUseMetric
-                )
-                OnboardingStep.BODY_FAT -> BodyFatStep(
-                    bodyFat = ui.bodyFatPercentage,
-                    goalBodyFat = ui.goalBodyFatPercentage,
-                    onChange = vm::setBodyFat,
-                    onGoalChange = vm::setGoalBodyFat
-                )
-                OnboardingStep.ACTIVITY -> ActivityStep(
-                    selected = ui.activity,
-                    onSelect = vm::setActivity
-                )
-                OnboardingStep.GOAL -> GoalStep(selected = ui.goal, onSelect = vm::setGoal)
-                OnboardingStep.GOAL_WEIGHT -> GoalWeightStep(
-                    current = ui.goalWeightKg,
-                    goal = ui.goal,
-                    heightMetric = ui.heightMetric,
-                    weightMetric = ui.weightMetric,
-                    onChange = vm::setGoalWeight,
-                    onToggle = vm::setUseMetric
-                )
-                OnboardingStep.GOAL_SPEED -> GoalSpeedStep(
-                    weeklyKg = ui.weeklyChangeKg,
-                    goal = ui.goal,
-                    useMetric = ui.weightMetric,
-                    currentKg = ui.weightKg,
-                    targetKg = ui.goalWeightKg,
-                    onSelect = vm::setWeeklyChange
-                )
-                OnboardingStep.NOTIFICATIONS -> NotificationsStep(
-                    enabled = ui.notificationsEnabled,
-                    onToggle = vm::setNotificationsEnabled
-                )
-                OnboardingStep.HEALTH_CONNECT -> HealthConnectStep(
-                    container = container,
-                    enabled = ui.healthConnectEnabled,
-                    onToggle = vm::setHealthConnectEnabled
-                )
-                OnboardingStep.BUILDING_PLAN -> BuildingPlanStep(vm = vm, onComplete = vm::next)
-                OnboardingStep.PLAN_READY -> PlanReadyStep(state = ui, vm = vm)
             }
         }
 
         when (ui.step) {
             // Welcome back draws its own actions.
             OnboardingStep.WELCOME -> if (!showReturning) {
-                // iOS Welcome: full-width pink-gradient "Get Started" capsule.
+                val getStartedInteraction = remember { MutableInteractionSource() }
                 Column(
                     Modifier
                         .fillMaxWidth()
@@ -292,15 +334,25 @@ fun OnboardingScreen(container: AppContainer, onComplete: () -> Unit) {
                 ) {
                     Box(
                         modifier = Modifier
+                            .apexPressScale(interactionSource = getStartedInteraction)
                             .fillMaxWidth()
                             .height(56.dp)
-                            .clip(RoundedCornerShape(14.dp))
+                            .shadow(
+                                elevation = 14.dp,
+                                shape = RoundedCornerShape(16.dp),
+                                ambientColor = AppColors.Calorie.copy(alpha = 0.40f),
+                                spotColor = AppColors.Calorie.copy(alpha = 0.55f)
+                            )
+                            .clip(RoundedCornerShape(16.dp))
                             .background(
                                 Brush.horizontalGradient(
                                     listOf(AppColors.CalorieStart, AppColors.CalorieEnd)
                                 )
                             )
-                            .clickable { vm.next() },
+                            .clickable(
+                                interactionSource = getStartedInteraction,
+                                indication = null
+                            ) { vm.next() },
                         contentAlignment = Alignment.Center
                     ) {
                         Text(
@@ -310,7 +362,7 @@ fun OnboardingScreen(container: AppContainer, onComplete: () -> Unit) {
                             fontWeight = FontWeight.SemiBold
                         )
                     }
-                    Spacer(Modifier.height(4.dp))
+                    Spacer(Modifier.height(6.dp))
                     TextButton(
                         onClick = vm::openReturningUser,
                         modifier = Modifier
@@ -319,7 +371,7 @@ fun OnboardingScreen(container: AppContainer, onComplete: () -> Unit) {
                     ) {
                         Text(
                             stringResource(R.string.returning_entry),
-                            color = AppColors.Calorie,
+                            color = AppColors.CalorieEnd,
                             style = MaterialTheme.typography.titleSmall,
                             fontWeight = FontWeight.SemiBold
                         )
@@ -327,27 +379,33 @@ fun OnboardingScreen(container: AppContainer, onComplete: () -> Unit) {
                 }
             }
             OnboardingStep.BUILDING_PLAN -> {
-                // Auto-advancing animation; no CTA. Reserve the same footer
-                // height so layout doesn't jump when we land on this step.
                 Spacer(Modifier.height(54.dp + 36.dp + 24.dp))
             }
             OnboardingStep.PLAN_READY -> {
-                // Final step — completes onboarding directly (the old Rate-apex
-                // review step was removed; store-rating pressure in onboarding
-                // is rejection bait on both stores).
+                val finishInteraction = remember { MutableInteractionSource() }
                 Box(
                     modifier = Modifier
+                        .apexPressScale(interactionSource = finishInteraction)
                         .fillMaxWidth()
                         .padding(horizontal = 24.dp)
                         .padding(bottom = 36.dp)
                         .height(54.dp)
+                        .shadow(
+                            elevation = 14.dp,
+                            shape = RoundedCornerShape(28.dp),
+                            ambientColor = AppColors.Calorie.copy(alpha = 0.40f),
+                            spotColor = AppColors.Calorie.copy(alpha = 0.55f)
+                        )
                         .clip(RoundedCornerShape(28.dp))
                         .background(
                             Brush.horizontalGradient(
                                 listOf(AppColors.CalorieStart, AppColors.CalorieEnd)
                             )
                         )
-                        .clickable { vm.complete(onComplete) },
+                        .clickable(
+                            interactionSource = finishInteraction,
+                            indication = null
+                        ) { vm.complete(onComplete) },
                     contentAlignment = Alignment.Center
                 ) {
                     Text(
@@ -359,6 +417,7 @@ fun OnboardingScreen(container: AppContainer, onComplete: () -> Unit) {
                 }
             }
             else -> {
+                val continueInteraction = remember { MutableInteractionSource() }
                 Column(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -369,17 +428,22 @@ fun OnboardingScreen(container: AppContainer, onComplete: () -> Unit) {
                     Button(
                         onClick = { vm.next() },
                         enabled = ui.canAdvance,
+                        interactionSource = continueInteraction,
                         shape = RoundedCornerShape(28.dp),
                         colors = ButtonDefaults.buttonColors(
                             containerColor = AppColors.Calorie,
-                            contentColor = Color.White
+                            contentColor = Color.White,
+                            disabledContainerColor = AppColors.Calorie.copy(alpha = 0.35f),
+                            disabledContentColor = Color.White.copy(alpha = 0.58f)
                         ),
                         modifier = Modifier
+                            .apexPressScale(interactionSource = continueInteraction, enabled = ui.canAdvance)
                             .fillMaxWidth()
                             .height(54.dp)
                     ) {
                         Text(
                             stringResource(R.string.action_continue),
+                            color = if (ui.canAdvance) Color.White else Color.White.copy(alpha = 0.6f),
                             style = MaterialTheme.typography.titleMedium,
                             fontWeight = FontWeight.SemiBold
                         )
@@ -392,49 +456,124 @@ fun OnboardingScreen(container: AppContainer, onComplete: () -> Unit) {
 
 @Composable
 private fun WelcomeStep() {
-    // 1:1 port of iOS OnboardingView.welcomeStep — broccoli logo, two-line
-    // "Eat Smart, / Live Better" headline (second line uses the pink gradient),
-    // and a centered two-line subheading.
+    var entered by remember { mutableStateOf(false) }
+    LaunchedEffect(Unit) { entered = true }
+
+    val heroAlpha by animateFloatAsState(
+        targetValue = if (entered) 1f else 0f,
+        animationSpec = tween(420, easing = FastOutSlowInEasing),
+        label = "welcomeHeroAlpha"
+    )
+    val heroOffsetY by animateFloatAsState(
+        targetValue = if (entered) 0f else 22f,
+        animationSpec = spring(dampingRatio = 0.80f, stiffness = 240f),
+        label = "welcomeHeroOffset"
+    )
+    val listAlpha by animateFloatAsState(
+        targetValue = if (entered) 1f else 0f,
+        animationSpec = tween(460, delayMillis = 120, easing = FastOutSlowInEasing),
+        label = "welcomeListAlpha"
+    )
+    val listOffsetY by animateFloatAsState(
+        targetValue = if (entered) 0f else 18f,
+        animationSpec = spring(dampingRatio = 0.82f, stiffness = 220f),
+        label = "welcomeListOffset"
+    )
+
+    val pulseTransition = rememberInfiniteTransition(label = "welcomeLogoPulse")
+    val logoGlowScale by pulseTransition.animateFloat(
+        initialValue = 0.94f,
+        targetValue = 1.07f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(2600, easing = FastOutSlowInEasing),
+            repeatMode = RepeatMode.Reverse
+        ),
+        label = "logoGlowScale"
+    )
+
     Column(
         Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Image(
-            painter = painterResource(id = R.drawable.ic_logo),
-            contentDescription = stringResource(R.string.onboarding_logo_description),
-            modifier = Modifier.size(120.dp)
-        )
-        Spacer(Modifier.height(20.dp))
-        Text(
-            stringResource(R.string.onboarding_welcome_line1),
-            fontSize = 32.sp,
-            fontWeight = FontWeight.Bold,
-            color = MaterialTheme.colorScheme.onBackground
-        )
-        Spacer(Modifier.height(8.dp))
-        // Second line of the headline uses the pink gradient as a foreground
-        // brush — matches iOS .foregroundStyle(LinearGradient(...)).
-        Text(
-            stringResource(R.string.onboarding_welcome_line2),
-            fontSize = 32.sp,
-            fontWeight = FontWeight.Bold,
-            style = LocalTextStyle.current.copy(
-                brush = androidx.compose.ui.graphics.Brush.horizontalGradient(
-                    listOf(AppColors.CalorieStart, AppColors.CalorieEnd)
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = Modifier.graphicsLayer {
+                alpha = heroAlpha
+                translationY = heroOffsetY
+            }
+        ) {
+            Box(contentAlignment = Alignment.Center) {
+                Box(
+                    Modifier
+                        .size(144.dp)
+                        .graphicsLayer {
+                            scaleX = logoGlowScale
+                            scaleY = logoGlowScale
+                        }
+                        .background(
+                            Brush.radialGradient(
+                                colors = listOf(
+                                    AppColors.Calorie.copy(alpha = 0.34f),
+                                    AppColors.CalorieEnd.copy(alpha = 0.10f),
+                                    Color.Transparent
+                                )
+                            ),
+                            shape = CircleShape
+                        )
+                )
+                Image(
+                    painter = painterResource(id = R.drawable.ic_logo),
+                    contentDescription = stringResource(R.string.onboarding_logo_description),
+                    modifier = Modifier
+                        .size(116.dp)
+                        .clip(RoundedCornerShape(28.dp))
+                        .border(
+                            1.dp,
+                            Brush.linearGradient(
+                                listOf(
+                                    Color.White.copy(alpha = 0.24f),
+                                    AppColors.Calorie.copy(alpha = 0.50f)
+                                )
+                            ),
+                            RoundedCornerShape(28.dp)
+                        )
+                )
+            }
+            Spacer(Modifier.height(22.dp))
+            Text(
+                stringResource(R.string.onboarding_welcome_line1),
+                fontSize = 32.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.White
+            )
+            Spacer(Modifier.height(6.dp))
+            Text(
+                stringResource(R.string.onboarding_welcome_line2),
+                fontSize = 32.sp,
+                fontWeight = FontWeight.Bold,
+                style = LocalTextStyle.current.copy(
+                    brush = Brush.horizontalGradient(
+                        listOf(AppColors.CalorieStart, AppColors.CalorieEnd)
+                    )
                 )
             )
-        )
-        Spacer(Modifier.height(20.dp))
-        Text(
-            stringResource(R.string.onboarding_welcome_subtitle),
-            style = MaterialTheme.typography.bodyLarge,
-            color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.6f),
-            textAlign = androidx.compose.ui.text.style.TextAlign.Center
-        )
-        Spacer(Modifier.height(24.dp))
-        // Quick feature tour — everything is free and already unlocked (iOS parity).
-        Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            Spacer(Modifier.height(16.dp))
+            Text(
+                stringResource(R.string.onboarding_welcome_subtitle),
+                style = MaterialTheme.typography.bodyLarge,
+                color = Color.White.copy(alpha = 0.78f),
+                textAlign = androidx.compose.ui.text.style.TextAlign.Center
+            )
+        }
+        Spacer(Modifier.height(26.dp))
+        Column(
+            verticalArrangement = Arrangement.spacedBy(12.dp),
+            modifier = Modifier.graphicsLayer {
+                alpha = listAlpha
+                translationY = listOffsetY
+            }
+        ) {
             WelcomeFeatureRow(Icons.Outlined.PhotoCamera, stringResource(R.string.onboarding_feature_snap))
             WelcomeFeatureRow(Icons.Outlined.Forum, stringResource(R.string.onboarding_feature_coach))
             WelcomeFeatureRow(Icons.Outlined.FitnessCenter, stringResource(R.string.onboarding_feature_library))
@@ -446,16 +585,26 @@ private fun WelcomeStep() {
 @Composable
 private fun WelcomeFeatureRow(icon: ImageVector, text: String) {
     Row(verticalAlignment = Alignment.CenterVertically) {
-        Icon(
-            imageVector = icon,
-            contentDescription = null,
-            tint = AppColors.Calorie,
-            modifier = Modifier.size(20.dp)
-        )
-        Spacer(Modifier.width(12.dp))
+        Box(
+            modifier = Modifier
+                .size(34.dp)
+                .clip(RoundedCornerShape(10.dp))
+                .background(AppColors.Calorie.copy(alpha = 0.16f))
+                .border(0.7.dp, AppColors.Calorie.copy(alpha = 0.35f), RoundedCornerShape(10.dp)),
+            contentAlignment = Alignment.Center
+        ) {
+            Icon(
+                imageVector = icon,
+                contentDescription = null,
+                tint = AppColors.CalorieEnd,
+                modifier = Modifier.size(18.dp)
+            )
+        }
+        Spacer(Modifier.width(14.dp))
         Text(
             text,
-            style = MaterialTheme.typography.bodyMedium,
+            color = Color.White,
+            style = MaterialTheme.typography.bodyLarge,
             fontWeight = FontWeight.Medium
         )
     }
@@ -466,6 +615,7 @@ private fun StepHeader(title: String, subtitle: String? = null) {
     Column {
         Text(
             title,
+            color = Color.White,
             style = MaterialTheme.typography.displaySmall,
             fontWeight = FontWeight.Bold
         )
@@ -474,7 +624,7 @@ private fun StepHeader(title: String, subtitle: String? = null) {
             Text(
                 it,
                 style = MaterialTheme.typography.bodyLarge,
-                color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.6f)
+                color = Color.White.copy(alpha = 0.72f)
             )
         }
         Spacer(Modifier.height(32.dp))
@@ -1225,10 +1375,12 @@ private fun HealthFeatureRow(icon: ImageVector, label: String) {
 
 @Composable
 private fun ToggleCard(label: String, subtitle: String, enabled: Boolean, onToggle: (Boolean) -> Unit) {
+    val interactionSource = remember { MutableInteractionSource() }
     APEXGlassSurface(
         modifier = Modifier
+            .apexPressScale(interactionSource = interactionSource)
             .fillMaxWidth()
-            .clickable { onToggle(!enabled) },
+            .clickable(interactionSource = interactionSource, indication = null) { onToggle(!enabled) },
         cornerRadius = 20.dp,
         padding = 0.dp
     ) {
@@ -1237,15 +1389,25 @@ private fun ToggleCard(label: String, subtitle: String, enabled: Boolean, onTogg
             verticalAlignment = Alignment.CenterVertically
         ) {
             Column(Modifier.weight(1f)) {
-                Text(label, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                Text(label, color = Color.White, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
                 Spacer(Modifier.height(2.dp))
                 Text(
                     subtitle,
                     style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.55f)
+                    color = Color.White.copy(alpha = 0.68f)
                 )
             }
-            Switch(checked = enabled, onCheckedChange = onToggle)
+            Switch(
+                checked = enabled,
+                onCheckedChange = onToggle,
+                colors = SwitchDefaults.colors(
+                    checkedThumbColor = Color.White,
+                    checkedTrackColor = AppColors.Calorie,
+                    uncheckedThumbColor = Color.White.copy(alpha = 0.85f),
+                    uncheckedTrackColor = Color.White.copy(alpha = 0.16f),
+                    uncheckedBorderColor = Color.White.copy(alpha = 0.24f)
+                )
+            )
         }
     }
 }
@@ -2129,17 +2291,36 @@ private fun SelectionCard(
     selected: Boolean,
     onClick: () -> Unit
 ) {
-    val accent = if (selected) AppColors.Calorie else MaterialTheme.colorScheme.onBackground
-    val selectedBorder = if (selected) {
-        Modifier.border(BorderStroke(1.4.dp, AppColors.Calorie.copy(alpha = 0.55f)), RoundedCornerShape(20.dp))
-    } else {
-        Modifier
-    }
+    val interactionSource = remember { MutableInteractionSource() }
+    val accent by animateColorAsState(
+        targetValue = if (selected) AppColors.CalorieEnd else Color.White,
+        animationSpec = tween(220, easing = FastOutSlowInEasing),
+        label = "selectionCardAccent"
+    )
+    val borderAlpha by animateFloatAsState(
+        targetValue = if (selected) 0.80f else 0.0f,
+        animationSpec = tween(220, easing = FastOutSlowInEasing),
+        label = "selectionCardBorderAlpha"
+    )
     APEXGlassSurface(
         modifier = Modifier
+            .apexPressScale(interactionSource = interactionSource)
             .fillMaxWidth()
-            .then(selectedBorder)
-            .clickable(onClick = onClick),
+            .then(
+                if (borderAlpha > 0.01f) {
+                    Modifier.border(
+                        BorderStroke(1.6.dp, AppColors.Calorie.copy(alpha = borderAlpha)),
+                        RoundedCornerShape(20.dp)
+                    )
+                } else {
+                    Modifier
+                }
+            )
+            .clickable(
+                interactionSource = interactionSource,
+                indication = null,
+                onClick = onClick
+            ),
         cornerRadius = 20.dp,
         padding = 16.dp
     ) {
@@ -2149,6 +2330,7 @@ private fun SelectionCard(
             Column(Modifier.weight(1f)) {
                 Text(
                     title,
+                    color = Color.White,
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.SemiBold
                 )
@@ -2157,14 +2339,14 @@ private fun SelectionCard(
                     Text(
                         it,
                         style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.55f)
+                        color = Color.White.copy(alpha = 0.68f)
                     )
                 }
             }
             Icon(
                 imageVector = if (selected) Icons.Filled.CheckCircle else Icons.Outlined.RadioButtonUnchecked,
                 contentDescription = null,
-                tint = if (selected) AppColors.Calorie else MaterialTheme.colorScheme.onBackground.copy(alpha = 0.3f),
+                tint = if (selected) AppColors.CalorieEnd else Color.White.copy(alpha = 0.35f),
                 modifier = Modifier.size(22.dp)
             )
         }
