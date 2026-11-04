@@ -193,112 +193,109 @@ enum AppColors {
     static var fatGradient: [Color] { [Color(hex: 0xEF4444), Color(hex: 0xFCA5A5)] }
     static var fat: Color { Color(hex: 0xEF4444) }
 
-    // Pure Black background & Obsidian Card enforced globally across APEX
-    static let appBackground = Color.black
-    static let appCard = Color(hex: 0x0A0A0F)
+    // Rich Deep Charcoal-Slate background & Frosted Slate Card (never flat pitch-black)
+    static let appBackground = Color(hex: 0x11141E)
+    static let appCard = Color(hex: 0x1A1F2E)
 }
 
-/// Signature APEX smooth ambient animated background (Pure Black, Crimson Red & Crisp White).
-/// Mirrors Android's `APEXAnimatedBackground.kt` with identical 22s / 30s Lissajous radial motion.
+/// Signature APEX Animated Frosted-Blur Aurora Background.
+/// Mirrors Android's `APEXAnimatedBackground.kt` with 5 orbiting aurora blooms blurred through GPU Gaussian blur.
 struct APEXAnimatedBackground: View {
     var body: some View {
-        let primaryAccent = Color(hex: 0xE10600)
-        let secondaryAccent = Color(hex: 0xFF2E2E)
-        let isDark = true
+        let crimson = Color(hex: 0xE10600)
+        let scarlet = Color(hex: 0xFF2E2E)
+        let ruby = Color(hex: 0xB80A2C)
+        let midnightSlate = Color(hex: 0x2B3658)
+        let warmEmber = Color(hex: 0xFF5247)
 
-        TimelineView(.animation(minimumInterval: 1.0 / 60.0, paused: false)) { timeline in
-            let t = timeline.date.timeIntervalSinceReferenceDate
-            let phaseA = (t.truncatingRemainder(dividingBy: 22.0) / 22.0) * (2.0 * .pi)
-            let phaseB = (t.truncatingRemainder(dividingBy: 30.0) / 30.0) * (2.0 * .pi)
+        ZStack {
+            LinearGradient(
+                colors: [
+                    Color(hex: 0x0F121B),
+                    Color(hex: 0x161B28),
+                    Color(hex: 0x14111C)
+                ],
+                startPoint: .top,
+                endPoint: .bottom
+            )
 
-            Canvas { context, size in
-                let w = size.width
-                let h = size.height
-                let maxDim = max(w, h, 1)
+            TimelineView(.animation(minimumInterval: 1.0 / 60.0, paused: false)) { timeline in
+                let t = timeline.date.timeIntervalSinceReferenceDate
+                let phaseA = (t.truncatingRemainder(dividingBy: 11.0) / 11.0) * (2.0 * .pi)
+                let phaseB = (t.truncatingRemainder(dividingBy: 15.5) / 15.5) * (2.0 * .pi)
+                let phaseC = (t.truncatingRemainder(dividingBy: 19.0) / 19.0) * (2.0 * .pi)
 
-                // 1. Pure Black (#000000) canvas
-                context.fill(Path(CGRect(origin: .zero, size: size)), with: .color(.black))
+                Canvas { context, size in
+                    let w = size.width
+                    let h = size.height
+                    let maxDim = max(w, h, 1)
 
-                // 2. Primary APEX Crimson Red drifting ambient orb
-                let orb1Center = CGPoint(
-                    x: w * (0.24 + 0.22 * cos(phaseA)),
-                    y: h * (0.16 + 0.10 * sin(phaseA + 0.4))
-                )
-                let orb1Radius = maxDim * 0.62
-                let orb1Alpha = isDark ? 0.16 : 0.075
-                let orb1Rect = CGRect(
-                    x: orb1Center.x - orb1Radius,
-                    y: orb1Center.y - orb1Radius,
-                    width: orb1Radius * 2,
-                    height: orb1Radius * 2
-                )
-                context.fill(
-                    Path(ellipseIn: orb1Rect),
-                    with: .radialGradient(
-                        Gradient(colors: [
-                            primaryAccent.opacity(orb1Alpha),
-                            primaryAccent.opacity(orb1Alpha * 0.42),
-                            .clear
-                        ]),
-                        center: orb1Center,
-                        startRadius: 0,
-                        endRadius: orb1Radius
+                    func drawAuroraOrb(center: CGPoint, radius: CGFloat, color: Color, peakAlpha: Double) {
+                        let rect = CGRect(
+                            x: center.x - radius,
+                            y: center.y - radius,
+                            width: radius * 2,
+                            height: radius * 2
+                        )
+                        context.fill(
+                            Path(ellipseIn: rect),
+                            with: .radialGradient(
+                                Gradient(stops: [
+                                    .init(color: color.opacity(peakAlpha), location: 0.0),
+                                    .init(color: color.opacity(peakAlpha * 0.62), location: 0.35),
+                                    .init(color: color.opacity(peakAlpha * 0.22), location: 0.68),
+                                    .init(color: .clear, location: 1.0)
+                                ]),
+                                center: center,
+                                startRadius: 0,
+                                endRadius: radius
+                            )
+                        )
+                    }
+
+                    drawAuroraOrb(
+                        center: CGPoint(x: w * (0.26 + 0.30 * cos(phaseA)), y: h * (0.18 + 0.14 * sin(phaseA + 0.35))),
+                        radius: maxDim * (0.48 + 0.05 * sin(phaseB)),
+                        color: crimson,
+                        peakAlpha: 0.42
                     )
-                )
-
-                // 3. Secondary Scarlet Red counter-drifting ambient orb
-                let orb2Center = CGPoint(
-                    x: w * (0.78 - 0.24 * sin(phaseB)),
-                    y: h * (0.78 - 0.14 * cos(phaseB))
-                )
-                let orb2Radius = maxDim * 0.58
-                let orb2Alpha = isDark ? 0.12 : 0.055
-                let orb2Rect = CGRect(
-                    x: orb2Center.x - orb2Radius,
-                    y: orb2Center.y - orb2Radius,
-                    width: orb2Radius * 2,
-                    height: orb2Radius * 2
-                )
-                context.fill(
-                    Path(ellipseIn: orb2Rect),
-                    with: .radialGradient(
-                        Gradient(colors: [
-                            secondaryAccent.opacity(orb2Alpha),
-                            primaryAccent.opacity(orb2Alpha * 0.35),
-                            .clear
-                        ]),
-                        center: orb2Center,
-                        startRadius: 0,
-                        endRadius: orb2Radius
+                    drawAuroraOrb(
+                        center: CGPoint(x: w * (0.76 - 0.28 * cos(phaseC)), y: h * (0.34 + 0.18 * sin(phaseC))),
+                        radius: maxDim * (0.54 + 0.04 * cos(phaseA)),
+                        color: midnightSlate,
+                        peakAlpha: 0.52
                     )
-                )
-
-                // 4. Subtle Crisp White atmospheric crown glow
-                let crownCenter = CGPoint(
-                    x: w * (0.50 + 0.12 * sin(phaseA - phaseB)),
-                    y: -h * 0.06
-                )
-                let crownRadius = maxDim * 0.48
-                let crownAlpha = isDark ? 0.045 : 0.45
-                let crownRect = CGRect(
-                    x: crownCenter.x - crownRadius,
-                    y: crownCenter.y - crownRadius,
-                    width: crownRadius * 2,
-                    height: crownRadius * 2
-                )
-                context.fill(
-                    Path(ellipseIn: crownRect),
-                    with: .radialGradient(
-                        Gradient(colors: [
-                            Color.white.opacity(crownAlpha),
-                            .clear
-                        ]),
-                        center: crownCenter,
-                        startRadius: 0,
-                        endRadius: crownRadius
+                    drawAuroraOrb(
+                        center: CGPoint(x: w * (0.72 - 0.32 * sin(phaseB)), y: h * (0.78 - 0.18 * cos(phaseB))),
+                        radius: maxDim * (0.46 + 0.05 * cos(phaseC)),
+                        color: scarlet,
+                        peakAlpha: 0.34
                     )
-                )
+                    drawAuroraOrb(
+                        center: CGPoint(x: w * (0.34 + 0.24 * sin(phaseC + 0.8)), y: h * (0.56 + 0.16 * sin(phaseA))),
+                        radius: maxDim * 0.44,
+                        color: ruby,
+                        peakAlpha: 0.30
+                    )
+                    drawAuroraOrb(
+                        center: CGPoint(x: w * (0.52 + 0.26 * cos(phaseB - phaseA * 0.5)), y: h * (0.42 + 0.24 * sin(phaseB))),
+                        radius: maxDim * 0.32,
+                        color: warmEmber,
+                        peakAlpha: 0.20
+                    )
+                }
+                .blur(radius: 58)
             }
+
+            LinearGradient(
+                colors: [
+                    Color(hex: 0x10131D, opacity: 0.22),
+                    Color(hex: 0x131724, opacity: 0.18),
+                    Color(hex: 0x0E1018, opacity: 0.30)
+                ],
+                startPoint: .top,
+                endPoint: .bottom
+            )
         }
         .ignoresSafeArea()
     }

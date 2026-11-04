@@ -27,7 +27,7 @@ fun workoutsColors(): WorkoutsColors {
         background = if (isDark) AppColors.AppBackgroundDark else AppColors.AppBackgroundLight,
         charcoal = if (isDark) AppColors.OnDark else AppColors.OnLight,
         card = if (isDark) AppColors.AppCardDark else AppColors.AppCardLight,
-        panel = if (isDark) Color(0xFF15151C) else Color(0xFFF1F1F5),
+        panel = Color(0xFF202638),
         hairline = if (isDark) AppColors.DividerDark else AppColors.DividerLight,
         accent = AppColors.Calorie,
         secondaryAccent = AppColors.CalorieEnd,

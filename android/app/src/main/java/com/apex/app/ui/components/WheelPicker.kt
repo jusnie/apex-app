@@ -224,7 +224,7 @@ fun DateWheelPicker(
 @Composable
 private fun WheelSelectionHighlight(modifier: Modifier = Modifier) {
     val shape = RoundedCornerShape(14.dp)
-    val fill = Color(0xFF15151E).copy(alpha = 0.86f)
+    val fill = Color(0xFF1C2233).copy(alpha = 0.76f)
     val sheen = Brush.verticalGradient(
         colors = listOf(
             Color.White.copy(alpha = 0.10f),

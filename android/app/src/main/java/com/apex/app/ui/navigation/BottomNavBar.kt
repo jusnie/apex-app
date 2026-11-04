@@ -128,8 +128,8 @@ fun APEXBottomNavBar(
 
     val barShape = RoundedCornerShape(BarCorner)
 
-    val backdropColor = if (isDark) Color(0xFF0C0C10).copy(alpha = 0.88f)
-                        else Color(0xFFFFFFFF).copy(alpha = 0.90f)
+    val backdropColor = if (isDark) Color(0xFF161B28).copy(alpha = 0.78f)
+                        else Color(0xFF161B28).copy(alpha = 0.78f)
 
     val barSheen = Brush.verticalGradient(
         colors = if (isDark)

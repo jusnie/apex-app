@@ -5,15 +5,15 @@
     <color name="purple_700">#FFC80400</color>
     <color name="teal_200">#FFFF2E2E</color>
     <color name="teal_700">#FFE10600</color>
-    <color name="black">#FF000000</color>
-    <color name="ic_launcher_background">#FF000000</color>
+    <color name="black">#FF11141E</color>
+    <color name="ic_launcher_background">#FF11141E</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="apex_black">#FF000000</color>
+    <color name="apex_black">#FF11141E</color>
     <color name="apex_red">#FFE10600</color>
     <color name="apex_white">#FFFFFFFF</color>
-    <color name="app_splash_background">#FF000000</color>
-    <color name="widget_fallback_background">#FF000000</color>
+    <color name="app_splash_background">#FF11141E</color>
+    <color name="widget_fallback_background">#FF161B28</color>
     <color name="widget_fallback_primary">#FFFFFFFF</color>
-    <color name="widget_fallback_secondary">#FFC4C4CE</color>
-    <color name="voice_shortcut_background">#FF000000</color>
+    <color name="widget_fallback_secondary">#FFC8CDD9</color>
+    <color name="voice_shortcut_background">#FF161B28</color>
 </resources>

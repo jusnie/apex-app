@@ -73,10 +73,10 @@ fun ExerciseDetailScreen(
     val colors = workoutsColors()
     var showMetrics by remember { mutableStateOf(false) }
 
-    Column(modifier.testTag("workouts.detail").fillMaxSize().background(colors.background).statusBarsPadding()) {
+    Column(modifier.testTag("workouts.detail").fillMaxSize().background(colors.background.copy(alpha = 0.86f)).statusBarsPadding()) {
         // Top bar: back (start) + centered title
         Box(
-            Modifier.fillMaxWidth().background(colors.background).padding(vertical = 8.dp, horizontal = 8.dp),
+            Modifier.fillMaxWidth().background(Color.Transparent).padding(vertical = 8.dp, horizontal = 8.dp),
             contentAlignment = Alignment.Center
         ) {
             Icon(

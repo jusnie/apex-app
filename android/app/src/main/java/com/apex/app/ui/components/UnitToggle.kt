@@ -39,8 +39,8 @@ fun UnitToggle(
     Box(
         modifier = modifier
             .clip(shape)
-            .background(Color(0xFF0E0E14))
-            .border(0.8.dp, Color.White.copy(alpha = 0.14f), shape)
+            .background(Color(0xFF181D2B).copy(alpha = 0.78f))
+            .border(0.8.dp, Color.White.copy(alpha = 0.16f), shape)
             .padding(4.dp)
     ) {
         Row {

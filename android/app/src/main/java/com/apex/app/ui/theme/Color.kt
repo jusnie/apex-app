@@ -73,19 +73,19 @@ object AppColors {
     val CalorieGradient: Brush
         get() = Brush.linearGradient(listOf(CalorieStart, CalorieEnd))
 
-    // Pure Black background + Crisp White text enforced globally across APEX
-    val AppBackgroundLight = Color(0xFF000000)
-    val AppBackgroundDark = Color(0xFF000000)
+    // Rich Deep Charcoal-Slate base (not literal pitch-black) + Frosted Slate Cards + Crisp White text
+    val AppBackgroundLight = Color(0xFF11141E)
+    val AppBackgroundDark = Color(0xFF11141E)
 
-    val AppCardLight = Color(0xFF0B0B10)
-    val AppCardDark = Color(0xFF0B0B10)
+    val AppCardLight = Color(0xFF1A1F2E)
+    val AppCardDark = Color(0xFF1A1F2E)
 
     val OnLight = Color(0xFFFFFFFF)
     val OnDark = Color(0xFFFFFFFF)
 
-    val MutedLight = Color(0xFFB8B8C2)
-    val MutedDark = Color(0xFFB8B8C2)
+    val MutedLight = Color(0xFFC8CDD9)
+    val MutedDark = Color(0xFFC8CDD9)
 
-    val DividerLight = Color(0xFF22222B)
-    val DividerDark = Color(0xFF22222B)
+    val DividerLight = Color(0xFF2B3144)
+    val DividerDark = Color(0xFF2B3144)
 }

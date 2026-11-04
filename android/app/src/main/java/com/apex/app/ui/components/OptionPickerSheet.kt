@@ -69,7 +69,7 @@ fun <T> OptionPickerSheet(
         onDismissRequest = onDismiss,
         sheetState = state,
         shape = RoundedCornerShape(topStart = 28.dp, topEnd = 28.dp),
-        containerColor = Color(0xFF0A0A0F),
+        containerColor = Color(0xEB171B28),
         contentColor = Color.White
     ) {
         Column(Modifier.fillMaxWidth().padding(horizontal = 20.dp, vertical = 8.dp)) {

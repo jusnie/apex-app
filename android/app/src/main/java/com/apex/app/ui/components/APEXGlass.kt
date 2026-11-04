@@ -87,20 +87,20 @@ fun APEXGlassSurface(
     content: @Composable BoxScope.() -> Unit
 ) {
     val shape = RoundedCornerShape(cornerRadius)
-    val baseColor = Color(0xFF0A0A0F).copy(alpha = 0.90f)
-    val shadowColor = Color.Black.copy(alpha = 0.52f)
+    val baseColor = Color(0xFF181D2B).copy(alpha = 0.74f)
+    val shadowColor = Color(0xFF07090E).copy(alpha = 0.44f)
     val sheen = Brush.verticalGradient(
         listOf(
-            Color.White.copy(alpha = 0.06f),
-            Color.White.copy(alpha = 0.015f),
-            AppColors.Calorie.copy(alpha = 0.032f)
+            Color.White.copy(alpha = 0.10f),
+            Color.White.copy(alpha = 0.025f),
+            AppColors.Calorie.copy(alpha = 0.045f)
         )
     )
     val border = Brush.linearGradient(
         listOf(
-            Color.White.copy(alpha = 0.16f),
-            AppColors.Calorie.copy(alpha = 0.24f),
-            Color.White.copy(alpha = 0.05f)
+            Color.White.copy(alpha = 0.22f),
+            AppColors.Calorie.copy(alpha = 0.28f),
+            Color.White.copy(alpha = 0.08f)
         )
     )
 
@@ -187,7 +187,7 @@ fun APEXGlassTextField(
     )
 ) {
     val shape = RoundedCornerShape(18.dp)
-    val fieldFill = Color(0xFF121219).copy(alpha = 0.92f)
+    val fieldFill = Color(0xFF1D2232).copy(alpha = 0.80f)
     val fieldSheen = Brush.verticalGradient(
         listOf(
             Color.White.copy(alpha = 0.06f),

@@ -12,30 +12,30 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
-private val ApexBlackWhiteRedScheme: ColorScheme = darkColorScheme(
+private val ApexSlateCrimsonScheme: ColorScheme = darkColorScheme(
     primary = Color(0xFFE10600),
     onPrimary = Color.White,
-    primaryContainer = Color(0xFFE10600).copy(alpha = 0.24f),
+    primaryContainer = Color(0xFFE10600).copy(alpha = 0.26f),
     onPrimaryContainer = Color.White,
     secondary = Color(0xFFFF2E2E),
     onSecondary = Color.White,
-    secondaryContainer = Color(0xFFE10600).copy(alpha = 0.20f),
+    secondaryContainer = Color(0xFFE10600).copy(alpha = 0.22f),
     onSecondaryContainer = Color.White,
     tertiary = Color.White,
-    onTertiary = Color.Black,
-    background = Color(0xFF000000),
+    onTertiary = Color(0xFF11141E),
+    background = Color(0xFF11141E),
     onBackground = Color.White,
-    surface = Color(0xFF0B0B10),
+    surface = Color(0xFF1A1F2E),
     onSurface = Color.White,
-    surfaceVariant = Color(0xFF15151D),
-    onSurfaceVariant = Color(0xFFC4C4CE),
-    surfaceContainerLowest = Color(0xFF000000),
-    surfaceContainerLow = Color(0xFF09090D),
-    surfaceContainer = Color(0xFF0E0E14),
-    surfaceContainerHigh = Color(0xFF15151E),
-    surfaceContainerHighest = Color(0xFF1D1D28),
-    outline = Color(0xFF2A2A35),
-    outlineVariant = Color(0xFF1D1D26),
+    surfaceVariant = Color(0xFF23293B),
+    onSurfaceVariant = Color(0xFFD0D4E0),
+    surfaceContainerLowest = Color(0xFF0E1119),
+    surfaceContainerLow = Color(0xFF151925),
+    surfaceContainer = Color(0xFF1A1F2E),
+    surfaceContainerHigh = Color(0xFF22283A),
+    surfaceContainerHighest = Color(0xFF2B3247),
+    outline = Color(0xFF363E54),
+    outlineVariant = Color(0xFF272D3F),
     error = Color(0xFFFF3B30),
     onError = Color.White
 )
@@ -58,7 +58,7 @@ fun APEXTheme(
             }
         }
     }
-    MaterialTheme(colorScheme = ApexBlackWhiteRedScheme) {
+    MaterialTheme(colorScheme = ApexSlateCrimsonScheme) {
         CompositionLocalProvider(
             LocalContentColor provides Color.White,
             content = content
