@@ -61,8 +61,8 @@ android {
         applicationId = "com.apex.app"
         minSdk = 26
         targetSdk = 36
-        versionCode = 47
-        versionName = "8.0.3"
+        versionCode = 258
+        versionName = "2.5.8"
         // Release uses localized @string/app_name; debug overrides to "APEX Debug".
         manifestPlaceholders["launcherAppName"] = "@string/app_name"
 
