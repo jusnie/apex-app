@@ -1,0 +1,3395 @@
+{
+  "exercises": [
+    {
+      "exerciseId": "Ab_Crunch_Machine",
+      "format": "png",
+      "femaleFrameDigests": [
+        "7c8f0eef863e6883",
+        "30309c5b3b5cef1a",
+        "8620aa1b888f01b1",
+        "4b869798fe56ee4a"
+      ],
+      "femaleFrames": [
+        "Ab_Crunch_Machine_female_v2_0",
+        "Ab_Crunch_Machine_female_v2_1",
+        "Ab_Crunch_Machine_female_v2_2",
+        "Ab_Crunch_Machine_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "8885fa477a4e855f",
+        "5834c1958c255b6f",
+        "3e5375a056304843",
+        "d368fb9b3fa5a09d"
+      ],
+      "maleFrames": [
+        "Ab_Crunch_Machine_male_v2_0",
+        "Ab_Crunch_Machine_male_v2_1",
+        "Ab_Crunch_Machine_male_v2_2",
+        "Ab_Crunch_Machine_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Arnold_Dumbbell_Press",
+      "format": "png",
+      "femaleFrameDigests": [
+        "f07bfb0bd5b0689d",
+        "d5b024efdca76367",
+        "9caf9f2d5630fbdf",
+        "d7bafb4cfece7a1d"
+      ],
+      "femaleFrames": [
+        "Arnold_Dumbbell_Press_female_v2_0",
+        "Arnold_Dumbbell_Press_female_v2_1",
+        "Arnold_Dumbbell_Press_female_v2_2",
+        "Arnold_Dumbbell_Press_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "223ff45ae14bbefe",
+        "2d18e7720101ce79",
+        "96210e7f32ab6efc",
+        "77f992c875ae1b71"
+      ],
+      "maleFrames": [
+        "Arnold_Dumbbell_Press_male_v2_0",
+        "Arnold_Dumbbell_Press_male_v2_1",
+        "Arnold_Dumbbell_Press_male_v2_2",
+        "Arnold_Dumbbell_Press_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Band_Assisted_Pull-Up",
+      "format": "png",
+      "femaleFrameDigests": [
+        "0857272124fa0429",
+        "cb8ef5762f50128c",
+        "62451064fe022d4d",
+        "9c43b2eaae8038ec"
+      ],
+      "femaleFrames": [
+        "Band_Assisted_Pull-Up_female_v2_0",
+        "Band_Assisted_Pull-Up_female_v2_1",
+        "Band_Assisted_Pull-Up_female_v2_2",
+        "Band_Assisted_Pull-Up_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "c3ec23bf8c344d3b",
+        "ad836856ce494e71",
+        "bdd52e0f3f78351b",
+        "b507a00504d381ba"
+      ],
+      "maleFrames": [
+        "Band_Assisted_Pull-Up_male_v2_0",
+        "Band_Assisted_Pull-Up_male_v2_1",
+        "Band_Assisted_Pull-Up_male_v2_2",
+        "Band_Assisted_Pull-Up_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Band_Hip_Adductions",
+      "format": "png",
+      "femaleFrameDigests": [
+        "75ff2866e1116f3b",
+        "2aab532fed702238",
+        "a26409d44b9aa5cc",
+        "dddabd09512889d0"
+      ],
+      "femaleFrames": [
+        "Band_Hip_Adductions_female_v2_0",
+        "Band_Hip_Adductions_female_v2_1",
+        "Band_Hip_Adductions_female_v2_2",
+        "Band_Hip_Adductions_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "4da75c4c868fe2f5",
+        "4d98628bba92e0bf",
+        "3d32517eb09a8f26",
+        "1e60721cb4dcd1a0"
+      ],
+      "maleFrames": [
+        "Band_Hip_Adductions_male_v2_0",
+        "Band_Hip_Adductions_male_v2_1",
+        "Band_Hip_Adductions_male_v2_2",
+        "Band_Hip_Adductions_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Barbell_Bench_Press_-_Medium_Grip",
+      "format": "png",
+      "femaleFrameDigests": [
+        "328167fd20abe7e5",
+        "8185c34b0da3d3fb",
+        "ec6233568d45b6f9",
+        "09eb229c37e5441c"
+      ],
+      "femaleFrames": [
+        "Barbell_Bench_Press_-_Medium_Grip_female_v2_0",
+        "Barbell_Bench_Press_-_Medium_Grip_female_v2_1",
+        "Barbell_Bench_Press_-_Medium_Grip_female_v2_2",
+        "Barbell_Bench_Press_-_Medium_Grip_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "b4163b2b0c43cc25",
+        "fccfea57485ca2b4",
+        "f811fbd3b9543953",
+        "7252ee36e342f4b7"
+      ],
+      "maleFrames": [
+        "Barbell_Bench_Press_-_Medium_Grip_male_v2_0",
+        "Barbell_Bench_Press_-_Medium_Grip_male_v2_1",
+        "Barbell_Bench_Press_-_Medium_Grip_male_v2_2",
+        "Barbell_Bench_Press_-_Medium_Grip_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Barbell_Curl",
+      "format": "png",
+      "femaleFrameDigests": [
+        "b6b07647d9b49fcd",
+        "e593c343c4534669",
+        "8a5daa807eeb786e",
+        "0e947c08d08db01a"
+      ],
+      "femaleFrames": [
+        "Barbell_Curl_female_v2_0",
+        "Barbell_Curl_female_v2_1",
+        "Barbell_Curl_female_v2_2",
+        "Barbell_Curl_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "c70e91cbb8f1ebe1",
+        "e75c37e9ef2e24ae",
+        "439ba3c2d6421e84",
+        "f46cc505af2de6c0"
+      ],
+      "maleFrames": [
+        "Barbell_Curl_male_v2_0",
+        "Barbell_Curl_male_v2_1",
+        "Barbell_Curl_male_v2_2",
+        "Barbell_Curl_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Barbell_Incline_Bench_Press_-_Medium_Grip",
+      "format": "png",
+      "femaleFrameDigests": [
+        "0d3cbdd73c9c26c5",
+        "00ffc2351d83d66c",
+        "095b02959bafd085",
+        "d2994157410a3ca8"
+      ],
+      "femaleFrames": [
+        "Barbell_Incline_Bench_Press_-_Medium_Grip_female_v2_0",
+        "Barbell_Incline_Bench_Press_-_Medium_Grip_female_v2_1",
+        "Barbell_Incline_Bench_Press_-_Medium_Grip_female_v2_2",
+        "Barbell_Incline_Bench_Press_-_Medium_Grip_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "b70a55af5f25a77f",
+        "d456309d559136c4",
+        "ac665821a73773e4",
+        "ce12e48a10ca85e5"
+      ],
+      "maleFrames": [
+        "Barbell_Incline_Bench_Press_-_Medium_Grip_male_v2_0",
+        "Barbell_Incline_Bench_Press_-_Medium_Grip_male_v2_1",
+        "Barbell_Incline_Bench_Press_-_Medium_Grip_male_v2_2",
+        "Barbell_Incline_Bench_Press_-_Medium_Grip_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Barbell_Lunge",
+      "format": "png",
+      "femaleFrameDigests": [
+        "58f711670e71c750",
+        "7f4b3082b43b1c26",
+        "503f55b9a4dfad29",
+        "9484f233c54bff74"
+      ],
+      "femaleFrames": [
+        "Barbell_Lunge_female_v2_0",
+        "Barbell_Lunge_female_v2_1",
+        "Barbell_Lunge_female_v2_2",
+        "Barbell_Lunge_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "3b59e6f83a8dfb43",
+        "e8f09d9fba671098",
+        "8d5aff558aff9e14",
+        "d5c1a2f23f76b266"
+      ],
+      "maleFrames": [
+        "Barbell_Lunge_male_v2_0",
+        "Barbell_Lunge_male_v2_1",
+        "Barbell_Lunge_male_v2_2",
+        "Barbell_Lunge_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Barbell_Shrug",
+      "format": "png",
+      "femaleFrameDigests": [
+        "b5f0db7cf4447043",
+        "1ea6791466a72cd3",
+        "1a9b1d1c5de5659b",
+        "2075d8b52f1ee4f0"
+      ],
+      "femaleFrames": [
+        "Barbell_Shrug_female_v2_0",
+        "Barbell_Shrug_female_v2_1",
+        "Barbell_Shrug_female_v2_2",
+        "Barbell_Shrug_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "716a923de85c702f",
+        "0d8b9fe9f23bd24b",
+        "3cb4505d770c1004",
+        "729a91b21e14f002"
+      ],
+      "maleFrames": [
+        "Barbell_Shrug_male_v2_0",
+        "Barbell_Shrug_male_v2_1",
+        "Barbell_Shrug_male_v2_2",
+        "Barbell_Shrug_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Barbell_Squat",
+      "format": "png",
+      "femaleFrameDigests": [
+        "ef056812ec5c6a89",
+        "f88284a3a9eadb94",
+        "5035630a0cb944b3",
+        "a1b2ce0d8d03b22e"
+      ],
+      "femaleFrames": [
+        "Barbell_Squat_female_v2_0",
+        "Barbell_Squat_female_v2_1",
+        "Barbell_Squat_female_v2_2",
+        "Barbell_Squat_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "4e7930518f30e975",
+        "818daab21b361cbd",
+        "25341e74ca90145d",
+        "f099c7b441d0a038"
+      ],
+      "maleFrames": [
+        "Barbell_Squat_male_v2_0",
+        "Barbell_Squat_male_v2_1",
+        "Barbell_Squat_male_v2_2",
+        "Barbell_Squat_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Battling_Ropes",
+      "format": "png",
+      "femaleFrameDigests": [
+        "c2acb0391779aab2",
+        "2be3df69b4f736e9",
+        "710ac0bb87ba863d",
+        "22914125b5b45109"
+      ],
+      "femaleFrames": [
+        "Battling_Ropes_female_v2_0",
+        "Battling_Ropes_female_v2_1",
+        "Battling_Ropes_female_v2_2",
+        "Battling_Ropes_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "5d36cb34bc1c71a8",
+        "db25eb311ca1d885",
+        "06d6390f9b01f9e3",
+        "5f268916586c1587"
+      ],
+      "maleFrames": [
+        "Battling_Ropes_male_v2_0",
+        "Battling_Ropes_male_v2_1",
+        "Battling_Ropes_male_v2_2",
+        "Battling_Ropes_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Behind_Head_Chest_Stretch",
+      "format": "png",
+      "femaleFrameDigests": [
+        "46ab2aced4055566",
+        "f6bb775387eb1386",
+        "64f12327659d8a64",
+        "efdce29c023d1c26"
+      ],
+      "femaleFrames": [
+        "Behind_Head_Chest_Stretch_female_v2_0",
+        "Behind_Head_Chest_Stretch_female_v2_1",
+        "Behind_Head_Chest_Stretch_female_v2_2",
+        "Behind_Head_Chest_Stretch_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "6cb63606ed770dd1",
+        "47254d00c4212a29",
+        "068bd0abaf81da06",
+        "8bf4abfce2e46090"
+      ],
+      "maleFrames": [
+        "Behind_Head_Chest_Stretch_male_v2_0",
+        "Behind_Head_Chest_Stretch_male_v2_1",
+        "Behind_Head_Chest_Stretch_male_v2_2",
+        "Behind_Head_Chest_Stretch_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Bench_Dips",
+      "format": "png",
+      "femaleFrameDigests": [
+        "1fb984a2c864a946",
+        "f19485a6e606cac6",
+        "b9640a7a8baebf1d",
+        "a5f3577ef40cdd0c"
+      ],
+      "femaleFrames": [
+        "Bench_Dips_female_v2_0",
+        "Bench_Dips_female_v2_1",
+        "Bench_Dips_female_v2_2",
+        "Bench_Dips_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "9c7ebb000a1f6931",
+        "e2a4fe5fe59f33cf",
+        "ffc9d9fba60cff2f",
+        "16ca315b766e1eac"
+      ],
+      "maleFrames": [
+        "Bench_Dips_male_v2_0",
+        "Bench_Dips_male_v2_1",
+        "Bench_Dips_male_v2_2",
+        "Bench_Dips_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Bodyweight_Squat",
+      "format": "png",
+      "femaleFrameDigests": [
+        "965e72c133fcc59c",
+        "9346b67e5cbd99a0",
+        "a7c834e2a4d97e6a",
+        "1e174110a848ffea"
+      ],
+      "femaleFrames": [
+        "Bodyweight_Squat_female_v2_0",
+        "Bodyweight_Squat_female_v2_1",
+        "Bodyweight_Squat_female_v2_2",
+        "Bodyweight_Squat_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "dfe8e5f0be2ae7f5",
+        "06037e343a7797c6",
+        "f1420645a33bd318",
+        "afdf685b30a941b1"
+      ],
+      "maleFrames": [
+        "Bodyweight_Squat_male_v2_0",
+        "Bodyweight_Squat_male_v2_1",
+        "Bodyweight_Squat_male_v2_2",
+        "Bodyweight_Squat_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Cable_Crunch",
+      "format": "png",
+      "femaleFrameDigests": [
+        "b6c005b6d103f292",
+        "9781a449dd203f3c",
+        "ada171284cdf933f",
+        "6d2070dd87145ff3"
+      ],
+      "femaleFrames": [
+        "Cable_Crunch_female_v2_0",
+        "Cable_Crunch_female_v2_1",
+        "Cable_Crunch_female_v2_2",
+        "Cable_Crunch_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "c61be9628a3a0244",
+        "8575dca200622b15",
+        "46c95c153c7bb315",
+        "1bcef7db4bf5c078"
+      ],
+      "maleFrames": [
+        "Cable_Crunch_male_v2_0",
+        "Cable_Crunch_male_v2_1",
+        "Cable_Crunch_male_v2_2",
+        "Cable_Crunch_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Cable_Lying_Triceps_Extension",
+      "format": "png",
+      "femaleFrameDigests": [
+        "c2778822a11855de",
+        "9916a63c41dd45c0",
+        "1d90b3d0f0c229c0",
+        "ee6bcca4fe53b228"
+      ],
+      "femaleFrames": [
+        "Cable_Lying_Triceps_Extension_female_v2_0",
+        "Cable_Lying_Triceps_Extension_female_v2_1",
+        "Cable_Lying_Triceps_Extension_female_v2_2",
+        "Cable_Lying_Triceps_Extension_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "e0fe65049f36dd36",
+        "f318f1e342bde211",
+        "ab55dfc1cb79334b",
+        "f787319ca85bed07"
+      ],
+      "maleFrames": [
+        "Cable_Lying_Triceps_Extension_male_v2_0",
+        "Cable_Lying_Triceps_Extension_male_v2_1",
+        "Cable_Lying_Triceps_Extension_male_v2_2",
+        "Cable_Lying_Triceps_Extension_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Cable_One_Arm_Tricep_Extension",
+      "format": "png",
+      "femaleFrameDigests": [
+        "2f4fcf9d4ebdbf9f",
+        "7cb5ae8e922c2d7e",
+        "e3aad968d33a8044",
+        "fc8b1cb53fee1e15"
+      ],
+      "femaleFrames": [
+        "Cable_One_Arm_Tricep_Extension_female_v2_0",
+        "Cable_One_Arm_Tricep_Extension_female_v2_1",
+        "Cable_One_Arm_Tricep_Extension_female_v2_2",
+        "Cable_One_Arm_Tricep_Extension_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "efeef726a8b615ac",
+        "3b6712047db392d2",
+        "4a6243c6ce0130f4",
+        "1d54b995f9cefe82"
+      ],
+      "maleFrames": [
+        "Cable_One_Arm_Tricep_Extension_male_v2_0",
+        "Cable_One_Arm_Tricep_Extension_male_v2_1",
+        "Cable_One_Arm_Tricep_Extension_male_v2_2",
+        "Cable_One_Arm_Tricep_Extension_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Cable_Rope_Overhead_Triceps_Extension",
+      "format": "png",
+      "femaleFrameDigests": [
+        "97b778dd65c8fb16",
+        "9f3a25d89e3dc999",
+        "8144cf264298a085",
+        "55f67eb406d3802a"
+      ],
+      "femaleFrames": [
+        "Cable_Rope_Overhead_Triceps_Extension_female_v2_0",
+        "Cable_Rope_Overhead_Triceps_Extension_female_v2_1",
+        "Cable_Rope_Overhead_Triceps_Extension_female_v2_2",
+        "Cable_Rope_Overhead_Triceps_Extension_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "06009786246b5008",
+        "da820b68be93f12c",
+        "7eeff3d7e7bea75a",
+        "a1cdbbab93d49a38"
+      ],
+      "maleFrames": [
+        "Cable_Rope_Overhead_Triceps_Extension_male_v2_0",
+        "Cable_Rope_Overhead_Triceps_Extension_male_v2_1",
+        "Cable_Rope_Overhead_Triceps_Extension_male_v2_2",
+        "Cable_Rope_Overhead_Triceps_Extension_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Calf_Raise_On_A_Dumbbell",
+      "format": "png",
+      "femaleFrameDigests": [
+        "9528ca4ddd03654e",
+        "aaaeff6579c24f48",
+        "f5bdae8c0630ca4d",
+        "4f4f273d09f9e50e"
+      ],
+      "femaleFrames": [
+        "Calf_Raise_On_A_Dumbbell_female_v2_0",
+        "Calf_Raise_On_A_Dumbbell_female_v2_1",
+        "Calf_Raise_On_A_Dumbbell_female_v2_2",
+        "Calf_Raise_On_A_Dumbbell_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "73cbaa9224da0a05",
+        "61b58e10747c2c82",
+        "00ec4141c6b63a5d",
+        "cdcf351e025f62e6"
+      ],
+      "maleFrames": [
+        "Calf_Raise_On_A_Dumbbell_male_v2_0",
+        "Calf_Raise_On_A_Dumbbell_male_v2_1",
+        "Calf_Raise_On_A_Dumbbell_male_v2_2",
+        "Calf_Raise_On_A_Dumbbell_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Chin-Up",
+      "format": "png",
+      "femaleFrameDigests": [
+        "9c2be604c3ba3917",
+        "c5216e0a67b4caf7",
+        "4d395a0d857cb6ad",
+        "23df37fd0db9bfa2"
+      ],
+      "femaleFrames": [
+        "Chin-Up_female_v2_0",
+        "Chin-Up_female_v2_1",
+        "Chin-Up_female_v2_2",
+        "Chin-Up_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "536fb719c776d200",
+        "155db6b46209a2c8",
+        "31ca6b1d4ce9d092",
+        "336f968be74ef07e"
+      ],
+      "maleFrames": [
+        "Chin-Up_male_v2_0",
+        "Chin-Up_male_v2_1",
+        "Chin-Up_male_v2_2",
+        "Chin-Up_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Chin_To_Chest_Stretch",
+      "format": "png",
+      "femaleFrameDigests": [
+        "c237215e07159309",
+        "b21e52bdc1103f79",
+        "f7753fefce0d236e",
+        "cea1c6d220378e73"
+      ],
+      "femaleFrames": [
+        "Chin_To_Chest_Stretch_female_v2_0",
+        "Chin_To_Chest_Stretch_female_v2_1",
+        "Chin_To_Chest_Stretch_female_v2_2",
+        "Chin_To_Chest_Stretch_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "c3bb2a24b1ac22aa",
+        "984dad8672154463",
+        "74bb531bfd9885cc",
+        "ebcdb301fc851193"
+      ],
+      "maleFrames": [
+        "Chin_To_Chest_Stretch_male_v2_0",
+        "Chin_To_Chest_Stretch_male_v2_1",
+        "Chin_To_Chest_Stretch_male_v2_2",
+        "Chin_To_Chest_Stretch_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Close-Grip_Barbell_Bench_Press",
+      "format": "png",
+      "femaleFrameDigests": [
+        "70bc4797b985e60f",
+        "cc886d74e0c94c08",
+        "e5c717a1da8de344",
+        "558642752164b7bb"
+      ],
+      "femaleFrames": [
+        "Close-Grip_Barbell_Bench_Press_female_v2_0",
+        "Close-Grip_Barbell_Bench_Press_female_v2_1",
+        "Close-Grip_Barbell_Bench_Press_female_v2_2",
+        "Close-Grip_Barbell_Bench_Press_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "94b9dfe3ff12c4c0",
+        "81c780d62e9372f9",
+        "01bc177478da3ba9",
+        "0b14a15c69c4fdcd"
+      ],
+      "maleFrames": [
+        "Close-Grip_Barbell_Bench_Press_male_v2_0",
+        "Close-Grip_Barbell_Bench_Press_male_v2_1",
+        "Close-Grip_Barbell_Bench_Press_male_v2_2",
+        "Close-Grip_Barbell_Bench_Press_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Close-Grip_Dumbbell_Press",
+      "format": "png",
+      "femaleFrameDigests": [
+        "ac1bb58b291dbfc4",
+        "8172d13f5d345a5b",
+        "495aa5ba980eb0cb",
+        "70b024c063481daf"
+      ],
+      "femaleFrames": [
+        "Close-Grip_Dumbbell_Press_female_v2_0",
+        "Close-Grip_Dumbbell_Press_female_v2_1",
+        "Close-Grip_Dumbbell_Press_female_v2_2",
+        "Close-Grip_Dumbbell_Press_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "1306d35482949da8",
+        "55c816947b1e5f55",
+        "787f2a043eceb596",
+        "6f6141d7297e2f60"
+      ],
+      "maleFrames": [
+        "Close-Grip_Dumbbell_Press_male_v2_0",
+        "Close-Grip_Dumbbell_Press_male_v2_1",
+        "Close-Grip_Dumbbell_Press_male_v2_2",
+        "Close-Grip_Dumbbell_Press_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Cross-Body_Crunch",
+      "format": "png",
+      "femaleFrameDigests": [
+        "ca71efa84f6692d0",
+        "2e8b37ebcab8842e",
+        "a6eeb368ba638473",
+        "dd8b265b8b03c30f"
+      ],
+      "femaleFrames": [
+        "Cross-Body_Crunch_female_v2_0",
+        "Cross-Body_Crunch_female_v2_1",
+        "Cross-Body_Crunch_female_v2_2",
+        "Cross-Body_Crunch_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "af8979214e2a0bf2",
+        "9c3a85c15c2018ab",
+        "6c24ba913e3c0742",
+        "251f63d13481759f"
+      ],
+      "maleFrames": [
+        "Cross-Body_Crunch_male_v2_0",
+        "Cross-Body_Crunch_male_v2_1",
+        "Cross-Body_Crunch_male_v2_2",
+        "Cross-Body_Crunch_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Crunches",
+      "format": "png",
+      "femaleFrameDigests": [
+        "6da16babec8d08a8",
+        "0cdb27ba6f8f1480",
+        "232bdf9782c68158",
+        "0717338d0cc46a73"
+      ],
+      "femaleFrames": [
+        "Crunches_female_v2_0",
+        "Crunches_female_v2_1",
+        "Crunches_female_v2_2",
+        "Crunches_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "b3aaba6ff4e26b95",
+        "2c6120a94c3dc9a3",
+        "35071ccc141f0173",
+        "baba29b2cd8ebc5e"
+      ],
+      "maleFrames": [
+        "Crunches_male_v2_0",
+        "Crunches_male_v2_1",
+        "Crunches_male_v2_2",
+        "Crunches_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Decline_Barbell_Bench_Press",
+      "format": "png",
+      "femaleFrameDigests": [
+        "9fc2938d9edc9a18",
+        "d4e2ef4ece1f6469",
+        "50cb2b579c149720",
+        "e78b49645c321426"
+      ],
+      "femaleFrames": [
+        "Decline_Barbell_Bench_Press_female_v2_0",
+        "Decline_Barbell_Bench_Press_female_v2_1",
+        "Decline_Barbell_Bench_Press_female_v2_2",
+        "Decline_Barbell_Bench_Press_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "085b58fdd958a8d3",
+        "181f6f0fa46259d3",
+        "60a8f813e7b9e849",
+        "ba1125881f742771"
+      ],
+      "maleFrames": [
+        "Decline_Barbell_Bench_Press_male_v2_0",
+        "Decline_Barbell_Bench_Press_male_v2_1",
+        "Decline_Barbell_Bench_Press_male_v2_2",
+        "Decline_Barbell_Bench_Press_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Decline_Dumbbell_Bench_Press",
+      "format": "png",
+      "femaleFrameDigests": [
+        "fd1a85bb07ecc9e2",
+        "c7051beb99ed0f01",
+        "a7b9d082c84ee99f",
+        "176d07b5a4d8ba06"
+      ],
+      "femaleFrames": [
+        "Decline_Dumbbell_Bench_Press_female_v2_0",
+        "Decline_Dumbbell_Bench_Press_female_v2_1",
+        "Decline_Dumbbell_Bench_Press_female_v2_2",
+        "Decline_Dumbbell_Bench_Press_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "15111a7aea0d8380",
+        "d5f466df4d7c939e",
+        "0c2a26a4d28977f9",
+        "3f608dc8fa643654"
+      ],
+      "maleFrames": [
+        "Decline_Dumbbell_Bench_Press_male_v2_0",
+        "Decline_Dumbbell_Bench_Press_male_v2_1",
+        "Decline_Dumbbell_Bench_Press_male_v2_2",
+        "Decline_Dumbbell_Bench_Press_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Decline_Dumbbell_Flyes",
+      "format": "png",
+      "femaleFrameDigests": [
+        "fb3f8c4ce97984f5",
+        "5901c6dab3b9a753",
+        "aaf1ae918dcf5769",
+        "820f262c341c6cc9"
+      ],
+      "femaleFrames": [
+        "Decline_Dumbbell_Flyes_female_v2_0",
+        "Decline_Dumbbell_Flyes_female_v2_1",
+        "Decline_Dumbbell_Flyes_female_v2_2",
+        "Decline_Dumbbell_Flyes_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "eb45ebeff5345fb4",
+        "5d53b9988a015877",
+        "684f4fbd7f68fb60",
+        "d5b6d20ca5d98d9d"
+      ],
+      "maleFrames": [
+        "Decline_Dumbbell_Flyes_male_v2_0",
+        "Decline_Dumbbell_Flyes_male_v2_1",
+        "Decline_Dumbbell_Flyes_male_v2_2",
+        "Decline_Dumbbell_Flyes_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Dip_Machine",
+      "format": "png",
+      "femaleFrameDigests": [
+        "0bbccefbbb6095c2",
+        "627c97abe0e7860b",
+        "78296babf570f02a",
+        "95480210af999c83"
+      ],
+      "femaleFrames": [
+        "Dip_Machine_female_v2_0",
+        "Dip_Machine_female_v2_1",
+        "Dip_Machine_female_v2_2",
+        "Dip_Machine_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "3a8ca6a36c2d1ce7",
+        "bc0b30bd4bac30a9",
+        "d414152657e1b426",
+        "c02e6955d84993a3"
+      ],
+      "maleFrames": [
+        "Dip_Machine_male_v2_0",
+        "Dip_Machine_male_v2_1",
+        "Dip_Machine_male_v2_2",
+        "Dip_Machine_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Donkey_Calf_Raises",
+      "format": "png",
+      "femaleFrameDigests": [
+        "135a2a7388c1105a",
+        "e6002f05f2100cab",
+        "8fa3be7eabd116a8",
+        "9220e5eaecc73647"
+      ],
+      "femaleFrames": [
+        "Donkey_Calf_Raises_female_v2_0",
+        "Donkey_Calf_Raises_female_v2_1",
+        "Donkey_Calf_Raises_female_v2_2",
+        "Donkey_Calf_Raises_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "e89886ce908bd8dd",
+        "cc61c88f719ced5e",
+        "02d0495ed54f54b9",
+        "950384530c1723de"
+      ],
+      "maleFrames": [
+        "Donkey_Calf_Raises_male_v2_0",
+        "Donkey_Calf_Raises_male_v2_1",
+        "Donkey_Calf_Raises_male_v2_2",
+        "Donkey_Calf_Raises_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Dumbbell_Alternate_Bicep_Curl",
+      "format": "png",
+      "femaleFrameDigests": [
+        "fadd5a84d5945857",
+        "9f2ca5c554538a84",
+        "dbefaf74dec995c7",
+        "81ede87dc3abed82"
+      ],
+      "femaleFrames": [
+        "Dumbbell_Alternate_Bicep_Curl_female_v2_0",
+        "Dumbbell_Alternate_Bicep_Curl_female_v2_1",
+        "Dumbbell_Alternate_Bicep_Curl_female_v2_2",
+        "Dumbbell_Alternate_Bicep_Curl_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "5aad56e325e0de9e",
+        "d46e881ca7fa1f68",
+        "7fe3d4a3562f9e8a",
+        "92004c65ffa83ea2"
+      ],
+      "maleFrames": [
+        "Dumbbell_Alternate_Bicep_Curl_male_v2_0",
+        "Dumbbell_Alternate_Bicep_Curl_male_v2_1",
+        "Dumbbell_Alternate_Bicep_Curl_male_v2_2",
+        "Dumbbell_Alternate_Bicep_Curl_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Dumbbell_Bench_Press",
+      "format": "png",
+      "femaleFrameDigests": [
+        "4e82b5d191b20b59",
+        "e8be2962642de911",
+        "87ef3b3fc1da18f5",
+        "0d5c027af3d7e2ee"
+      ],
+      "femaleFrames": [
+        "Dumbbell_Bench_Press_female_v2_0",
+        "Dumbbell_Bench_Press_female_v2_1",
+        "Dumbbell_Bench_Press_female_v2_2",
+        "Dumbbell_Bench_Press_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "7ea8db3a96314713",
+        "15bfc2884387e5d2",
+        "6621dd897efd4ce3",
+        "7444ddc515cae82b"
+      ],
+      "maleFrames": [
+        "Dumbbell_Bench_Press_male_v2_0",
+        "Dumbbell_Bench_Press_male_v2_1",
+        "Dumbbell_Bench_Press_male_v2_2",
+        "Dumbbell_Bench_Press_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Dumbbell_Bench_Press_with_Neutral_Grip",
+      "format": "png",
+      "femaleFrameDigests": [
+        "73dc315470a5f9a9",
+        "3a48f17b70a08c6b",
+        "80477df2e6d98693",
+        "1fd69927c980a67e"
+      ],
+      "femaleFrames": [
+        "Dumbbell_Bench_Press_with_Neutral_Grip_female_v2_0",
+        "Dumbbell_Bench_Press_with_Neutral_Grip_female_v2_1",
+        "Dumbbell_Bench_Press_with_Neutral_Grip_female_v2_2",
+        "Dumbbell_Bench_Press_with_Neutral_Grip_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "6d91a60f590d5f46",
+        "5cc62f71b4151575",
+        "81b085a14792b424",
+        "f19831e0c9634781"
+      ],
+      "maleFrames": [
+        "Dumbbell_Bench_Press_with_Neutral_Grip_male_v2_0",
+        "Dumbbell_Bench_Press_with_Neutral_Grip_male_v2_1",
+        "Dumbbell_Bench_Press_with_Neutral_Grip_male_v2_2",
+        "Dumbbell_Bench_Press_with_Neutral_Grip_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Dumbbell_Bicep_Curl",
+      "format": "png",
+      "femaleFrameDigests": [
+        "2e5148976a9018b7",
+        "cd7fdec52300c386",
+        "d313315c8fad37dd",
+        "0f6d993cc758a9e4"
+      ],
+      "femaleFrames": [
+        "Dumbbell_Bicep_Curl_female_v2_0",
+        "Dumbbell_Bicep_Curl_female_v2_1",
+        "Dumbbell_Bicep_Curl_female_v2_2",
+        "Dumbbell_Bicep_Curl_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "52d6ce3b2e4b273f",
+        "f6f29314f10e15b6",
+        "52bb8dda55f3a885",
+        "05e99d33b6c889a2"
+      ],
+      "maleFrames": [
+        "Dumbbell_Bicep_Curl_male_v2_0",
+        "Dumbbell_Bicep_Curl_male_v2_1",
+        "Dumbbell_Bicep_Curl_male_v2_2",
+        "Dumbbell_Bicep_Curl_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Dumbbell_Flyes",
+      "format": "png",
+      "femaleFrameDigests": [
+        "797081b1aa68c153",
+        "fda296605553fd74",
+        "57a61c03b3b7e07f",
+        "3b9af6c245f3308c"
+      ],
+      "femaleFrames": [
+        "Dumbbell_Flyes_female_v2_0",
+        "Dumbbell_Flyes_female_v2_1",
+        "Dumbbell_Flyes_female_v2_2",
+        "Dumbbell_Flyes_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "55477dd9e3b55a7a",
+        "1110490d0d109b22",
+        "ef985bca76ee3f2a",
+        "53666a34a3dd4462"
+      ],
+      "maleFrames": [
+        "Dumbbell_Flyes_male_v2_0",
+        "Dumbbell_Flyes_male_v2_1",
+        "Dumbbell_Flyes_male_v2_2",
+        "Dumbbell_Flyes_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Dumbbell_Incline_Row",
+      "format": "png",
+      "femaleFrameDigests": [
+        "3944541ae941f080",
+        "335a58b6dc678cde",
+        "187d4e0d93b93f22",
+        "9e0ce1ed93cbf7a7"
+      ],
+      "femaleFrames": [
+        "Dumbbell_Incline_Row_female_v2_0",
+        "Dumbbell_Incline_Row_female_v2_1",
+        "Dumbbell_Incline_Row_female_v2_2",
+        "Dumbbell_Incline_Row_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "9d2e0977bcda1c6b",
+        "9eb6aaaf7eb150c1",
+        "53c8c503c5e740af",
+        "ae64a1c5b2d3b48a"
+      ],
+      "maleFrames": [
+        "Dumbbell_Incline_Row_male_v2_0",
+        "Dumbbell_Incline_Row_male_v2_1",
+        "Dumbbell_Incline_Row_male_v2_2",
+        "Dumbbell_Incline_Row_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Dumbbell_Lunges",
+      "format": "png",
+      "femaleFrameDigests": [
+        "ad02c5e4aa863ca1",
+        "e98c1eb0b152ad1c",
+        "b84475c0369e6fef",
+        "f9f8fda85200504d"
+      ],
+      "femaleFrames": [
+        "Dumbbell_Lunges_female_v2_0",
+        "Dumbbell_Lunges_female_v2_1",
+        "Dumbbell_Lunges_female_v2_2",
+        "Dumbbell_Lunges_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "8d2e70c1e6dec9ed",
+        "74a20fed2222f8ca",
+        "e743e2f94a14f489",
+        "6769053aee297f86"
+      ],
+      "maleFrames": [
+        "Dumbbell_Lunges_male_v2_0",
+        "Dumbbell_Lunges_male_v2_1",
+        "Dumbbell_Lunges_male_v2_2",
+        "Dumbbell_Lunges_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Dumbbell_One-Arm_Triceps_Extension",
+      "format": "png",
+      "femaleFrameDigests": [
+        "1ee3bbdd3ad57031",
+        "d671b770593a8c33",
+        "1735294a5ed36f29",
+        "ca22f36aae9043a2"
+      ],
+      "femaleFrames": [
+        "Dumbbell_One-Arm_Triceps_Extension_female_v2_0",
+        "Dumbbell_One-Arm_Triceps_Extension_female_v2_1",
+        "Dumbbell_One-Arm_Triceps_Extension_female_v2_2",
+        "Dumbbell_One-Arm_Triceps_Extension_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "aa6c4ac358285d1c",
+        "88b1bd1c70ed6491",
+        "7e161d0bc6ed66ed",
+        "b97f2f906c93661a"
+      ],
+      "maleFrames": [
+        "Dumbbell_One-Arm_Triceps_Extension_male_v2_0",
+        "Dumbbell_One-Arm_Triceps_Extension_male_v2_1",
+        "Dumbbell_One-Arm_Triceps_Extension_male_v2_2",
+        "Dumbbell_One-Arm_Triceps_Extension_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Dumbbell_Prone_Incline_Curl",
+      "format": "png",
+      "femaleFrameDigests": [
+        "46136b5bd217c642",
+        "d5d2527a60b1d7ad",
+        "601040cef958f35d",
+        "c9fd527ca7bc2dcd"
+      ],
+      "femaleFrames": [
+        "Dumbbell_Prone_Incline_Curl_female_v2_0",
+        "Dumbbell_Prone_Incline_Curl_female_v2_1",
+        "Dumbbell_Prone_Incline_Curl_female_v2_2",
+        "Dumbbell_Prone_Incline_Curl_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "1c94f7264bb67f5c",
+        "9b23d90d9d8e6504",
+        "00612fd8ec94ab4c",
+        "028c56c12281e087"
+      ],
+      "maleFrames": [
+        "Dumbbell_Prone_Incline_Curl_male_v2_0",
+        "Dumbbell_Prone_Incline_Curl_male_v2_1",
+        "Dumbbell_Prone_Incline_Curl_male_v2_2",
+        "Dumbbell_Prone_Incline_Curl_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Dumbbell_Shrug",
+      "format": "png",
+      "femaleFrameDigests": [
+        "e3b7b7e18f72a8cf",
+        "658f8a3f46b152d5",
+        "a3232e510054fcc6",
+        "9b18c3eb04030c2d"
+      ],
+      "femaleFrames": [
+        "Dumbbell_Shrug_female_v2_0",
+        "Dumbbell_Shrug_female_v2_1",
+        "Dumbbell_Shrug_female_v2_2",
+        "Dumbbell_Shrug_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "c7f1c8be577b3568",
+        "294e9fd3c31b015e",
+        "d3541c520d48acaf",
+        "48918b49e64b82e1"
+      ],
+      "maleFrames": [
+        "Dumbbell_Shrug_male_v2_0",
+        "Dumbbell_Shrug_male_v2_1",
+        "Dumbbell_Shrug_male_v2_2",
+        "Dumbbell_Shrug_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Dumbbell_Side_Bend",
+      "format": "png",
+      "femaleFrameDigests": [
+        "e32756b00a94304b",
+        "ef1f173627ed24d0",
+        "a600188c804efea7",
+        "1f2c30b6972ff1c6"
+      ],
+      "femaleFrames": [
+        "Dumbbell_Side_Bend_female_v2_0",
+        "Dumbbell_Side_Bend_female_v2_1",
+        "Dumbbell_Side_Bend_female_v2_2",
+        "Dumbbell_Side_Bend_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "d7e623607485c03d",
+        "3896ba629f086b27",
+        "b44bbb392419add9",
+        "13314b11c918b269"
+      ],
+      "maleFrames": [
+        "Dumbbell_Side_Bend_male_v2_0",
+        "Dumbbell_Side_Bend_male_v2_1",
+        "Dumbbell_Side_Bend_male_v2_2",
+        "Dumbbell_Side_Bend_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Dumbbell_Squat",
+      "format": "png",
+      "femaleFrameDigests": [
+        "2f0f82412f8023d7",
+        "4a183e98b48b6bce",
+        "dc5c493a2399161d",
+        "d23d5fdd650d7876"
+      ],
+      "femaleFrames": [
+        "Dumbbell_Squat_female_v2_0",
+        "Dumbbell_Squat_female_v2_1",
+        "Dumbbell_Squat_female_v2_2",
+        "Dumbbell_Squat_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "5c00782bdf3f434f",
+        "8b0e4c8946d68ec8",
+        "50403f618364dd29",
+        "4e5722d10fdcc8f0"
+      ],
+      "maleFrames": [
+        "Dumbbell_Squat_male_v2_0",
+        "Dumbbell_Squat_male_v2_1",
+        "Dumbbell_Squat_male_v2_2",
+        "Dumbbell_Squat_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Dumbbell_Tricep_Extension_-Pronated_Grip",
+      "format": "png",
+      "femaleFrameDigests": [
+        "9ea0849becb7976e",
+        "7054ae971d22004d",
+        "1e8976327b9432a1",
+        "994a373a21397b61"
+      ],
+      "femaleFrames": [
+        "Dumbbell_Tricep_Extension_-Pronated_Grip_female_v2_0",
+        "Dumbbell_Tricep_Extension_-Pronated_Grip_female_v2_1",
+        "Dumbbell_Tricep_Extension_-Pronated_Grip_female_v2_2",
+        "Dumbbell_Tricep_Extension_-Pronated_Grip_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "f624418133cb4f42",
+        "4e37569c0e34ef64",
+        "02aed6cc5a1cc40c",
+        "54ef93d7d4743ca4"
+      ],
+      "maleFrames": [
+        "Dumbbell_Tricep_Extension_-Pronated_Grip_male_v2_0",
+        "Dumbbell_Tricep_Extension_-Pronated_Grip_male_v2_1",
+        "Dumbbell_Tricep_Extension_-Pronated_Grip_male_v2_2",
+        "Dumbbell_Tricep_Extension_-Pronated_Grip_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Dynamic_Chest_Stretch",
+      "format": "png",
+      "femaleFrameDigests": [
+        "d348d5cf478a08c7",
+        "17e648282d2ac473",
+        "72694ae984b94117",
+        "ddc6a575e359f280"
+      ],
+      "femaleFrames": [
+        "Dynamic_Chest_Stretch_female_v2_0",
+        "Dynamic_Chest_Stretch_female_v2_1",
+        "Dynamic_Chest_Stretch_female_v2_2",
+        "Dynamic_Chest_Stretch_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "42d7b118c6394709",
+        "6b54dc0e1f0417b7",
+        "b07968815be62ba5",
+        "612d00a0ef1997fc"
+      ],
+      "maleFrames": [
+        "Dynamic_Chest_Stretch_male_v2_0",
+        "Dynamic_Chest_Stretch_male_v2_1",
+        "Dynamic_Chest_Stretch_male_v2_2",
+        "Dynamic_Chest_Stretch_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "EZ-Bar_Curl",
+      "format": "png",
+      "femaleFrameDigests": [
+        "6b8dba7e057e495e",
+        "3a0945235b7ec88f",
+        "915c8173a0e40181",
+        "a4b1308f34898f56"
+      ],
+      "femaleFrames": [
+        "EZ-Bar_Curl_female_v2_0",
+        "EZ-Bar_Curl_female_v2_1",
+        "EZ-Bar_Curl_female_v2_2",
+        "EZ-Bar_Curl_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "21b9ed306a3e5f5f",
+        "3406d18cdc20cfce",
+        "06b9ea301013b1dd",
+        "91fb71ea96993922"
+      ],
+      "maleFrames": [
+        "EZ-Bar_Curl_male_v2_0",
+        "EZ-Bar_Curl_male_v2_1",
+        "EZ-Bar_Curl_male_v2_2",
+        "EZ-Bar_Curl_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "EZ-Bar_Skullcrusher",
+      "format": "png",
+      "femaleFrameDigests": [
+        "5b708d39e4a76feb",
+        "08cba65dce24c3ae",
+        "da984b70dbf2c124",
+        "cd5a6edcef98f590"
+      ],
+      "femaleFrames": [
+        "EZ-Bar_Skullcrusher_female_v2_0",
+        "EZ-Bar_Skullcrusher_female_v2_1",
+        "EZ-Bar_Skullcrusher_female_v2_2",
+        "EZ-Bar_Skullcrusher_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "562dee58a06bf710",
+        "e35708070cb2460e",
+        "038796bcbf4c240e",
+        "61ea58f566230d87"
+      ],
+      "maleFrames": [
+        "EZ-Bar_Skullcrusher_male_v2_0",
+        "EZ-Bar_Skullcrusher_male_v2_1",
+        "EZ-Bar_Skullcrusher_male_v2_2",
+        "EZ-Bar_Skullcrusher_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Elliptical_Trainer",
+      "format": "png",
+      "femaleFrameDigests": [
+        "2ba5c17ccdb8306e",
+        "7423b3c01b1c8252",
+        "e92e270898a92556",
+        "1590cab2085cd8f6"
+      ],
+      "femaleFrames": [
+        "Elliptical_Trainer_female_v2_0",
+        "Elliptical_Trainer_female_v2_1",
+        "Elliptical_Trainer_female_v2_2",
+        "Elliptical_Trainer_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "887e8defcfedefea",
+        "5256c774fabad013",
+        "d8be420eac63b3bc",
+        "e58e782fdf296f5b"
+      ],
+      "maleFrames": [
+        "Elliptical_Trainer_male_v2_0",
+        "Elliptical_Trainer_male_v2_1",
+        "Elliptical_Trainer_male_v2_2",
+        "Elliptical_Trainer_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Flat_Bench_Cable_Flyes",
+      "format": "png",
+      "femaleFrameDigests": [
+        "4d8fce111feb5734",
+        "ecaeca608acdce7f",
+        "61cde43623c6d3ef",
+        "f786d05a658feba0"
+      ],
+      "femaleFrames": [
+        "Flat_Bench_Cable_Flyes_female_v2_0",
+        "Flat_Bench_Cable_Flyes_female_v2_1",
+        "Flat_Bench_Cable_Flyes_female_v2_2",
+        "Flat_Bench_Cable_Flyes_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "f7409f5a4f4fe87a",
+        "9644cdae74f06591",
+        "76121e5a9f3cf7fb",
+        "8ee0b1f5c0440f1e"
+      ],
+      "maleFrames": [
+        "Flat_Bench_Cable_Flyes_male_v2_0",
+        "Flat_Bench_Cable_Flyes_male_v2_1",
+        "Flat_Bench_Cable_Flyes_male_v2_2",
+        "Flat_Bench_Cable_Flyes_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Flutter_Kicks",
+      "format": "png",
+      "femaleFrameDigests": [
+        "ab5cffb961fa3faf",
+        "d7695bdac7a4b235",
+        "3f9946360e355b94",
+        "11ac29941053afa1"
+      ],
+      "femaleFrames": [
+        "Flutter_Kicks_female_v2_0",
+        "Flutter_Kicks_female_v2_1",
+        "Flutter_Kicks_female_v2_2",
+        "Flutter_Kicks_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "1475ef6a8678f2bc",
+        "73af9b03a267143b",
+        "b0b9429538c6c6e5",
+        "52ef2ce424a74742"
+      ],
+      "maleFrames": [
+        "Flutter_Kicks_male_v2_0",
+        "Flutter_Kicks_male_v2_1",
+        "Flutter_Kicks_male_v2_2",
+        "Flutter_Kicks_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Front_Barbell_Squat",
+      "format": "png",
+      "femaleFrameDigests": [
+        "795f77296c6f6b20",
+        "825e7372b8ab772a",
+        "d1144892a8697c3d",
+        "fca7844121c5c451"
+      ],
+      "femaleFrames": [
+        "Front_Barbell_Squat_female_v2_0",
+        "Front_Barbell_Squat_female_v2_1",
+        "Front_Barbell_Squat_female_v2_2",
+        "Front_Barbell_Squat_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "5aa276ca16c1ef3e",
+        "0be25429ddd0d0df",
+        "3f64cdf9bd4cd05b",
+        "6b7d6c8e03951cf4"
+      ],
+      "maleFrames": [
+        "Front_Barbell_Squat_male_v2_0",
+        "Front_Barbell_Squat_male_v2_1",
+        "Front_Barbell_Squat_male_v2_2",
+        "Front_Barbell_Squat_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Front_Dumbbell_Raise",
+      "format": "png",
+      "femaleFrameDigests": [
+        "892fda40a4d8dc32",
+        "6d81f69755327f33",
+        "b209a1c7c5573c77",
+        "1f1675c1179a76f7"
+      ],
+      "femaleFrames": [
+        "Front_Dumbbell_Raise_female_v2_0",
+        "Front_Dumbbell_Raise_female_v2_1",
+        "Front_Dumbbell_Raise_female_v2_2",
+        "Front_Dumbbell_Raise_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "54e4f6794be1ad87",
+        "556fc6974064b621",
+        "b1066c65f6668f3a",
+        "cc6f5d7bb20f0eb6"
+      ],
+      "maleFrames": [
+        "Front_Dumbbell_Raise_male_v2_0",
+        "Front_Dumbbell_Raise_male_v2_1",
+        "Front_Dumbbell_Raise_male_v2_2",
+        "Front_Dumbbell_Raise_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Hack_Squat",
+      "format": "png",
+      "femaleFrameDigests": [
+        "4cf9664b5b908cbd",
+        "f9be43df7305c996",
+        "0b1969c53b41dc76",
+        "b5c7ea62ecaf3c9c"
+      ],
+      "femaleFrames": [
+        "Hack_Squat_female_v2_0",
+        "Hack_Squat_female_v2_1",
+        "Hack_Squat_female_v2_2",
+        "Hack_Squat_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "1d1f7dab122be8f8",
+        "e70f40a4cb160de5",
+        "4e19caf288d5cbff",
+        "a12614c175d572f7"
+      ],
+      "maleFrames": [
+        "Hack_Squat_male_v2_0",
+        "Hack_Squat_male_v2_1",
+        "Hack_Squat_male_v2_2",
+        "Hack_Squat_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Hamstring_Stretch",
+      "format": "png",
+      "femaleFrameDigests": [
+        "4b06b7637478cc4a",
+        "182f2d8901ebd0aa",
+        "cdec3dc9a8e93df3",
+        "451bc1f7985ca6c4"
+      ],
+      "femaleFrames": [
+        "Hamstring_Stretch_female_v2_0",
+        "Hamstring_Stretch_female_v2_1",
+        "Hamstring_Stretch_female_v2_2",
+        "Hamstring_Stretch_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "136a9916af5ee755",
+        "c52a9a7d62b6e2c8",
+        "56824c0344bcb99a",
+        "1f54876e8063f1cc"
+      ],
+      "maleFrames": [
+        "Hamstring_Stretch_male_v2_0",
+        "Hamstring_Stretch_male_v2_1",
+        "Hamstring_Stretch_male_v2_2",
+        "Hamstring_Stretch_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Hanging_Leg_Raise",
+      "format": "png",
+      "femaleFrameDigests": [
+        "537a69563b1028cd",
+        "a4adc29649ad1a33",
+        "8bc02ab58f955db9",
+        "a5cb8ca8153998a0"
+      ],
+      "femaleFrames": [
+        "Hanging_Leg_Raise_female_v2_0",
+        "Hanging_Leg_Raise_female_v2_1",
+        "Hanging_Leg_Raise_female_v2_2",
+        "Hanging_Leg_Raise_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "66a2905de18797b4",
+        "c40e4063dd01b901",
+        "f07e2d277e0e565a",
+        "61c8d36366f85275"
+      ],
+      "maleFrames": [
+        "Hanging_Leg_Raise_male_v2_0",
+        "Hanging_Leg_Raise_male_v2_1",
+        "Hanging_Leg_Raise_male_v2_2",
+        "Hanging_Leg_Raise_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Hyperextensions_Back_Extensions",
+      "format": "png",
+      "femaleFrameDigests": [
+        "8646df7cd7e41513",
+        "047f86fbde6483c6",
+        "64de82c4face0ab8",
+        "066680c961eadd0d"
+      ],
+      "femaleFrames": [
+        "Hyperextensions_Back_Extensions_female_v2_0",
+        "Hyperextensions_Back_Extensions_female_v2_1",
+        "Hyperextensions_Back_Extensions_female_v2_2",
+        "Hyperextensions_Back_Extensions_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "7d97c4c9bf1b01d7",
+        "e70d502126c880a1",
+        "7bf0fcd71197e03c",
+        "363064598e00265b"
+      ],
+      "maleFrames": [
+        "Hyperextensions_Back_Extensions_male_v2_0",
+        "Hyperextensions_Back_Extensions_male_v2_1",
+        "Hyperextensions_Back_Extensions_male_v2_2",
+        "Hyperextensions_Back_Extensions_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Incline_Dumbbell_Curl",
+      "format": "png",
+      "femaleFrameDigests": [
+        "9a3511f890421a22",
+        "bd77c96345eae7ca",
+        "5915f544c7417b92",
+        "aa85c03923e473c4"
+      ],
+      "femaleFrames": [
+        "Incline_Dumbbell_Curl_female_v2_0",
+        "Incline_Dumbbell_Curl_female_v2_1",
+        "Incline_Dumbbell_Curl_female_v2_2",
+        "Incline_Dumbbell_Curl_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "be35804ed5fc212d",
+        "181a673f900e3326",
+        "d13cb286feaf6c52",
+        "ccc560f696f47433"
+      ],
+      "maleFrames": [
+        "Incline_Dumbbell_Curl_male_v2_0",
+        "Incline_Dumbbell_Curl_male_v2_1",
+        "Incline_Dumbbell_Curl_male_v2_2",
+        "Incline_Dumbbell_Curl_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Incline_Dumbbell_Flyes",
+      "format": "png",
+      "femaleFrameDigests": [
+        "dc0a825ec723923a",
+        "a7304dd8230b4eaf",
+        "6a3a0be0172b14d8",
+        "429aa0237b7f015c"
+      ],
+      "femaleFrames": [
+        "Incline_Dumbbell_Flyes_female_v2_0",
+        "Incline_Dumbbell_Flyes_female_v2_1",
+        "Incline_Dumbbell_Flyes_female_v2_2",
+        "Incline_Dumbbell_Flyes_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "2d6ac4d7f280c763",
+        "a2e96e435f971082",
+        "0661e109fee3cde6",
+        "3394e70a651cc3bc"
+      ],
+      "maleFrames": [
+        "Incline_Dumbbell_Flyes_male_v2_0",
+        "Incline_Dumbbell_Flyes_male_v2_1",
+        "Incline_Dumbbell_Flyes_male_v2_2",
+        "Incline_Dumbbell_Flyes_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Incline_Dumbbell_Press",
+      "format": "png",
+      "femaleFrameDigests": [
+        "d17d591099a08191",
+        "846779a581958f09",
+        "645ea6bb8566d078",
+        "a2be60723fdb1733"
+      ],
+      "femaleFrames": [
+        "Incline_Dumbbell_Press_female_v2_0",
+        "Incline_Dumbbell_Press_female_v2_1",
+        "Incline_Dumbbell_Press_female_v2_2",
+        "Incline_Dumbbell_Press_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "aa2165a0aeb679b1",
+        "f321555ef4d69e5d",
+        "9becedf2ff91a00b",
+        "b66f0cb4725ceff0"
+      ],
+      "maleFrames": [
+        "Incline_Dumbbell_Press_male_v2_0",
+        "Incline_Dumbbell_Press_male_v2_1",
+        "Incline_Dumbbell_Press_male_v2_2",
+        "Incline_Dumbbell_Press_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Incline_Push-Up",
+      "format": "png",
+      "femaleFrameDigests": [
+        "fa1a7826239f9d49",
+        "4452bf7fd6dd8f77",
+        "08ed6ff805744957",
+        "5ddf12ac88754549"
+      ],
+      "femaleFrames": [
+        "Incline_Push-Up_female_v2_0",
+        "Incline_Push-Up_female_v2_1",
+        "Incline_Push-Up_female_v2_2",
+        "Incline_Push-Up_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "d865bb78c48b6552",
+        "8329824d0bb9e82d",
+        "d826b5f53c40551b",
+        "1956b968a2c9150b"
+      ],
+      "maleFrames": [
+        "Incline_Push-Up_male_v2_0",
+        "Incline_Push-Up_male_v2_1",
+        "Incline_Push-Up_male_v2_2",
+        "Incline_Push-Up_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Intermediate_Hip_Flexor_and_Quad_Stretch",
+      "format": "png",
+      "femaleFrameDigests": [
+        "bca992ae7f835e52",
+        "d3f4d54e155a46ab",
+        "b61a000d32db3b92",
+        "63e54adca929bf0d"
+      ],
+      "femaleFrames": [
+        "Intermediate_Hip_Flexor_and_Quad_Stretch_female_v2_0",
+        "Intermediate_Hip_Flexor_and_Quad_Stretch_female_v2_1",
+        "Intermediate_Hip_Flexor_and_Quad_Stretch_female_v2_2",
+        "Intermediate_Hip_Flexor_and_Quad_Stretch_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "560e7f33f251751a",
+        "79f7e1394b6a8840",
+        "f53cf857255bf93b",
+        "42260f5f0f0e494e"
+      ],
+      "maleFrames": [
+        "Intermediate_Hip_Flexor_and_Quad_Stretch_male_v2_0",
+        "Intermediate_Hip_Flexor_and_Quad_Stretch_male_v2_1",
+        "Intermediate_Hip_Flexor_and_Quad_Stretch_male_v2_2",
+        "Intermediate_Hip_Flexor_and_Quad_Stretch_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Inverted_Row",
+      "format": "png",
+      "femaleFrameDigests": [
+        "13449747e28049f9",
+        "8f71312da8c6a86b",
+        "690d2110623a166e",
+        "8d88ea45f7aceeb2"
+      ],
+      "femaleFrames": [
+        "Inverted_Row_female_v2_0",
+        "Inverted_Row_female_v2_1",
+        "Inverted_Row_female_v2_2",
+        "Inverted_Row_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "77cfbafe088b0b11",
+        "f9bbde021d73dd01",
+        "1d2a68c2207a2cb4",
+        "8be49be68cd45098"
+      ],
+      "maleFrames": [
+        "Inverted_Row_male_v2_0",
+        "Inverted_Row_male_v2_1",
+        "Inverted_Row_male_v2_2",
+        "Inverted_Row_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Inverted_Row_with_Straps",
+      "format": "png",
+      "femaleFrameDigests": [
+        "8e4d137ee0759c4a",
+        "97cb373937335a51",
+        "f13e3c3ee2fc1b2a",
+        "92c0e43e00364dc8"
+      ],
+      "femaleFrames": [
+        "Inverted_Row_with_Straps_female_v2_0",
+        "Inverted_Row_with_Straps_female_v2_1",
+        "Inverted_Row_with_Straps_female_v2_2",
+        "Inverted_Row_with_Straps_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "86a725189dcb3bcd",
+        "aa53f1a1a7016e62",
+        "cca55d1523cac784",
+        "4b31a9228956ce5b"
+      ],
+      "maleFrames": [
+        "Inverted_Row_with_Straps_male_v2_0",
+        "Inverted_Row_with_Straps_male_v2_1",
+        "Inverted_Row_with_Straps_male_v2_2",
+        "Inverted_Row_with_Straps_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Jackknife_Sit-Up",
+      "format": "png",
+      "femaleFrameDigests": [
+        "75957fee61e9b81b",
+        "9ad2c62d6533a2ad",
+        "ffb90158b678c692",
+        "23b4f4e8f9709884"
+      ],
+      "femaleFrames": [
+        "Jackknife_Sit-Up_female_v2_0",
+        "Jackknife_Sit-Up_female_v2_1",
+        "Jackknife_Sit-Up_female_v2_2",
+        "Jackknife_Sit-Up_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "feb33adb13d3c637",
+        "e239b4375e22cf81",
+        "6e6ee4f488b63080",
+        "9e397bb0c8be79d5"
+      ],
+      "maleFrames": [
+        "Jackknife_Sit-Up_male_v2_0",
+        "Jackknife_Sit-Up_male_v2_1",
+        "Jackknife_Sit-Up_male_v2_2",
+        "Jackknife_Sit-Up_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Leg_Extensions",
+      "format": "png",
+      "femaleFrameDigests": [
+        "73dc1811237074ec",
+        "25ca5875dfa05fd6",
+        "c5574338c31096b7",
+        "17994b1757e601f4"
+      ],
+      "femaleFrames": [
+        "Leg_Extensions_female_v2_0",
+        "Leg_Extensions_female_v2_1",
+        "Leg_Extensions_female_v2_2",
+        "Leg_Extensions_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "1d9e6d8dfc9e32d9",
+        "425fd30a3c678160",
+        "95bc26cffd1e9ff6",
+        "070d9504bee0bb86"
+      ],
+      "maleFrames": [
+        "Leg_Extensions_male_v2_0",
+        "Leg_Extensions_male_v2_1",
+        "Leg_Extensions_male_v2_2",
+        "Leg_Extensions_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Leverage_High_Row",
+      "format": "png",
+      "femaleFrameDigests": [
+        "4a8210678b23ccd7",
+        "239c3353864d4376",
+        "0fbaf4bd8d87b7c7",
+        "eb4ea050cfe2b26b"
+      ],
+      "femaleFrames": [
+        "Leverage_High_Row_female_v2_0",
+        "Leverage_High_Row_female_v2_1",
+        "Leverage_High_Row_female_v2_2",
+        "Leverage_High_Row_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "cf6a9e7dd4ae5ff9",
+        "0b450f1dfa3dc794",
+        "f1a7754263711312",
+        "3780cfa3a8e61400"
+      ],
+      "maleFrames": [
+        "Leverage_High_Row_male_v2_0",
+        "Leverage_High_Row_male_v2_1",
+        "Leverage_High_Row_male_v2_2",
+        "Leverage_High_Row_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Leverage_Incline_Chest_Press",
+      "format": "png",
+      "femaleFrameDigests": [
+        "71e774079d6e1521",
+        "37da21fdb21c5c08",
+        "0964741cb2d7abe9",
+        "a9e31d658e007534"
+      ],
+      "femaleFrames": [
+        "Leverage_Incline_Chest_Press_female_v2_0",
+        "Leverage_Incline_Chest_Press_female_v2_1",
+        "Leverage_Incline_Chest_Press_female_v2_2",
+        "Leverage_Incline_Chest_Press_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "bd662bed5460a17f",
+        "b33c2d962c8a7a7d",
+        "52009beb4f672860",
+        "16fafc3dc4a755f6"
+      ],
+      "maleFrames": [
+        "Leverage_Incline_Chest_Press_male_v2_0",
+        "Leverage_Incline_Chest_Press_male_v2_1",
+        "Leverage_Incline_Chest_Press_male_v2_2",
+        "Leverage_Incline_Chest_Press_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Leverage_Shrug",
+      "format": "png",
+      "femaleFrameDigests": [
+        "ec69e977b157186a",
+        "a2933a9fa7491259",
+        "bda8df591ab6ac98",
+        "d2b12e56975c1b34"
+      ],
+      "femaleFrames": [
+        "Leverage_Shrug_female_v2_0",
+        "Leverage_Shrug_female_v2_1",
+        "Leverage_Shrug_female_v2_2",
+        "Leverage_Shrug_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "6d883ba214b157d4",
+        "9f9c30fb98aff630",
+        "d4c09ce23f6c1a3c",
+        "5075749b39d98ac2"
+      ],
+      "maleFrames": [
+        "Leverage_Shrug_male_v2_0",
+        "Leverage_Shrug_male_v2_1",
+        "Leverage_Shrug_male_v2_2",
+        "Leverage_Shrug_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Lying_Dumbbell_Tricep_Extension",
+      "format": "png",
+      "femaleFrameDigests": [
+        "bcf52a31a00f3e90",
+        "80341dd53b4af726",
+        "64ea3c7de5e1f52e",
+        "01dbee87b44795ee"
+      ],
+      "femaleFrames": [
+        "Lying_Dumbbell_Tricep_Extension_female_v2_0",
+        "Lying_Dumbbell_Tricep_Extension_female_v2_1",
+        "Lying_Dumbbell_Tricep_Extension_female_v2_2",
+        "Lying_Dumbbell_Tricep_Extension_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "3a8505da31927e21",
+        "53826ff2e0a2253f",
+        "9fbdca058393e3d6",
+        "6d890522e31af017"
+      ],
+      "maleFrames": [
+        "Lying_Dumbbell_Tricep_Extension_male_v2_0",
+        "Lying_Dumbbell_Tricep_Extension_male_v2_1",
+        "Lying_Dumbbell_Tricep_Extension_male_v2_2",
+        "Lying_Dumbbell_Tricep_Extension_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Lying_Leg_Curls",
+      "format": "png",
+      "femaleFrameDigests": [
+        "9ad535204c245c3f",
+        "0a27acb27ef0ce38",
+        "a5b6e925a6a83a9c",
+        "50e8659041837547"
+      ],
+      "femaleFrames": [
+        "Lying_Leg_Curls_female_v2_0",
+        "Lying_Leg_Curls_female_v2_1",
+        "Lying_Leg_Curls_female_v2_2",
+        "Lying_Leg_Curls_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "443c96084ad81f67",
+        "dff9d3fe4e9f8f3f",
+        "068800a77871a23b",
+        "d1fc6ce6a569fda6"
+      ],
+      "maleFrames": [
+        "Lying_Leg_Curls_male_v2_0",
+        "Lying_Leg_Curls_male_v2_1",
+        "Lying_Leg_Curls_male_v2_2",
+        "Lying_Leg_Curls_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Lying_Supine_Dumbbell_Curl",
+      "format": "png",
+      "femaleFrameDigests": [
+        "876af48442bc22f2",
+        "6f724c9bda61026c",
+        "a52182803f364e40",
+        "139047eb10bdcffc"
+      ],
+      "femaleFrames": [
+        "Lying_Supine_Dumbbell_Curl_female_v2_0",
+        "Lying_Supine_Dumbbell_Curl_female_v2_1",
+        "Lying_Supine_Dumbbell_Curl_female_v2_2",
+        "Lying_Supine_Dumbbell_Curl_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "a7035b4322f22b1a",
+        "413bac9fb3642ee3",
+        "f5ccff07f6795751",
+        "9505e37a2fb30279"
+      ],
+      "maleFrames": [
+        "Lying_Supine_Dumbbell_Curl_male_v2_0",
+        "Lying_Supine_Dumbbell_Curl_male_v2_1",
+        "Lying_Supine_Dumbbell_Curl_male_v2_2",
+        "Lying_Supine_Dumbbell_Curl_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Machine_Bench_Press",
+      "format": "png",
+      "femaleFrameDigests": [
+        "528b2d31bdaebdd5",
+        "99458c77142a7bdd",
+        "105a9fa2eef4d6ec",
+        "a75ca5f69c58ae90"
+      ],
+      "femaleFrames": [
+        "Machine_Bench_Press_female_v2_0",
+        "Machine_Bench_Press_female_v2_1",
+        "Machine_Bench_Press_female_v2_2",
+        "Machine_Bench_Press_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "014ded34dc400e8e",
+        "79b405401a32b971",
+        "8103dc6969ce5688",
+        "3c08c7a1638e44eb"
+      ],
+      "maleFrames": [
+        "Machine_Bench_Press_male_v2_0",
+        "Machine_Bench_Press_male_v2_1",
+        "Machine_Bench_Press_male_v2_2",
+        "Machine_Bench_Press_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Machine_Preacher_Curls",
+      "format": "png",
+      "femaleFrameDigests": [
+        "d865186610cb5f3c",
+        "0ec58d7584b36b79",
+        "1c5b573c35ddd649",
+        "720bcbb2f7135890"
+      ],
+      "femaleFrames": [
+        "Machine_Preacher_Curls_female_v2_0",
+        "Machine_Preacher_Curls_female_v2_1",
+        "Machine_Preacher_Curls_female_v2_2",
+        "Machine_Preacher_Curls_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "9f8b00d5cf29a902",
+        "ae5639cdb02f057a",
+        "6ea757173a4aa31b",
+        "409528cebd129391"
+      ],
+      "maleFrames": [
+        "Machine_Preacher_Curls_male_v2_0",
+        "Machine_Preacher_Curls_male_v2_1",
+        "Machine_Preacher_Curls_male_v2_2",
+        "Machine_Preacher_Curls_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Machine_Triceps_Extension",
+      "format": "png",
+      "femaleFrameDigests": [
+        "7841eb2890bec462",
+        "9ec8b9bba7b495b1",
+        "e51c5f84a592f396",
+        "634becb0ba37362f"
+      ],
+      "femaleFrames": [
+        "Machine_Triceps_Extension_female_v2_0",
+        "Machine_Triceps_Extension_female_v2_1",
+        "Machine_Triceps_Extension_female_v2_2",
+        "Machine_Triceps_Extension_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "4d96cacb5ddc8900",
+        "cf91af8725132b8a",
+        "9df59eea0218ea04",
+        "03780170129332f3"
+      ],
+      "maleFrames": [
+        "Machine_Triceps_Extension_male_v2_0",
+        "Machine_Triceps_Extension_male_v2_1",
+        "Machine_Triceps_Extension_male_v2_2",
+        "Machine_Triceps_Extension_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Middle_Back_Stretch",
+      "format": "png",
+      "femaleFrameDigests": [
+        "54a9d6e272d5f148",
+        "9300404464d5e39b",
+        "567d03136d76ec64",
+        "682010321a5e4033"
+      ],
+      "femaleFrames": [
+        "Middle_Back_Stretch_female_v2_0",
+        "Middle_Back_Stretch_female_v2_1",
+        "Middle_Back_Stretch_female_v2_2",
+        "Middle_Back_Stretch_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "9fa71dd0f1551a80",
+        "7ca17279a62ca8d2",
+        "d5661532ce3d3b39",
+        "9ea003f27fa743ef"
+      ],
+      "maleFrames": [
+        "Middle_Back_Stretch_male_v2_0",
+        "Middle_Back_Stretch_male_v2_1",
+        "Middle_Back_Stretch_male_v2_2",
+        "Middle_Back_Stretch_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Narrow_Stance_Leg_Press",
+      "format": "png",
+      "femaleFrameDigests": [
+        "ea326d51a3b3ba50",
+        "8ea83a9a2849c1c1",
+        "f64a5a1ad232e2c9",
+        "b0da3750370efaa9"
+      ],
+      "femaleFrames": [
+        "Narrow_Stance_Leg_Press_female_v2_0",
+        "Narrow_Stance_Leg_Press_female_v2_1",
+        "Narrow_Stance_Leg_Press_female_v2_2",
+        "Narrow_Stance_Leg_Press_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "dfd195a318e845a8",
+        "7d5834f26ae94fe2",
+        "b60b2b50ca8b98f3",
+        "a0356419dcdd6834"
+      ],
+      "maleFrames": [
+        "Narrow_Stance_Leg_Press_male_v2_0",
+        "Narrow_Stance_Leg_Press_male_v2_1",
+        "Narrow_Stance_Leg_Press_male_v2_2",
+        "Narrow_Stance_Leg_Press_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Otis-Up",
+      "format": "png",
+      "femaleFrameDigests": [
+        "3eece21e5d4aa6b3",
+        "82b2c331d13ba1cd",
+        "654e28678fb9b533",
+        "7c41cc8b1812fa54"
+      ],
+      "femaleFrames": [
+        "Otis-Up_female_v2_0",
+        "Otis-Up_female_v2_1",
+        "Otis-Up_female_v2_2",
+        "Otis-Up_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "ff416396322a76a6",
+        "a18d174127ab93a0",
+        "41755a305af688a3",
+        "e1a5fd0d8974f432"
+      ],
+      "maleFrames": [
+        "Otis-Up_male_v2_0",
+        "Otis-Up_male_v2_1",
+        "Otis-Up_male_v2_2",
+        "Otis-Up_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Parallel_Bar_Dip",
+      "format": "png",
+      "femaleFrameDigests": [
+        "7a5dc1b4d049336f",
+        "82ee367e2e142ecd",
+        "dfb6e27f53c9ed43",
+        "092cf1ba44e08431"
+      ],
+      "femaleFrames": [
+        "Parallel_Bar_Dip_female_v2_0",
+        "Parallel_Bar_Dip_female_v2_1",
+        "Parallel_Bar_Dip_female_v2_2",
+        "Parallel_Bar_Dip_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "6cabe1c4f3e52499",
+        "b4a286098bb86acf",
+        "d6de4ff7ecab46a1",
+        "f7ff2f044f834a49"
+      ],
+      "maleFrames": [
+        "Parallel_Bar_Dip_male_v2_0",
+        "Parallel_Bar_Dip_male_v2_1",
+        "Parallel_Bar_Dip_male_v2_2",
+        "Parallel_Bar_Dip_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Peroneals_Stretch",
+      "format": "png",
+      "femaleFrameDigests": [
+        "f62457c88d762dba",
+        "10e972a2814d2cc3",
+        "bf4b25ee0241b1c1",
+        "a581249346e7c053"
+      ],
+      "femaleFrames": [
+        "Peroneals_Stretch_female_v2_0",
+        "Peroneals_Stretch_female_v2_1",
+        "Peroneals_Stretch_female_v2_2",
+        "Peroneals_Stretch_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "5edb1c5035235623",
+        "aee43f16334ad2a6",
+        "fcac97989298fc5a",
+        "b22058a9795459b3"
+      ],
+      "maleFrames": [
+        "Peroneals_Stretch_male_v2_0",
+        "Peroneals_Stretch_male_v2_1",
+        "Peroneals_Stretch_male_v2_2",
+        "Peroneals_Stretch_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Plank",
+      "format": "png",
+      "femaleFrameDigests": [
+        "cd1f8a972216cce2",
+        "d26dd01d5dcc7885",
+        "c1029bfe62bd7b23",
+        "4a5138c30cf251f8"
+      ],
+      "femaleFrames": [
+        "Plank_female_v2_0",
+        "Plank_female_v2_1",
+        "Plank_female_v2_2",
+        "Plank_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "df970cbc8c60d339",
+        "d7d6042bf78fa7ce",
+        "039cde8f27998826",
+        "cd126b96a45e8141"
+      ],
+      "maleFrames": [
+        "Plank_male_v2_0",
+        "Plank_male_v2_1",
+        "Plank_male_v2_2",
+        "Plank_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Pullups",
+      "format": "png",
+      "femaleFrameDigests": [
+        "2d2b15534ac60d6e",
+        "120d8e073e7cc64f",
+        "644a7966e0e7e6b9",
+        "b6808afa9a674a26"
+      ],
+      "femaleFrames": [
+        "Pullups_female_v2_0",
+        "Pullups_female_v2_1",
+        "Pullups_female_v2_2",
+        "Pullups_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "70fe4c80a5a0d017",
+        "3d65ac420cd63301",
+        "5f226393ed390c88",
+        "1c2cd71a26e1b5f5"
+      ],
+      "maleFrames": [
+        "Pullups_male_v2_0",
+        "Pullups_male_v2_1",
+        "Pullups_male_v2_2",
+        "Pullups_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Pushups",
+      "format": "png",
+      "femaleFrameDigests": [
+        "ab3cad91e7ba6bd7",
+        "4b9e4980fa49ab42",
+        "cea89103f8773c6e",
+        "56d415fc01b999d2"
+      ],
+      "femaleFrames": [
+        "Pushups_female_v2_0",
+        "Pushups_female_v2_1",
+        "Pushups_female_v2_2",
+        "Pushups_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "8cf8701188054175",
+        "eb9cb97170dcdaf8",
+        "06f5711fe8530b5b",
+        "c51d5f17bddeb4c6"
+      ],
+      "maleFrames": [
+        "Pushups_male_v2_0",
+        "Pushups_male_v2_1",
+        "Pushups_male_v2_2",
+        "Pushups_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Quad_Stretch",
+      "format": "png",
+      "femaleFrameDigests": [
+        "0afe0b34a0f121bd",
+        "b54aaef997c223de",
+        "2d0713ea83faf190",
+        "6da7ce6e228dc5dc"
+      ],
+      "femaleFrames": [
+        "Quad_Stretch_female_v2_0",
+        "Quad_Stretch_female_v2_1",
+        "Quad_Stretch_female_v2_2",
+        "Quad_Stretch_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "4c56b5de7c08c777",
+        "74b54930de07e186",
+        "b02fa960b702a665",
+        "f2788e3914d22220"
+      ],
+      "maleFrames": [
+        "Quad_Stretch_male_v2_0",
+        "Quad_Stretch_male_v2_1",
+        "Quad_Stretch_male_v2_2",
+        "Quad_Stretch_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Recumbent_Bike",
+      "format": "png",
+      "femaleFrameDigests": [
+        "4842b045b37c4243",
+        "55a74fc3f6145358",
+        "411b77e8aef2a578",
+        "92c9db7868a4e531"
+      ],
+      "femaleFrames": [
+        "Recumbent_Bike_female_v2_0",
+        "Recumbent_Bike_female_v2_1",
+        "Recumbent_Bike_female_v2_2",
+        "Recumbent_Bike_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "c0a756ccca0c9a8f",
+        "7a8f7b8a5d3efd5c",
+        "744549abf71e3c1c",
+        "2a46d69131268321"
+      ],
+      "maleFrames": [
+        "Recumbent_Bike_male_v2_0",
+        "Recumbent_Bike_male_v2_1",
+        "Recumbent_Bike_male_v2_2",
+        "Recumbent_Bike_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Reverse_Crunch",
+      "format": "png",
+      "femaleFrameDigests": [
+        "528e577d06afcab2",
+        "f09d30f3d38c31b7",
+        "ba7db93b6f9f7927",
+        "5f4b0311ca1095bf"
+      ],
+      "femaleFrames": [
+        "Reverse_Crunch_female_v2_0",
+        "Reverse_Crunch_female_v2_1",
+        "Reverse_Crunch_female_v2_2",
+        "Reverse_Crunch_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "5e7b7deb509f7962",
+        "386894441514588c",
+        "8635461509e3fdab",
+        "95c1571d678517c8"
+      ],
+      "maleFrames": [
+        "Reverse_Crunch_male_v2_0",
+        "Reverse_Crunch_male_v2_1",
+        "Reverse_Crunch_male_v2_2",
+        "Reverse_Crunch_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Rope_Jumping",
+      "format": "png",
+      "femaleFrameDigests": [
+        "2ad14b543aac1499",
+        "cdf17662499cefd8",
+        "2a8cf3c11c8e2077",
+        "d869a2c3ea26c50d"
+      ],
+      "femaleFrames": [
+        "Rope_Jumping_female_v2_0",
+        "Rope_Jumping_female_v2_1",
+        "Rope_Jumping_female_v2_2",
+        "Rope_Jumping_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "d4994cfa3ad17fbb",
+        "48268c8041ebd100",
+        "586921eb4d7f40e7",
+        "356f0b2d647ddfc2"
+      ],
+      "maleFrames": [
+        "Rope_Jumping_male_v2_0",
+        "Rope_Jumping_male_v2_1",
+        "Rope_Jumping_male_v2_2",
+        "Rope_Jumping_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Runners_Stretch",
+      "format": "png",
+      "femaleFrameDigests": [
+        "b080a8c4dd2898cd",
+        "43ae520e5b86da4b",
+        "c64cde1128497182",
+        "20e1aff6b4d60960"
+      ],
+      "femaleFrames": [
+        "Runners_Stretch_female_v2_0",
+        "Runners_Stretch_female_v2_1",
+        "Runners_Stretch_female_v2_2",
+        "Runners_Stretch_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "632d76274a383bf9",
+        "9caf9c811b2f6f43",
+        "1be6bd5de07dab76",
+        "d3bad41a0d468c40"
+      ],
+      "maleFrames": [
+        "Runners_Stretch_male_v2_0",
+        "Runners_Stretch_male_v2_1",
+        "Runners_Stretch_male_v2_2",
+        "Runners_Stretch_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Running_Treadmill",
+      "format": "png",
+      "femaleFrameDigests": [
+        "5c44cb0e6a230bb7",
+        "0e3b6f39efe15204",
+        "caae9e356ad81b98",
+        "793ab39ad70643c4"
+      ],
+      "femaleFrames": [
+        "Running_Treadmill_female_v2_0",
+        "Running_Treadmill_female_v2_1",
+        "Running_Treadmill_female_v2_2",
+        "Running_Treadmill_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "66a8c26012598864",
+        "798f716294ca12ff",
+        "a91412be42b66d06",
+        "ab98feb25fd45e44"
+      ],
+      "maleFrames": [
+        "Running_Treadmill_male_v2_0",
+        "Running_Treadmill_male_v2_1",
+        "Running_Treadmill_male_v2_2",
+        "Running_Treadmill_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Russian_Twist",
+      "format": "png",
+      "femaleFrameDigests": [
+        "7ef84fb45f663c2f",
+        "7e3872c4efc83b7d",
+        "a6d09ef337c9e424",
+        "e384b9154ef33da6"
+      ],
+      "femaleFrames": [
+        "Russian_Twist_female_v2_0",
+        "Russian_Twist_female_v2_1",
+        "Russian_Twist_female_v2_2",
+        "Russian_Twist_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "96f4299dfd4ac76b",
+        "9b6e186dee5fc6b2",
+        "568f1a499e397640",
+        "b23d8ff63fde2ff6"
+      ],
+      "maleFrames": [
+        "Russian_Twist_male_v2_0",
+        "Russian_Twist_male_v2_1",
+        "Russian_Twist_male_v2_2",
+        "Russian_Twist_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Seated_Cable_Rows",
+      "format": "png",
+      "femaleFrameDigests": [
+        "46144f146d3083ec",
+        "4cdb0dd4883ab6d4",
+        "d3c8fcd183d97041",
+        "1e0a691200055ec6"
+      ],
+      "femaleFrames": [
+        "Seated_Cable_Rows_female_v2_0",
+        "Seated_Cable_Rows_female_v2_1",
+        "Seated_Cable_Rows_female_v2_2",
+        "Seated_Cable_Rows_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "e7f7dcda716c8755",
+        "17763093bc03e554",
+        "d2b7801c9368f6e8",
+        "e5e286e105c94351"
+      ],
+      "maleFrames": [
+        "Seated_Cable_Rows_male_v2_0",
+        "Seated_Cable_Rows_male_v2_1",
+        "Seated_Cable_Rows_male_v2_2",
+        "Seated_Cable_Rows_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Seated_Calf_Raise",
+      "format": "png",
+      "femaleFrameDigests": [
+        "a1c45fe8c01b475d",
+        "77ea5053345392ad",
+        "d02e009cc3ac7447",
+        "5263ba8b7098d43b"
+      ],
+      "femaleFrames": [
+        "Seated_Calf_Raise_female_v2_0",
+        "Seated_Calf_Raise_female_v2_1",
+        "Seated_Calf_Raise_female_v2_2",
+        "Seated_Calf_Raise_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "2831ff584bb90205",
+        "f89426393aed5773",
+        "c270fdb5f7289e8e",
+        "2a4b8b489cc3431d"
+      ],
+      "maleFrames": [
+        "Seated_Calf_Raise_male_v2_0",
+        "Seated_Calf_Raise_male_v2_1",
+        "Seated_Calf_Raise_male_v2_2",
+        "Seated_Calf_Raise_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Seated_Calf_Stretch",
+      "format": "png",
+      "femaleFrameDigests": [
+        "fc81fd8dad85b4da",
+        "f20ac0457d74ae1a",
+        "f849ad25ca4948cc",
+        "4ab023efde8d9da3"
+      ],
+      "femaleFrames": [
+        "Seated_Calf_Stretch_female_v2_0",
+        "Seated_Calf_Stretch_female_v2_1",
+        "Seated_Calf_Stretch_female_v2_2",
+        "Seated_Calf_Stretch_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "55924fca4ad49971",
+        "262074cf6844f043",
+        "72a90bfcebec3494",
+        "97850bfd3f4bc7bc"
+      ],
+      "maleFrames": [
+        "Seated_Calf_Stretch_male_v2_0",
+        "Seated_Calf_Stretch_male_v2_1",
+        "Seated_Calf_Stretch_male_v2_2",
+        "Seated_Calf_Stretch_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Seated_Leg_Curl",
+      "format": "png",
+      "femaleFrameDigests": [
+        "1243d366ebb97e7a",
+        "dd54cac12063dc9f",
+        "a79531485732beeb",
+        "1627dc5eb3d4dc3c"
+      ],
+      "femaleFrames": [
+        "Seated_Leg_Curl_female_v2_0",
+        "Seated_Leg_Curl_female_v2_1",
+        "Seated_Leg_Curl_female_v2_2",
+        "Seated_Leg_Curl_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "f7ad329bd95bcbc5",
+        "f36c73ebfcfa0ee3",
+        "af1eaa7585181094",
+        "ff4f24a8d10998c8"
+      ],
+      "maleFrames": [
+        "Seated_Leg_Curl_male_v2_0",
+        "Seated_Leg_Curl_male_v2_1",
+        "Seated_Leg_Curl_male_v2_2",
+        "Seated_Leg_Curl_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Side_Bridge",
+      "format": "png",
+      "femaleFrameDigests": [
+        "d7ab175b951f1da1",
+        "52dc8e5419bdf2f7",
+        "f60dcbd55273d0de",
+        "5a99aef950ae54a3"
+      ],
+      "femaleFrames": [
+        "Side_Bridge_female_v2_0",
+        "Side_Bridge_female_v2_1",
+        "Side_Bridge_female_v2_2",
+        "Side_Bridge_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "8b071b914a67b2cd",
+        "206a4edc0412d416",
+        "0591992352255a5f",
+        "65efb4dc2c3c8303"
+      ],
+      "maleFrames": [
+        "Side_Bridge_male_v2_0",
+        "Side_Bridge_male_v2_1",
+        "Side_Bridge_male_v2_2",
+        "Side_Bridge_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Side_Neck_Stretch",
+      "format": "png",
+      "femaleFrameDigests": [
+        "87aa2ebc75a5fed7",
+        "f15a16cfd65e79f6",
+        "9b59f6182870ff58",
+        "d0734061a0537148"
+      ],
+      "femaleFrames": [
+        "Side_Neck_Stretch_female_v2_0",
+        "Side_Neck_Stretch_female_v2_1",
+        "Side_Neck_Stretch_female_v2_2",
+        "Side_Neck_Stretch_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "8317ba92e67d9054",
+        "87ee2e9f6172d18c",
+        "48aa391c78b5c8ef",
+        "551bfdfc12636cc3"
+      ],
+      "maleFrames": [
+        "Side_Neck_Stretch_male_v2_0",
+        "Side_Neck_Stretch_male_v2_1",
+        "Side_Neck_Stretch_male_v2_2",
+        "Side_Neck_Stretch_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Sit-Up",
+      "format": "png",
+      "femaleFrameDigests": [
+        "7fe15aad6796c85b",
+        "b992861ed642df6b",
+        "38dc0c6acb7ead52",
+        "a31b12d46c296207"
+      ],
+      "femaleFrames": [
+        "Sit-Up_female_v2_0",
+        "Sit-Up_female_v2_1",
+        "Sit-Up_female_v2_2",
+        "Sit-Up_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "f2ea45935896c63e",
+        "08afbb639ccf8ec9",
+        "59571b4fcf4c31fa",
+        "376b906b260acf27"
+      ],
+      "maleFrames": [
+        "Sit-Up_male_v2_0",
+        "Sit-Up_male_v2_1",
+        "Sit-Up_male_v2_2",
+        "Sit-Up_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Smith_Machine_Calf_Raise",
+      "format": "png",
+      "femaleFrameDigests": [
+        "1322ec2f388aab08",
+        "60e191c3cffa0c77",
+        "28d54ec3b8efba49",
+        "c5b36dd4b94b54ff"
+      ],
+      "femaleFrames": [
+        "Smith_Machine_Calf_Raise_female_v2_0",
+        "Smith_Machine_Calf_Raise_female_v2_1",
+        "Smith_Machine_Calf_Raise_female_v2_2",
+        "Smith_Machine_Calf_Raise_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "5151072a00f1fb0a",
+        "db146c745cb3cf7f",
+        "663ea18521814b67",
+        "e8e0594607abebcc"
+      ],
+      "maleFrames": [
+        "Smith_Machine_Calf_Raise_male_v2_0",
+        "Smith_Machine_Calf_Raise_male_v2_1",
+        "Smith_Machine_Calf_Raise_male_v2_2",
+        "Smith_Machine_Calf_Raise_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Smith_Machine_Leg_Press",
+      "format": "png",
+      "femaleFrameDigests": [
+        "4e60a8e985e9dc9c",
+        "11668e9a3dc3164c",
+        "e8c306c20b9b8625",
+        "a7402e72ddb783be"
+      ],
+      "femaleFrames": [
+        "Smith_Machine_Leg_Press_female_v2_0",
+        "Smith_Machine_Leg_Press_female_v2_1",
+        "Smith_Machine_Leg_Press_female_v2_2",
+        "Smith_Machine_Leg_Press_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "db3d8ca054d0034c",
+        "63265a5a20768303",
+        "6a04008e61ec6ff2",
+        "25d8efa72c7de92c"
+      ],
+      "maleFrames": [
+        "Smith_Machine_Leg_Press_male_v2_0",
+        "Smith_Machine_Leg_Press_male_v2_1",
+        "Smith_Machine_Leg_Press_male_v2_2",
+        "Smith_Machine_Leg_Press_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Smith_Machine_Squat",
+      "format": "png",
+      "femaleFrameDigests": [
+        "377c3118570891f8",
+        "da6dd75b8a107391",
+        "519a583ec8e3e70b",
+        "abeb84476c85a771"
+      ],
+      "femaleFrames": [
+        "Smith_Machine_Squat_female_v2_0",
+        "Smith_Machine_Squat_female_v2_1",
+        "Smith_Machine_Squat_female_v2_2",
+        "Smith_Machine_Squat_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "3b25378907b7032f",
+        "20cfe129fa1b02b4",
+        "3456d87e4561ff09",
+        "cc68481cc66fd9cb"
+      ],
+      "maleFrames": [
+        "Smith_Machine_Squat_male_v2_0",
+        "Smith_Machine_Squat_male_v2_1",
+        "Smith_Machine_Squat_male_v2_2",
+        "Smith_Machine_Squat_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Spell_Caster",
+      "format": "png",
+      "femaleFrameDigests": [
+        "c779e37953b76eb3",
+        "b5e42a33a155e973",
+        "0a6f5894df198b95",
+        "6af20892430dfc8c"
+      ],
+      "femaleFrames": [
+        "Spell_Caster_female_v2_0",
+        "Spell_Caster_female_v2_1",
+        "Spell_Caster_female_v2_2",
+        "Spell_Caster_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "e8882c7933f5726d",
+        "3f916c2ff003e0d4",
+        "093a52cc9f716adb",
+        "0999f06f77b70518"
+      ],
+      "maleFrames": [
+        "Spell_Caster_male_v2_0",
+        "Spell_Caster_male_v2_1",
+        "Spell_Caster_male_v2_2",
+        "Spell_Caster_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Spinal_Stretch",
+      "format": "png",
+      "femaleFrameDigests": [
+        "e250bd0e8d05d80b",
+        "b0d2771fb3443b43",
+        "03d6237ee900579b",
+        "f4913f3c0d9d6348"
+      ],
+      "femaleFrames": [
+        "Spinal_Stretch_female_v2_0",
+        "Spinal_Stretch_female_v2_1",
+        "Spinal_Stretch_female_v2_2",
+        "Spinal_Stretch_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "a4e51351e0588333",
+        "d8e5ace2f2651a8e",
+        "ffb4a582bbc07c69",
+        "e45eaf893436367f"
+      ],
+      "maleFrames": [
+        "Spinal_Stretch_male_v2_0",
+        "Spinal_Stretch_male_v2_1",
+        "Spinal_Stretch_male_v2_2",
+        "Spinal_Stretch_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Standing_Cable_Lift",
+      "format": "png",
+      "femaleFrameDigests": [
+        "928002814e836ab6",
+        "90500b412711fa30",
+        "e674b8ceca3f8450",
+        "f2f587826e27fdc1"
+      ],
+      "femaleFrames": [
+        "Standing_Cable_Lift_female_v2_0",
+        "Standing_Cable_Lift_female_v2_1",
+        "Standing_Cable_Lift_female_v2_2",
+        "Standing_Cable_Lift_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "0e9534737b97d849",
+        "5cb13e5e8adc6ebe",
+        "a77bfd82c9b0cc70",
+        "d4becd85babe3eaf"
+      ],
+      "maleFrames": [
+        "Standing_Cable_Lift_male_v2_0",
+        "Standing_Cable_Lift_male_v2_1",
+        "Standing_Cable_Lift_male_v2_2",
+        "Standing_Cable_Lift_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Standing_Dumbbell_Calf_Raise",
+      "format": "png",
+      "femaleFrameDigests": [
+        "f5a5566d15cbc234",
+        "0462ab35a7789fcd",
+        "0e0154c80891219c",
+        "058bb0459dce6d65"
+      ],
+      "femaleFrames": [
+        "Standing_Dumbbell_Calf_Raise_female_v2_0",
+        "Standing_Dumbbell_Calf_Raise_female_v2_1",
+        "Standing_Dumbbell_Calf_Raise_female_v2_2",
+        "Standing_Dumbbell_Calf_Raise_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "9ed59783abe89837",
+        "a75ab8ce27411335",
+        "0ef6c343630d9217",
+        "57eccba7a0eb87e0"
+      ],
+      "maleFrames": [
+        "Standing_Dumbbell_Calf_Raise_male_v2_0",
+        "Standing_Dumbbell_Calf_Raise_male_v2_1",
+        "Standing_Dumbbell_Calf_Raise_male_v2_2",
+        "Standing_Dumbbell_Calf_Raise_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Standing_Dumbbell_Upright_Row",
+      "format": "png",
+      "femaleFrameDigests": [
+        "f3ab4f92336bfe8a",
+        "894f34a73524f35a",
+        "26f5556f3cf2e127",
+        "3c7525b81f76d3af"
+      ],
+      "femaleFrames": [
+        "Standing_Dumbbell_Upright_Row_female_v2_0",
+        "Standing_Dumbbell_Upright_Row_female_v2_1",
+        "Standing_Dumbbell_Upright_Row_female_v2_2",
+        "Standing_Dumbbell_Upright_Row_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "0f33f29c48b5d7a2",
+        "e5ff020cf22dac74",
+        "12af05e6076057f7",
+        "45158f873b218368"
+      ],
+      "maleFrames": [
+        "Standing_Dumbbell_Upright_Row_male_v2_0",
+        "Standing_Dumbbell_Upright_Row_male_v2_1",
+        "Standing_Dumbbell_Upright_Row_male_v2_2",
+        "Standing_Dumbbell_Upright_Row_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Standing_Lateral_Stretch",
+      "format": "png",
+      "femaleFrameDigests": [
+        "d9e096c44f8f438a",
+        "ec2cbc3b16f47d46",
+        "0410e41f7266aaf0",
+        "41cfd52458adbc92"
+      ],
+      "femaleFrames": [
+        "Standing_Lateral_Stretch_female_v2_0",
+        "Standing_Lateral_Stretch_female_v2_1",
+        "Standing_Lateral_Stretch_female_v2_2",
+        "Standing_Lateral_Stretch_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "46082d2faff3c9f9",
+        "79b62987ec00fd98",
+        "fe3bd464074c5e98",
+        "4a27fbd282fe30a1"
+      ],
+      "maleFrames": [
+        "Standing_Lateral_Stretch_male_v2_0",
+        "Standing_Lateral_Stretch_male_v2_1",
+        "Standing_Lateral_Stretch_male_v2_2",
+        "Standing_Lateral_Stretch_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Standing_One-Arm_Cable_Curl",
+      "format": "png",
+      "femaleFrameDigests": [
+        "7a71098c9f52a7e4",
+        "a7c7a060fd12a23f",
+        "e9c431b0b3baa787",
+        "788456538a18a481"
+      ],
+      "femaleFrames": [
+        "Standing_One-Arm_Cable_Curl_female_v2_0",
+        "Standing_One-Arm_Cable_Curl_female_v2_1",
+        "Standing_One-Arm_Cable_Curl_female_v2_2",
+        "Standing_One-Arm_Cable_Curl_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "2fd236eeb8ec2f35",
+        "bc49316df2b1748b",
+        "87aacfa1838e70ad",
+        "d1bb3115e6152702"
+      ],
+      "maleFrames": [
+        "Standing_One-Arm_Cable_Curl_male_v2_0",
+        "Standing_One-Arm_Cable_Curl_male_v2_1",
+        "Standing_One-Arm_Cable_Curl_male_v2_2",
+        "Standing_One-Arm_Cable_Curl_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Star_Jump",
+      "format": "png",
+      "femaleFrameDigests": [
+        "51fc75081ad1e0d7",
+        "2990649a6c2b33b6",
+        "ba673446dd1c7980",
+        "183286f0aa2824ca"
+      ],
+      "femaleFrames": [
+        "Star_Jump_female_v2_0",
+        "Star_Jump_female_v2_1",
+        "Star_Jump_female_v2_2",
+        "Star_Jump_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "0f084f6d4be4b538",
+        "cc58cc7c904ef722",
+        "3362cd162aab4d1e",
+        "0d03d67258888f2d"
+      ],
+      "maleFrames": [
+        "Star_Jump_male_v2_0",
+        "Star_Jump_male_v2_1",
+        "Star_Jump_male_v2_2",
+        "Star_Jump_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Stiff-Legged_Barbell_Deadlift",
+      "format": "png",
+      "femaleFrameDigests": [
+        "bb7bc997cd7a70ff",
+        "f174c72e837afdaf",
+        "5b8f833d0e63bd0c",
+        "ad5fed2d5a7fc047"
+      ],
+      "femaleFrames": [
+        "Stiff-Legged_Barbell_Deadlift_female_v2_0",
+        "Stiff-Legged_Barbell_Deadlift_female_v2_1",
+        "Stiff-Legged_Barbell_Deadlift_female_v2_2",
+        "Stiff-Legged_Barbell_Deadlift_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "2491730716c2a02c",
+        "fa081590ca3a5307",
+        "eb50950608e3b327",
+        "ffc981decde7d12b"
+      ],
+      "maleFrames": [
+        "Stiff-Legged_Barbell_Deadlift_male_v2_0",
+        "Stiff-Legged_Barbell_Deadlift_male_v2_1",
+        "Stiff-Legged_Barbell_Deadlift_male_v2_2",
+        "Stiff-Legged_Barbell_Deadlift_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Stiff-Legged_Dumbbell_Deadlift",
+      "format": "png",
+      "femaleFrameDigests": [
+        "f466d8e8c3b3f441",
+        "b91f483fc45f194c",
+        "337fa8ba2d59cbaa",
+        "93d8668ee488040b"
+      ],
+      "femaleFrames": [
+        "Stiff-Legged_Dumbbell_Deadlift_female_v2_0",
+        "Stiff-Legged_Dumbbell_Deadlift_female_v2_1",
+        "Stiff-Legged_Dumbbell_Deadlift_female_v2_2",
+        "Stiff-Legged_Dumbbell_Deadlift_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "f262d5f17a7031d8",
+        "6b2593a00a36a254",
+        "6924bece4f9479cc",
+        "53bfcf1248aaa2c2"
+      ],
+      "maleFrames": [
+        "Stiff-Legged_Dumbbell_Deadlift_male_v2_0",
+        "Stiff-Legged_Dumbbell_Deadlift_male_v2_1",
+        "Stiff-Legged_Dumbbell_Deadlift_male_v2_2",
+        "Stiff-Legged_Dumbbell_Deadlift_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Tricep_Dumbbell_Kickback",
+      "format": "png",
+      "femaleFrameDigests": [
+        "6982cdf43156041f",
+        "bdec7651e32735c6",
+        "8c6d066877ae478e",
+        "91f9ea2c540a46d0"
+      ],
+      "femaleFrames": [
+        "Tricep_Dumbbell_Kickback_female_v2_0",
+        "Tricep_Dumbbell_Kickback_female_v2_1",
+        "Tricep_Dumbbell_Kickback_female_v2_2",
+        "Tricep_Dumbbell_Kickback_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "6dc0f5feb66de991",
+        "e029d6673fc6fa94",
+        "0c67a9307a379c91",
+        "f215d0e03ae4af9f"
+      ],
+      "maleFrames": [
+        "Tricep_Dumbbell_Kickback_male_v2_0",
+        "Tricep_Dumbbell_Kickback_male_v2_1",
+        "Tricep_Dumbbell_Kickback_male_v2_2",
+        "Tricep_Dumbbell_Kickback_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Upright_Barbell_Row",
+      "format": "png",
+      "femaleFrameDigests": [
+        "aba983c5ec36ac77",
+        "b557145fc57eca8b",
+        "1907d895a89c6159",
+        "eb5497ee035ceadd"
+      ],
+      "femaleFrames": [
+        "Upright_Barbell_Row_female_v2_0",
+        "Upright_Barbell_Row_female_v2_1",
+        "Upright_Barbell_Row_female_v2_2",
+        "Upright_Barbell_Row_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "da7f13b945b39e0c",
+        "c693c6b498784847",
+        "aefc49c1cfc35f4e",
+        "c752fe007272b09f"
+      ],
+      "maleFrames": [
+        "Upright_Barbell_Row_male_v2_0",
+        "Upright_Barbell_Row_male_v2_1",
+        "Upright_Barbell_Row_male_v2_2",
+        "Upright_Barbell_Row_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Weighted_Crunches",
+      "format": "png",
+      "femaleFrameDigests": [
+        "66f0afc84b50f3e3",
+        "f39993c95ce53483",
+        "29e70c44a22c4f61",
+        "7f1a41ff2c2a7cbe"
+      ],
+      "femaleFrames": [
+        "Weighted_Crunches_female_v2_0",
+        "Weighted_Crunches_female_v2_1",
+        "Weighted_Crunches_female_v2_2",
+        "Weighted_Crunches_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "f35a90343c5df88b",
+        "f24d74fc453c3343",
+        "7fa26869e73cbc3b",
+        "7b73ed27ea9820cc"
+      ],
+      "maleFrames": [
+        "Weighted_Crunches_male_v2_0",
+        "Weighted_Crunches_male_v2_1",
+        "Weighted_Crunches_male_v2_2",
+        "Weighted_Crunches_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Weighted_Sissy_Squat",
+      "format": "png",
+      "femaleFrameDigests": [
+        "c951ca27db74c4aa",
+        "266da1005d5fed0b",
+        "a88cbe14b511f822",
+        "eaa86fcb47f57c57"
+      ],
+      "femaleFrames": [
+        "Weighted_Sissy_Squat_female_v2_0",
+        "Weighted_Sissy_Squat_female_v2_1",
+        "Weighted_Sissy_Squat_female_v2_2",
+        "Weighted_Sissy_Squat_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "628e3471a63667cf",
+        "a2c72d478edcc67e",
+        "41e654f0616d91cf",
+        "144831c3ad8475cf"
+      ],
+      "maleFrames": [
+        "Weighted_Sissy_Squat_male_v2_0",
+        "Weighted_Sissy_Squat_male_v2_1",
+        "Weighted_Sissy_Squat_male_v2_2",
+        "Weighted_Sissy_Squat_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    },
+    {
+      "exerciseId": "Wrist_Circles",
+      "format": "png",
+      "femaleFrameDigests": [
+        "7f1a4058f3245bc2",
+        "aeb4cc5e1617e191",
+        "52e988155edb92b8",
+        "c96491563cee076b"
+      ],
+      "femaleFrames": [
+        "Wrist_Circles_female_v2_0",
+        "Wrist_Circles_female_v2_1",
+        "Wrist_Circles_female_v2_2",
+        "Wrist_Circles_female_v2_3"
+      ],
+      "frameCount": 4,
+      "maleFrameDigests": [
+        "c4046e82ad821831",
+        "12f5010c070795c9",
+        "b3c23aed53e96a38",
+        "603d5ea21fbf0c22"
+      ],
+      "maleFrames": [
+        "Wrist_Circles_male_v2_0",
+        "Wrist_Circles_male_v2_1",
+        "Wrist_Circles_male_v2_2",
+        "Wrist_Circles_male_v2_3"
+      ],
+      "representativeFrameIndex": 2
+    }
+  ],
+  "schemaVersion": 1
+}

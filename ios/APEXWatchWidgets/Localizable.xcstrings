@@ -1,0 +1,213 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Calories" : {
+      "localizations" : {
+        "ar" : { "stringUnit" : { "state" : "translated", "value" : "السعرات الحرارية" } },
+        "az" : { "stringUnit" : { "state" : "translated", "value" : "Kalorilər" } },
+        "cs" : { "stringUnit" : { "state" : "translated", "value" : "Kalorie" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Kalorien" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Calories" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Calorías" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Calories" } },
+        "hi" : { "stringUnit" : { "state" : "translated", "value" : "कैलोरी" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Calorie" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "カロリー" } },
+        "ko" : { "stringUnit" : { "state" : "translated", "value" : "칼로리" } },
+        "nl" : { "stringUnit" : { "state" : "translated", "value" : "Calorieën" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Kalorie" } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Calorias" } },
+        "ro" : { "stringUnit" : { "state" : "translated", "value" : "Calorii" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Калории" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Kalori" } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "Калорії" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "卡路里" } }
+      }
+    },
+    "APEX Calories" : {
+      "localizations" : {
+        "ar" : { "stringUnit" : { "state" : "translated", "value" : "سعرات APEX" } },
+        "az" : { "stringUnit" : { "state" : "translated", "value" : "APEX Kalorilər" } },
+        "cs" : { "stringUnit" : { "state" : "translated", "value" : "APEX Kalorie" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "APEX Kalorien" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "APEX Calories" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "APEX Calorías" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "APEX Calories" } },
+        "hi" : { "stringUnit" : { "state" : "translated", "value" : "APEX कैलोरी" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "APEX Calorie" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "APEX カロリー" } },
+        "ko" : { "stringUnit" : { "state" : "translated", "value" : "APEX 칼로리" } },
+        "nl" : { "stringUnit" : { "state" : "translated", "value" : "APEX Calorieën" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "APEX Kalorie" } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "APEX Calorias" } },
+        "ro" : { "stringUnit" : { "state" : "translated", "value" : "APEX Calorii" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "APEX Калории" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "APEX Kalori" } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "APEX Калорії" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "APEX 卡路里" } }
+      }
+    },
+    "APEX Macros" : {
+      "localizations" : {
+        "ar" : { "stringUnit" : { "state" : "translated", "value" : "العناصر الكبرى في APEX" } },
+        "az" : { "stringUnit" : { "state" : "translated", "value" : "APEX Makrolar" } },
+        "cs" : { "stringUnit" : { "state" : "translated", "value" : "APEX Makroživiny" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "APEX Makros" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "APEX Macros" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "APEX Macros" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "APEX Macros" } },
+        "hi" : { "stringUnit" : { "state" : "translated", "value" : "APEX मैक्रो" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "APEX Macro" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "APEX マクロ" } },
+        "ko" : { "stringUnit" : { "state" : "translated", "value" : "APEX 매크로" } },
+        "nl" : { "stringUnit" : { "state" : "translated", "value" : "APEX Macro’s" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "APEX Makro" } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "APEX Macros" } },
+        "ro" : { "stringUnit" : { "state" : "translated", "value" : "APEX Macronutrienți" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "APEX БЖУ" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "APEX Makrolar" } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "APEX БЖВ" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "APEX 宏量营养素" } }
+      }
+    },
+    "APEX Protein" : {
+      "localizations" : {
+        "ar" : { "stringUnit" : { "state" : "translated", "value" : "بروتين APEX" } },
+        "az" : { "stringUnit" : { "state" : "translated", "value" : "APEX Zülal" } },
+        "cs" : { "stringUnit" : { "state" : "translated", "value" : "APEX Bílkoviny" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "APEX Protein" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "APEX Protein" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "APEX Proteína" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "APEX Protéines" } },
+        "hi" : { "stringUnit" : { "state" : "translated", "value" : "APEX प्रोटीन" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "APEX Proteine" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "APEX たんぱく質" } },
+        "ko" : { "stringUnit" : { "state" : "translated", "value" : "APEX 단백질" } },
+        "nl" : { "stringUnit" : { "state" : "translated", "value" : "APEX Eiwit" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "APEX Białko" } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "APEX Proteína" } },
+        "ro" : { "stringUnit" : { "state" : "translated", "value" : "APEX Proteine" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "APEX Белки" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "APEX Protein" } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "APEX Білок" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "APEX 蛋白质" } }
+      }
+    },
+    "Macros" : {
+      "localizations" : {
+        "ar" : { "stringUnit" : { "state" : "translated", "value" : "العناصر الكبرى" } },
+        "az" : { "stringUnit" : { "state" : "translated", "value" : "Makrolar" } },
+        "cs" : { "stringUnit" : { "state" : "translated", "value" : "Makroživiny" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Makros" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Macros" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Macros" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Macros" } },
+        "hi" : { "stringUnit" : { "state" : "translated", "value" : "मैक्रो" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Macro" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "マクロ" } },
+        "ko" : { "stringUnit" : { "state" : "translated", "value" : "매크로" } },
+        "nl" : { "stringUnit" : { "state" : "translated", "value" : "Macro's" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Makra" } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Macros" } },
+        "ro" : { "stringUnit" : { "state" : "translated", "value" : "Macronutrienți" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Макросы" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Makrolar" } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "Макроси" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "宏量营养素" } }
+      }
+    },
+    "Protein" : {
+      "localizations" : {
+        "ar" : { "stringUnit" : { "state" : "translated", "value" : "البروتين" } },
+        "az" : { "stringUnit" : { "state" : "translated", "value" : "Zülal" } },
+        "cs" : { "stringUnit" : { "state" : "translated", "value" : "Bílkoviny" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Protein" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Protein" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Proteína" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Protéines" } },
+        "hi" : { "stringUnit" : { "state" : "translated", "value" : "प्रोटीन" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Proteine" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "たんぱく質" } },
+        "ko" : { "stringUnit" : { "state" : "translated", "value" : "단백질" } },
+        "nl" : { "stringUnit" : { "state" : "translated", "value" : "Eiwit" } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Białko" } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Proteína" } },
+        "ro" : { "stringUnit" : { "state" : "translated", "value" : "Proteine" } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Белки" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Protein" } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "Білок" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "蛋白质" } }
+      }
+    },
+    "Protein, carbs, and fat on your watch face." : {
+      "localizations" : {
+        "ar" : { "stringUnit" : { "state" : "translated", "value" : "البروتين والكربوهيدرات والدهون على واجهة ساعتك." } },
+        "az" : { "stringUnit" : { "state" : "translated", "value" : "Zülal, karbohidrat və yağ saatınızın siferblatında." } },
+        "cs" : { "stringUnit" : { "state" : "translated", "value" : "Bílkoviny, sacharidy a tuky na ciferníku hodinek." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Protein, Kohlenhydrate und Fett auf deinem Zifferblatt." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Protein, carbs, and fat on your watch face." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Proteína, carbohidratos y grasa en tu esfera." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Protéines, glucides et lipides sur ton cadran." } },
+        "hi" : { "stringUnit" : { "state" : "translated", "value" : "आपके वॉच फ़ेस पर प्रोटीन, कार्ब्स और फैट।" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Proteine, carboidrati e grassi sul quadrante." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "たんぱく質、炭水化物、脂質を文字盤に表示します。" } },
+        "ko" : { "stringUnit" : { "state" : "translated", "value" : "워치 페이스에 단백질, 탄수화물, 지방을 표시합니다." } },
+        "nl" : { "stringUnit" : { "state" : "translated", "value" : "Eiwit, koolhydraten en vet op je wijzerplaat." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Białko, węglowodany i tłuszcz na tarczy zegarka." } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Proteína, carboidratos e gordura no mostrador." } },
+        "ro" : { "stringUnit" : { "state" : "translated", "value" : "Proteine, carbohidrați și grăsimi pe cadranul ceasului." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Белки, углеводы и жиры на циферблате." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Saat kadranınızda protein, karbonhidrat ve yağ." } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "Білки, вуглеводи та жири на циферблаті." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "在表盘上显示蛋白质、碳水和脂肪。" } }
+      }
+    },
+    "Today's calories on your watch face." : {
+      "localizations" : {
+        "ar" : { "stringUnit" : { "state" : "translated", "value" : "سعرات اليوم على واجهة ساعتك." } },
+        "az" : { "stringUnit" : { "state" : "translated", "value" : "Bugünkü kalorilər saatınızın siferblatında." } },
+        "cs" : { "stringUnit" : { "state" : "translated", "value" : "Dnešní kalorie na ciferníku hodinek." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Die Kalorien von heute auf deinem Zifferblatt." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Today's calories on your watch face." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Las calorías de hoy en tu esfera." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Les calories du jour sur ton cadran." } },
+        "hi" : { "stringUnit" : { "state" : "translated", "value" : "आपके वॉच फ़ेस पर आज की कैलोरी।" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Le calorie di oggi sul quadrante." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今日のカロリーを文字盤に表示します。" } },
+        "ko" : { "stringUnit" : { "state" : "translated", "value" : "워치 페이스에 오늘의 칼로리를 표시합니다." } },
+        "nl" : { "stringUnit" : { "state" : "translated", "value" : "De calorieën van vandaag op je wijzerplaat." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Dzisiejsze kalorie na tarczy zegarka." } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "As calorias de hoje no mostrador." } },
+        "ro" : { "stringUnit" : { "state" : "translated", "value" : "Caloriile de azi pe cadranul ceasului." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Калории за сегодня на циферблате." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Bugünkü kaloriler saat kadranınızda." } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "Калорії за сьогодні на циферблаті." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "在表盘上显示今天的卡路里。" } }
+      }
+    },
+    "Today's protein on your watch face." : {
+      "localizations" : {
+        "ar" : { "stringUnit" : { "state" : "translated", "value" : "بروتين اليوم على واجهة ساعتك." } },
+        "az" : { "stringUnit" : { "state" : "translated", "value" : "Bugünkü zülal saatınızın siferblatında." } },
+        "cs" : { "stringUnit" : { "state" : "translated", "value" : "Dnešní bílkoviny na ciferníku hodinek." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Das Protein von heute auf deinem Zifferblatt." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Today's protein on your watch face." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "La proteína de hoy en tu esfera." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Les protéines du jour sur ton cadran." } },
+        "hi" : { "stringUnit" : { "state" : "translated", "value" : "आपके वॉच फ़ेस पर आज का प्रोटीन।" } },
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Le proteine di oggi sul quadrante." } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今日のたんぱく質を文字盤に表示します。" } },
+        "ko" : { "stringUnit" : { "state" : "translated", "value" : "워치 페이스에 오늘의 단백질을 표시합니다." } },
+        "nl" : { "stringUnit" : { "state" : "translated", "value" : "Het eiwit van vandaag op je wijzerplaat." } },
+        "pl" : { "stringUnit" : { "state" : "translated", "value" : "Dzisiejsze białko na tarczy zegarka." } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "A proteína de hoje no mostrador." } },
+        "ro" : { "stringUnit" : { "state" : "translated", "value" : "Proteinele de azi pe cadranul ceasului." } },
+        "ru" : { "stringUnit" : { "state" : "translated", "value" : "Белки за сегодня на циферблате." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Bugünkü protein saat kadranınızda." } },
+        "uk" : { "stringUnit" : { "state" : "translated", "value" : "Білок за сьогодні на циферблаті." } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "在表盘上显示今天的蛋白质。" } }
+      }
+    }
+  },
+  "version" : "1.1"
+}
